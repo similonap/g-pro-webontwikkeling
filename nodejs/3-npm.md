@@ -6,9 +6,11 @@ Samen met Node.js werd npm \(Node Package Manager\) geïnstalleerd. Dit laat ont
 
 ## voorbeeld
 
-
+lorem ipsum
 
 
 
 ## npm + Node.js
+
+lorem ipsum
 
