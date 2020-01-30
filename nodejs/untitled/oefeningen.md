@@ -1,6 +1,6 @@
 # Oefeningen
 
-### Opdracht - Opfrissing van JavaScript
+### Opdracht 1: Opfrissing van JavaScript
 
 Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aantal JavaScript statements uit:
 
@@ -10,7 +10,7 @@ Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aan
 * Verlaat de REPL tool en doe het bovenstaande in een eigen index.js bestand in visual studio code. Als je hier output wil hebben zal je moeten gebruik maken van console.log statements.
 * Gebruik de debugger van visual studio code en zet een breakpoint ergens in de for lus en stap daarna doorheen de code. 
 
-### **Opdracht - JSON Modelleren**
+### **Opdracht 2: JSON Modelleren**
 
 Maak een JSON bestand waarin je een winkel mandje modeleerd:
 
@@ -30,7 +30,7 @@ npm install -g jsonlint
 jsonlint shopping.json
 ```
 
-### Opdracht - Eenvoudige webserver met JSON
+### Opdracht 3: Eenvoudige webserver met JSON
 
 Je kan in Node.js heel eenvoudig een webserver maken. 
 
