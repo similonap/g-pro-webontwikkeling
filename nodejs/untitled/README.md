@@ -4,7 +4,7 @@
 
 JavaScript is overal, denk maar aan JS-bibliotheken en -frameworks in de browser. Bekend zijn onder meer [jQuery](https://jquery.com/), [AngularJS](https://angularjs.org/) en [React](https://reactjs.org/). JavaScript wordt tegenwoordig ook gebruikt in server-sided projecten en hiervoor wordt Node.js ingezet. 
 
-![](../.gitbook/assets/node.png)
+![](../../.gitbook/assets/node.png)
 
 [**Node.js**](https://nodejs.org/en/) is een asynchrone Javascript _runtime environment_ gebaseerd op de Google V8 engine en één van de populairste projecten op [Github](https://github.com/).  Een runtime environment zet een bepaalde taal, zoals Javascript, om in machinetaal die een computer kan uitvoeren. Node.js is een softwareplatform dat aan de serverkant gebruikt kan worden en die grote hoeveelheden gegevens in realtime moeten verwerken, en buiten een browser om uitgevoerd kan worden. Node.js is populair voor de realisatie van lichtgewicht webservers. Node.js wordt dus gebruikt om code te schrijven voor de server, zoals de talen PHP, Java, .NET, Ruby of Python. 
 
