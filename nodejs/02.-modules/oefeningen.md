@@ -1,4 +1,4 @@
-# Oefeningen
+# oefeningen
 
 ### Opdracht 1: Gebruik maken van externe modules in kleur
 

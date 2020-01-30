@@ -1,4 +1,4 @@
-# Oefeningen
+# oefeningen
 
 ### Opdracht 1: Opfrissing van JavaScript
 
