@@ -4,9 +4,9 @@
 
 ## NodeJS & NPM en JSON <a id="nodejs"></a>
 
-* [01. NodeJS intro](nodejs/untitled.md)
-* [02.JSON](nodejs/2-json.md)
-* [02. modules](nodejs/02.-modules.md)
+* [01. NodeJS intro](nodejs/untitled/README.md)
+* [02.JSON](nodejs/untitled-3.md)
+* [02. modules](nodejs/02.-modules/README.md)
 * [Untitled](nodejs/untitled-2.md)
 * [Untitled](nodejs/untitled-1.md)
 
@@ -21,7 +21,7 @@
 
 ## labo
 
-* [labo 1: hfdst.1-3](labo/labo-1.md)
+* [labo 1: hfdst.1-3](nodejs/untitled/oefeningen.md)
 * [labo 2](labo/labo-2.md)
 * [Untitled](labo/untitled.md)
 

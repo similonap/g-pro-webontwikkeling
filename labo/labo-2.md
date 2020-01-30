@@ -16,7 +16,7 @@
 verwachte output:
 
 ```text
-Hello Mr. Achternaam!
+Hello Joske Vermeulen!
 ```
 
 ### 3. gebruiken externe modules en maken eigen modules
