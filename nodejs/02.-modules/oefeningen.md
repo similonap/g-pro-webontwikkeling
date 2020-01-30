@@ -1,12 +1,12 @@
 # oefeningen
 
-### 1: gebruiken externe modules in kleur
+### 1. gebruiken externe modules in kleur
 
 * Gebruik de npm module chalk \([https://www.npmjs.com/package/chalk](https://www.npmjs.com/package/chalk)\) om in mooie kleurtjes Hello World op het scherm te laten verschijnen.  
 * Hello moet geschreven met witte letters op rode achtergrond.
 * World moet geschreven zijn met gele letters op een blauwe achtergrond.
 
-### 2: eigen module maken
+### 2. eigen module maken
 
 * Schrijf een programma \(index.js\) met een functie hello en argumenten **voor** en **achternaam.**  Deze functie zal 'Hallo &lt;voornaam&gt; &lt;achternaam&gt;!' afprinten.
 * Roep deze functie op vanuit hetzelfde bestand.
@@ -19,7 +19,7 @@ Verwachte output:
 Hello Andie Similon!
 ```
 
-### 3: gebruiken externe modules en maken eigen modules
+### 3. gebruiken externe modules en maken eigen modules
 
 * Maak een node js applicatie die gebruik maakt van de _Pokedex_ module \([https://www.npmjs.com/package/pokedex](https://www.npmjs.com/package/pokedex)\).
 * Elke _Pokémon_ heeft een id startende met het getal 1 \(dus niet 0 zoals bij een array\).
@@ -44,7 +44,7 @@ Hello Andie Similon!
 
 * Verplaats alle code die te maken heeft met het afprinten van _Pokémon_ naar een apart bestand en maak ze beschikbaar als module. Roep deze functies aan in je index.js bestand. De output moet identiek blijven.
 
-### 4: gebruiken externe module moment
+### 4. gebruiken externe module moment
 
 * Gebruik de npm module moment \([https://www.npmjs.com/package/moment](https://www.npmjs.com/package/moment)\) om een klokje te maken dat elke seconde de nieuwe tijd laat zien. Maak gebruik van de ingebouwde [setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp) functie.
 * Als extra zou je je scherm kunnen leegmaken elke keer hij de tijd laat zien met de volgende regel code: `process.stdout.write('\033c');` \(niet te kennen of begrijpen\)
