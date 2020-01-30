@@ -89,7 +89,7 @@ const server = http.createServer((req, res) => {
 
 // laat de webserver luisteren op de aangegeven poort en adres.
 server.listen(port, hostname, () => {
-  console.log('Server running at http://' + hostname + ':' + port + '/');
+  console.log('Server running at http://' + hostname + ':' + port);
 });
 ```
 
