@@ -18,7 +18,43 @@ Node.js bevat een bibliotheek van diverse JavaScript-modules, die met een eenvou
 
 Een voorbeeld hiervan is de HTTP-module, waarmee je met één enkele functie een rudimentaire webserver kunt maken. Bovendien kun je met de geïntegreerde pakketmanager npm \(Node Package Manager\) extra modules installeren.
 
+```javascript
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+```
+
 ## installatie
+
+### 1. software downloaden
+
+{% embed url="https://nodejs.org/en/" %}
+
+Terwijl de huidige versie van Node.js je de nieuwste functies van de runtime-omgeving biedt, biedt de LTS-release een stabiele softwareversie voor duurzaam gebruik.
+
+### **2. Node.js en npm installeren**
+
+Ga stap voor stap doorheen de installatie-wizard. Installeer naast Node.js ook de npm package manager.
+
+### 3. testen installatie
+
+Start Node.js op en voer een eerste eenvoudige JavaScript-code uit. De runtime-omgeving biedt daarvoor **twee modi**: Node.js in de interactieve modus of de applicatiecode uitvoeren van een eerder aangemaakt JavaScript \(.js\)-bestand. 
+
+* Kies voor de interactieve modus en test deze in de terminal \(mac\) \| opdrachtprompt \(Windows\).
+* Start de JavaScript runtime-omgeving via het commando node.
+
+
 
 
 
