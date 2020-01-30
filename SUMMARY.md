@@ -1,12 +1,12 @@
 # Table of contents
 
-* [00. Inleiding](README.md)
+* [00. inleiding](README.md)
 
 ## NodeJS
 
 * [01. NodeJS intro](nodejs/untitled/README.md)
   * [Oefeningen](nodejs/untitled/oefeningen.md)
-* [02. Modules](nodejs/02.-modules/README.md)
+* [02. modules](nodejs/02.-modules/README.md)
   * [Oefeningen](nodejs/02.-modules/oefeningen.md)
 * [Untitled](nodejs/untitled-3.md)
 * [Untitled](nodejs/untitled-2.md)

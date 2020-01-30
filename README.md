@@ -1,4 +1,4 @@
-# 00. Inleiding
+# 00. inleiding
 
 ## Doelstellingen
 
