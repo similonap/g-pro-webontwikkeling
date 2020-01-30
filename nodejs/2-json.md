@@ -43,12 +43,7 @@
 
 ## data types
 
-JSON kan _nooit_ de waarde krijgen van de volgende data types:
-
-* function
-* date
-* _undefined_
-
+JSON kan nooit _****_de waarde krijgen van de volgende data types: function, date of _undefined._  
 JSON kan wel gebruikt worden voor de onderstaande data types:
 
 * **string** moet altijd tussen dubbele aanhalingstekens
