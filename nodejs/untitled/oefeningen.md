@@ -10,7 +10,7 @@ Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aan
 * Verlaat de REPL tool en doe het bovenstaande in een eigen index.js bestand in visual studio code. Als je hier output wil hebben zal je moeten gebruik maken van console.log statements.
 * Gebruik de debugger van visual studio code en zet een breakpoint ergens in de for lus en stap daarna doorheen de code. 
 
-### **2. JSON modelleren**
+### **2. JSON Modelleren**
 
 Maak een JSON bestand waarin je een winkel mandje modelleert:
 
@@ -25,18 +25,16 @@ Maak een JSON bestand waarin je een winkel mandje modelleert:
 
 * Installeer jsonlint en kijk na of jouw json file voldoet aan de specificaties:
 
-```bash
+```text
 npm install -g jsonlint
 jsonlint shopping.json
 ```
 
 ### 3. eenvoudige webserver met JSON
 
-Interessante functies die eventueel nodig zijn voor dit labo: [JSON.stringify\(\)](https://www.w3schools.com/js/js_json_stringify.asp) en [JSON.parse\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
-
 Je kan in Node.js heel eenvoudig een webserver maken. 
 
-```javascript
+```text
 const http = require('http');
 const server = http.createServer((request, response) => {
     response.writeHead(200, {'Content-Type':'text/plain'});
@@ -52,6 +50,8 @@ server.listen(3000);
 * Retourneer een JSON object dat je voornaam en achternaam bevat als je naar http://localhost:1337 surft. Hou er rekening mee dat de write functie alleen strings aanvaard dus je zal je object nog moeten omzetten.
 * Ga op zoek naar headers in het request object naar informatie over je browser en je operating system. Geef dit ook mee terug in het JSON object. _\(Je kan ofwel via de debugger het request object inspecteren of gewoon het object afprinten via console.log\)_
 * Hou een teller bij hoeveel keer de pagina is geladen en geef ook dit mee in de response van je http server.
+
+Interessante functies die eventueel nodig zijn voor dit labo: [JSON.stringify\(\)](https://www.w3schools.com/js/js_json_stringify.asp) en [JSON.parse\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
 
 
