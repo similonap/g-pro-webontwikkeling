@@ -1,4 +1,4 @@
-# oefeningen
+# labo 1: hfdst.1-3
 
 ### 1. opfrissing van JavaScript
 
