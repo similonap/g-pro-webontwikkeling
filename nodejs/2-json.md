@@ -43,11 +43,17 @@
 
 ## data types
 
-JSON kan nooit de waarde krijgen van de volgende data types:
+JSON kan **nooit** de waarde krijgen van de volgende data types:
 
 * function
 * date
 * _undefined_
 
+JSON kan wel gebruikt worden voor de onderstaande data types:
 
+* string moet altijd tussen dubbele aanhalingstekens
+
+```javascript
+{ "name":"John" }
+```
 
