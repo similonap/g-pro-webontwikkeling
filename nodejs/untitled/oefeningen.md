@@ -10,7 +10,7 @@ Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aan
 * Verlaat de REPL tool en doe het bovenstaande in een eigen index.js bestand in visual studio code. Als je hier output wil hebben zal je moeten gebruik maken van console.log statements.
 * Gebruik de debugger van visual studio code en zet een breakpoint ergens in de for lus en stap daarna doorheen de code. 
 
-### **2. JSON Modelleren**
+### **2. JSON modelleren**
 
 Maak een JSON bestand waarin je een winkel mandje modelleert:
 
