@@ -42,3 +42,64 @@ server.listen(port, hostname, () => {
 });
 ```
 
+
+
+## eigen modules
+
+### search-string
+
+```javascript
+const search = ['antwerpen', 'brussel', 'leuven', 'mechelen', 'gent'];
+
+exports.getSearchTerm = function () {
+  const id = Math.floor(Math.random() * search.length);
+  return search[id];
+};
+```
+
+
+
+
+
+```javascript
+const http = require('http');
+const search = require('youtube-search');
+const searchstrings = require('./searchstrings.js');
+
+const searchTerm = searchstrings.getSearchTerm();
+const opts = {
+  maxResults: 10,
+  key: 'KEYGOESHERE',
+};
+
+let output = '';
+search(searchTerm, opts, (err, results) => {
+  if (err) return console.log(err);
+  results.forEach((element) => {
+    output += ` <a href='${element.link}'>${element.title}</a> <br/> `;
+    // console.log(element);
+    //console.log(output);
+  });
+});
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(output);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+```
+
+
+
+## package.json
+
+### npm init
+
+
+
