@@ -4,7 +4,7 @@
 
 JavaScript is overal, denk maar aan JS-bibliotheken en -frameworks in de browser. Bekend zijn onder meer [jQuery](https://jquery.com/), [AngularJS](https://angularjs.org/) en [React](https://reactjs.org/). JavaScript wordt tegenwoordig ook gebruikt in server-sided projecten en hiervoor wordt Node.js ingezet. 
 
-[**Node.js**](https://nodejs.org/en/) is een van de populairste projecten op [Github](https://github.com/) en dus open source.  Het is een softwareplatform met een event-based architectuur, waarmee je de scripttaal JavaScript -oorspronkelijk ontwikkeld voor de client- aan de serverkant kan gebruiken die grote hoeveelheden gegevens in realtime moeten verwerken, en buiten een browser om uitgevoerd kan worden. Node.JS is populair voor de realisatie van lichtgewicht webservers. Node.JS wordt dus gebruikt om code te schrijven voor de server, zoals de talen PHP, Java, .NET, Ruby of Python.   
+[**Node.js**](https://nodejs.org/en/) is een van de populairste projecten op [Github](https://github.com/) en dus open source.  Het is een softwareplatform met een asynchroon event-driven JS-runtime architectuur -JavaScript oorspronkelijk ontwikkeld voor de client- aan de serverkant kan gebruiken, die grote hoeveelheden gegevens in realtime moeten verwerken, en buiten een browser om uitgevoerd kan worden. Node.JS is populair voor de realisatie van lichtgewicht webservers. Node.JS wordt dus gebruikt om code te schrijven voor de server, zoals de talen PHP, Java, .NET, Ruby of Python.   
   
 Dankzij Node.js kunnen ontwikkelaars JavaScript gebruiken voor command-line-tools en server-side scripting. Node.JS is populair voor de realisatie van lichtgewicht webservers.  
   
