@@ -1,4 +1,8 @@
-# 02.JSON
+---
+description: data formaat
+---
+
+# 02. JSON
 
 ## Wat is JSON?
 

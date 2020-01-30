@@ -1,4 +1,4 @@
-# 01. NodeJS intro
+# 01. intro NodeJS
 
 ## Wat is Node.js?
 
