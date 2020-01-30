@@ -55,7 +55,23 @@ console.log(“Hello World!”);
 
 De uitvoer ‘Hello World!’ laat zien dat de installatie van Node.js is geslaagd.
 
-## eerste script
+## terminal
+
+
+
+## editor
+
+
+
+## eerst script
+
+
+
+## situering NodeJS
+
+### 
+
+## voorbeelden
 
 Een voorbeeld hiervan is de HTTP-module, waarmee je met één enkele functie een rudimentaire webserver kunt maken. Bovendien kun je met de geïntegreerde pakketmanager npm \(Node Package Manager\) extra modules installeren.
 
@@ -76,7 +92,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log('Server running at http://${hostname}:${port}/');
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```
 
