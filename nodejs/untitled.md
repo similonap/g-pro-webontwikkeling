@@ -72,21 +72,24 @@ Een voorbeeld hiervan is de HTTP-module, waarmee je met één enkele functie een
 ### Hello world
 
 ```javascript
-//http-module oproepen
+// http-module importeren
 const http = require('http');
 
-// opzetten van een server
+// het adres en de poort van de webserver.
 const hostname = '127.0.0.1';
 const port = 3000;
 
+// maakt een web server aan. Neemt een handler methode aan met 2 parameters:
+// het request en response object.
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
   res.end('Hello World');
 });
 
+// laat de webserver luisteren op de aangegeven poort en adres.
 server.listen(port, hostname, () => {
-  console.log('Server running at http://${hostname}:${port}/');
+  console.log('Server running at http://' + hostname + ':' + port + '/');
 });
 ```
 
