@@ -2,7 +2,7 @@
 description: data formaat
 ---
 
-# 02. JSON
+# 03. JSON
 
 ## Wat is JSON?
 

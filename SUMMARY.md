@@ -4,10 +4,9 @@
 
 ## NodeJS & NPM en JSON <a id="nodejs"></a>
 
-* [01. intro NodeJS](nodejs/untitled/README.md)
-  * [video](nodejs/untitled/video.md)
-* [02. JSON](nodejs/2-json.md)
-* [03. Node Package Manager \(npm\)](nodejs/3-npm.md)
+* [01. intro NodeJS](nodejs/untitled.md)
+* [02. Node Package Manager \(npm\)](nodejs/2-npm.md)
+* [03. JSON](nodejs/3-json.md)
 * [04. eigen modules](nodejs/4-eigen-modules.md)
 
 ## Express
