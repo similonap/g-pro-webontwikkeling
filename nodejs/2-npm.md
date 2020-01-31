@@ -12,6 +12,12 @@ lorem ipsum???
 
 ## npm + Node.js
 
+Hier wordt de package.json \(houdt dependencies bij\) gecombineerd met algemene info over de applicatie. 
+
+Bij elke installatie van een npm, komt wat je installeert in de node\_modules map terecht. Bij `npm install --save` wordt de package en zijn versie ook in de package.json gezet als een dependency.  
+Bij het verwijderen van de node\_modules map kan aan de hand van de dependencies in de package.json alles vlot terug geïnstalleerd worden met `npm install`.  Concreet maakt npm een verbinden met het internet om de packages te downloaden die beschreven staan die beschreven staan in de package.json.  
+De geïnstalleerde packages kunnen nu gebruikt worden met de `require` functie. Documentatie omtrent de packages zijn te vinden op [npmjs.com](https://www.npmjs.com/)
+
 ```javascript
 const http = require('http');
 const search = require('youtube-search');
