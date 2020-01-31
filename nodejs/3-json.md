@@ -58,7 +58,7 @@ JSON kan wel gebruikt worden voor de onderstaande data types:
 { "name":"John" }
 ```
 
-* **number**
+* **number** als nummers tussen dubbel aanhalingstekens staan wordt het tekst, anders zijn het nummers en kunnen er berekeningen mee gemaakt worden
 
 ```javascript
 {"age" : 32}
