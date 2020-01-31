@@ -2,7 +2,7 @@
 description: data formaat
 ---
 
-# 03. JSON
+# 03. JSON \(data formaat\)
 
 ## Wat is JSON?
 
@@ -17,30 +17,6 @@ description: data formaat
 ```
 
 ## voorbeeld
-
-```javascript
-{
-  "name": "tracking",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "http": "0.0.0",
-    "https": "^1.0.0",
-    "json-stringify": "^1.0.0",
-    "net": "^1.0.2"
-  }
-}
-```
-
-voorbeeld van package.json
 
 ```javascript
 {

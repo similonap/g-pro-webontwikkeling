@@ -8,6 +8,34 @@ Samen met Node.js werd npm \(Node Package Manager\) geïnstalleerd. Dit laat ont
 
 ### npm init
 
+Met het volgende commando te typen in de terminal `npm init` wordt een package.json bestand aangemaakt, waarvan hieronder een voorbeeld.
+
+```javascript
+{
+  "name": "parktrack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "student AP",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "json-stringify": "^1.0.0",
+    "net": "^1.0.2"
+  }
+}
+```
+
+voorbeeld van package.json
+
+
+
 ## npm + Node.js
 
 Hier wordt de package.json \(houdt dependencies bij\) gecombineerd met algemene info over de applicatie. 
@@ -45,21 +73,4 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```
-
-## eigen modules
-
-### search-string
-
-```javascript
-const search = ['antwerpen', 'brussel', 'leuven', 'mechelen', 'gent'];
-
-exports.getSearchTerm = function () {
-  const id = Math.floor(Math.random() * search.length);
-  return search[id];
-};
-```
-
-
-
-
 
