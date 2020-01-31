@@ -2,7 +2,7 @@
 description: data formaat
 ---
 
-# 03. JSON
+# 03. JSON \(data formaat\)
 
 ## Wat is JSON?
 
@@ -38,12 +38,14 @@ description: data formaat
         {
             "type": "office",
             "number": "646 555-4567"
+        }
     ],
     "children": [],
     "spouse": null
 }
-
 ```
+
+JSON-validator: [https://jsonlint.com/](https://jsonlint.com/)
 
 ## data types
 
