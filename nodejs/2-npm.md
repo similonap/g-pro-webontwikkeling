@@ -34,8 +34,6 @@ Met het volgende commando te typen in de terminal `npm init` wordt een package.j
 
 voorbeeld van package.json
 
-
-
 ## npm + Node.js
 
 Hier wordt de package.json \(houdt dependencies bij\) gecombineerd met algemene info over de applicatie. 

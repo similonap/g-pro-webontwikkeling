@@ -2,7 +2,7 @@
 description: data formaat
 ---
 
-# 03. JSON \(data formaat\)
+# 03. JSON
 
 ## Wat is JSON?
 
@@ -42,6 +42,7 @@ description: data formaat
     "children": [],
     "spouse": null
 }
+
 ```
 
 ## data types
