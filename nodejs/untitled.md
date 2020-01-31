@@ -56,13 +56,13 @@ Open de terminal \(opdrachtprompt\) en type onderstaande code. Deze vraagt naar 
 voor de versie van Node.js
 
 ```bash
-node --version
+node version
 ```
 
 voor de versie van npm
 
 ```bash
-npm --version
+npm version
 ```
 
 ## eerste script
