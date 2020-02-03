@@ -1,2 +1,2 @@
-# Routes
+# Routes & views
 
