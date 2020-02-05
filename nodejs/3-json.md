@@ -10,10 +10,10 @@ description: data formaat
 
 ```javascript
 //JSON: string moet geschreven worden tussen dubbele aanhalingstekens
-{ "name":"John" }
+"name":"John"
 
 //JS: string kan geschreven worden tussen enkele of dubbele aanhalingstekens
-{ name:'John' }
+name:'John'
 ```
 
 ## voorbeeld
