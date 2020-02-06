@@ -10,10 +10,10 @@ description: data formaat
 
 ```javascript
 //JSON: string moet geschreven worden tussen dubbele aanhalingstekens
-{ "name":"John" }
+"name":"John"
 
 //JS: string kan geschreven worden tussen enkele of dubbele aanhalingstekens
-{ name:'John' }
+name:'John'
 ```
 
 ## voorbeeld
@@ -55,40 +55,38 @@ JSON kan wel gebruikt worden voor de onderstaande data types:
 * **string** moet altijd tussen dubbele aanhalingstekens
 
 ```javascript
-{ "name":"John" }
+"name":"John"
 ```
 
 * **number** als nummers tussen dubbel aanhalingstekens staan wordt het tekst, anders zijn het nummers en kunnen er berekeningen mee gemaakt worden
 
 ```javascript
-{"age" : 32}
-{"temperature" : -4}
+"age" : 32
+"temperature" : -4
 ```
 
 * **boolean** met waarde true of false
 
 ```javascript
-{"visible" : true}
+"visible" : true
 ```
 
 * **null** kan een waarde zijn
 
 ```javascript
-{"grade" : null}
+"grade" : null
 ```
 
 * **array**
 
 ```javascript
-{"cars" : ["Toyota","BMW","Audi"]}
+"cars" : ["Toyota","BMW","Audi"]
 ```
 
 * **object**
 
 ```javascript
-{
 "student" : {"name" : "John","leeftijd" : 32,"grade" : null}
-}
 ```
 
 

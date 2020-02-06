@@ -1,5 +1,15 @@
 # labo 1: hfdst.1-3
 
+### 0. Installeer bash terminal \(voor Windows gebruikers\)
+
+Volg deze instructies \(de lijn die je moet copy pasten staat onder de afbeelding\)
+
+![](../.gitbook/assets/image.png)
+
+```text
+"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+```
+
 ### 1. opfrissing van JavaScript
 
 Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aantal JavaScript statements uit:
