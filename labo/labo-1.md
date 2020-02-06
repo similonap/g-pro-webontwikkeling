@@ -6,24 +6,24 @@ Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aan
 
 * Maak een variabele a, b, c aan en initialiseer deze met een waarde \(gebruik let, niet var!\) en tel deze bij elkaar op.
 * Maak een array myArray\[\] en voeg daar een aantal getallen aan toe. Tel alle getallen van deze array bij elkaar op.
-  * Je kan hiervoor een gewone for lus gebruiken maar ook het forEach\(\) statement.
-* Verlaat de [REPL tool](https://www.tutorialspoint.com/nodejs/nodejs_repl_terminal.htm) en doe het bovenstaande in een eigen index.js bestand in visual studio code. Als je hier output wil hebben zal je moeten gebruik maken van console.log statements.
-* Gebruik de debugger van visual studio code en zet een breakpoint ergens in de for lus en stap daarna doorheen de code. 
+  * Je kan hiervoor een gewone **for** lus gebruiken maar ook het **forEach\(\)** statement.
+* Verlaat de [REPL tool](https://www.tutorialspoint.com/nodejs/nodejs_repl_terminal.htm) en doe het bovenstaande in een eigen index.js bestand in Visual Studio Code. Als je hier output wil hebben zal je gebruik moeten maken van console.log statements.
+* Gebruik de debugger van Visual Studio Code en zet een breakpoint ergens in de for lus en stap daarna doorheen de code. 
 
 ### **2. JSON modelleren**
 
-Maak een JSON bestand waarin je een winkel mandje modelleert:
+Maak een JSON-bestand waarin je een winkelmandje modelleert:
 
-* Het bevat een array van producten
-* Een product bevat de volgende eigenschappen
+* Het bevat een array van producten.
+* Een product bevat de volgende eigenschappen:
   * naam
   * beschrijving
   * prijs
-  * hoeveelheid in stock
+  * stock
 
 **Er moeten minimum drie producten in het winkelmandje liggen en één van de producten heeft geen beschrijving.**
 
-* Installeer jsonlint en kijk na of jouw json file voldoet aan de specificaties:
+* Installeer JSONlint en kijk na of jouw json-bestand voldoet aan de specificaties:
 
 ```bash
 npm install -g jsonlint
@@ -34,8 +34,7 @@ OF gebruik de online JSON-validator: [https://jsonlint.com/](https://jsonlint.co
 
 ### 3. eenvoudige webserver met JSON
 
-Interessante functies die eventueel nodig zijn voor dit labo: [JSON.stringify\(\)](https://www.w3schools.com/js/js_json_stringify.asp) en [JSON.parse\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
-
+Interessante functies die eventueel nodig zijn voor dit labo: [JSON.stringify\(\)](https://www.w3schools.com/js/js_json_stringify.asp) en [JSON.parse\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)  
 Je kan in Node.js heel eenvoudig een webserver maken. 
 
 ```javascript
@@ -49,11 +48,11 @@ const server = http.createServer((request, response) => {
 server.listen(3000);
 ```
 
-* Pas deze webserver aan zodat deze JSON kan terug geven. Je kan een lijst van Content-Type's [hier](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types) vinden.
+* Pas deze webserver aan zodat deze JSON kan teruggeven. Je kan een lijst van content type's [hier](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types) vinden.
 * Pas deze webserver aan zodat het op een andere poort runt \(1337?\)
-* Retourneer een JSON object dat je voornaam en achternaam bevat als je naar http://localhost:1337 surft. Hou er rekening mee dat de write functie alleen strings aanvaard dus je zal je object nog moeten omzetten.
-* Ga op zoek naar headers in het request object naar informatie over je browser en je operating system. Geef dit ook mee terug in het JSON object. _\(Je kan ofwel via de debugger het request object inspecteren of gewoon het object afprinten via console.log\)_
-* Hou een teller bij hoeveel keer de pagina is geladen en geef ook dit mee in de response van je http server.
+* Retourneer een JSON-object dat je voornaam en achternaam bevat als je naar http://localhost:1337 surft. Hou er rekening mee dat de write-functie alleen strings aanvaardt, dus het object zal nog omgezet moeten worden.
+* Ga op zoek naar headers in het request-object, naar informatie over je browser en je operating system. Geef dit ook mee terug in het JSON-object. _\(Je kan ofwel via de debugger het request object inspecteren of gewoon het object afprinten via console.log\)_
+* Hou een teller bij hoeveel keer de pagina is geladen en geef ook dit mee in de response van je http-server.
 
 
 
