@@ -10,6 +10,8 @@ Volg deze instructies \(de lijn die je moet copy pasten staat onder de afbeeldin
 "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
 ```
 
+![](../.gitbook/assets/image%20%281%29.png)
+
 ### 1. opfrissing van JavaScript
 
 Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aantal JavaScript statements uit:
