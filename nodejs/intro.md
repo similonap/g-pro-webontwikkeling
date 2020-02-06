@@ -99,6 +99,8 @@ bron: [https://nodejs.org/en/about/](https://nodejs.org/en/about/)
 
 ## video \(achtergrondinfo\)
 
+{% embed url="https://www.youtube.com/watch?v=TlB\_eWDSMt4" %}
+
 {% embed url="https://youtu.be/gG3pytAY2MY" %}
 
 
