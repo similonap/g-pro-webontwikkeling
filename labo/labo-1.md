@@ -4,9 +4,10 @@
 
 Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aantal JavaScript statements uit:
 
-* Maak een variabele a, b, c aan en initialiseer deze met een waarde \(gebruik let, niet var!\) en tel deze bij elkaar op.
+* Maak een variabele a, b, c aan en initialiseer deze met een waarde \(gebruik let, niet var!\) en tel deze bij elkaar op \(= eerste keer console.log\)
 * Maak een array myArray\[\] en voeg daar een aantal getallen aan toe. Tel alle getallen van deze array bij elkaar op.
-  * Je kan hiervoor een gewone **for** lus gebruiken maar ook het **forEach\(\)** statement.
+  * Maak hiervoor een gewone **for** lus \(= tweede keer console.log\)
+  * Maak ook gebruik van het **forEach\(\)** statement \(=derde keer console.log\).
 * Verlaat de [REPL tool](https://www.tutorialspoint.com/nodejs/nodejs_repl_terminal.htm) en doe het bovenstaande in een eigen index.js bestand in Visual Studio Code. Als je hier output wil hebben zal je gebruik moeten maken van console.log statements.
 * Gebruik de debugger van Visual Studio Code en zet een breakpoint ergens in de for lus en stap daarna doorheen de code. 
 
