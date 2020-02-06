@@ -7,7 +7,7 @@ Start de Node.js CLI \(via node ****zonder argumenten\) op. Probeer hier een aan
 * Maak een variabele a, b, c aan en initialiseer deze met een waarde \(gebruik let, niet var!\) en tel deze bij elkaar op.
 * Maak een array myArray\[\] en voeg daar een aantal getallen aan toe. Tel alle getallen van deze array bij elkaar op.
   * Je kan hiervoor een gewone for lus gebruiken maar ook het forEach\(\) statement.
-* Verlaat de REPL tool en doe het bovenstaande in een eigen index.js bestand in visual studio code. Als je hier output wil hebben zal je moeten gebruik maken van console.log statements.
+* Verlaat de [REPL tool](https://www.tutorialspoint.com/nodejs/nodejs_repl_terminal.htm) en doe het bovenstaande in een eigen index.js bestand in visual studio code. Als je hier output wil hebben zal je moeten gebruik maken van console.log statements.
 * Gebruik de debugger van visual studio code en zet een breakpoint ergens in de for lus en stap daarna doorheen de code. 
 
 ### **2. JSON modelleren**
@@ -29,6 +29,8 @@ Maak een JSON bestand waarin je een winkel mandje modelleert:
 npm install -g jsonlint
 jsonlint shopping.json
 ```
+
+OF gebruik de online JSON-validator: [https://jsonlint.com/](https://jsonlint.com/)
 
 ### 3. eenvoudige webserver met JSON
 

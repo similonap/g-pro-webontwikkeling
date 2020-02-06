@@ -69,7 +69,7 @@ npm version
 
 Een voorbeeld hiervan is de HTTP-module, waarmee je met één enkele functie een rudimentaire webserver kunt maken. Bovendien kun je met de geïntegreerde pakketmanager npm \(Node Package Manager\) extra modules installeren.
 
-### Hello world
+### Hello AP
 
 ```javascript
 // http-module importeren
