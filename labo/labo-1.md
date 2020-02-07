@@ -1,6 +1,8 @@
 # labo 1: hfdst.1-3
 
-### 0. Installeer bash terminal \(voor Windows gebruikers\)
+## 0. installatie
+
+### bash terminal \(voor Windows gebruikers\)
 
 Volg deze instructies \(de lijn die je moet copy pasten staat onder de afbeelding\)
 
@@ -11,6 +13,14 @@ Volg deze instructies \(de lijn die je moet copy pasten staat onder de afbeeldin
 ```
 
 ![](../.gitbook/assets/image%20%281%29.png)
+
+### Node Exec \(extensie in Visual Studio Code\)
+
+### integrated terminal \(in Visual Studio Code\)
+
+* [https://code.visualstudio.com/docs/nodejs/nodejs-tutorial\#\_integrated-terminal](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_integrated-terminal)
+
+
 
 ### 1. opfrissing van JavaScript
 
