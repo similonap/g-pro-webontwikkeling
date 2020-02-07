@@ -59,7 +59,7 @@ OF gebruik de online JSON-validator: [https://jsonlint.com/](https://jsonlint.co
 ### 3. eenvoudige webserver met JSON
 
 Interessante functies die eventueel nodig zijn voor dit labo: [JSON.stringify\(\)](https://www.w3schools.com/js/js_json_stringify.asp) en [JSON.parse\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)  
-Je kan in Node.js heel eenvoudig een webserver maken. 
+Je kan in Node.js heel eenvoudig een webserver maken. Maak hiervoor eerst een bestand index.js aan.
 
 ```javascript
 const http = require('http');
