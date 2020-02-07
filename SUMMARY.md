@@ -24,7 +24,6 @@
 
 * [labo 1: hfdst.1-3](labo/labo-1.md)
 * [labo 2](labo/labo-2.md)
-* [Untitled](labo/untitled.md)
 
 ## Extra info
 
