@@ -95,7 +95,8 @@ server.listen(port, hostname, () => {
 });
 ```
 
-bron: [https://nodejs.org/en/about/](https://nodejs.org/en/about/)
+bron: [https://nodejs.org/en/about/](https://nodejs.org/en/about/)  
+ter info: =&gt; is een verkorte notatie voor functie
 
 ## video \(achtergrondinfo\)
 
