@@ -96,7 +96,6 @@ server.listen(port, hostname, () => {
 ```
 
 bron: [https://nodejs.org/en/about/](https://nodejs.org/en/about/)  
-ter info: [lijst van statuscodes](https://nl.wikipedia.org/wiki/Lijst_van_HTTP-statuscodes)  
 ter info: =&gt; is een verkorte notatie voor functie
 
 ## video \(achtergrondinfo\)
