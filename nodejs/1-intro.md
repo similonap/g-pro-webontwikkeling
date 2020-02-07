@@ -26,7 +26,7 @@ Node.js wordt gebruikt bij het ontwikkelen van tools als [PhoneGap](https://phon
 
 {% embed url="https://nodejs.org/en/" %}
 
-Terwijl de huidige versie van Node.js je de nieuwste functies van de runtime-omgeving biedt, biedt de LTS-release een stabiele softwareversie voor duurzaam gebruik.
+Terwijl de huidige versie van Node.js je de nieuwste functies van de runtime-omgeving biedt, biedt de LTS-release een stabiele softwareversie voor duurzaam gebruik, dus best **LTS downloaden**.
 
 ### **2. Node.js en npm installeren**
 
@@ -95,7 +95,8 @@ server.listen(port, hostname, () => {
 });
 ```
 
-bron: [https://nodejs.org/en/about/](https://nodejs.org/en/about/)
+bron: [https://nodejs.org/en/about/](https://nodejs.org/en/about/)  
+ter info: =&gt; is een verkorte notatie voor functie
 
 ## video \(achtergrondinfo\)
 
