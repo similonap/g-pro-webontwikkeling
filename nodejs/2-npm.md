@@ -10,13 +10,6 @@ Samen met Node.js werd npm \(Node Package Manager\) geïnstalleerd. Dit laat ont
 
 Met het volgende commando te typen in de terminal `npm init` wordt een package.json bestand aangemaakt, waarvan hieronder een voorbeeld.
 
-**name** is een string. Deze property of eigenschap geeft de naam van de module weer.  
-**version** is een belangrijk onderdeel omdat het de huidige versie van de module weergeeft.  
-**description**: Dit is een string waarin beschreven staat wat de module doet en waarvoor ze staat.  
-**main**: De belangrijkste eigenschap van een package.json is het startpunt van de module die de package.json beschrijft \(vb. index.js, app.js, ...\)  
-**license**: Deze eigenschap geeft aan welke licentie er gehanteerd wordt voor de module die in package.json beschreven wordt. Er kan bijvoorbeeld [MIT](https://nl.wikipedia.org/wiki/MIT-licentie), [ISC](https://nl.wikipedia.org/wiki/ISC-licentie) of [GPL-3.0](https://nl.wikipedia.org/wiki/GNU_General_Public_License) staan.  
-**dependencies**: Hier staan de modules die nodig zijn om de eigenlijke module te laten werken. De eigenschap 'dependencies' heeft een object nodig met de naam en desbetreffende versie. Om dingen terug te brengen naar eerder gedefinieerde versie-eigenschap, wordt de versie gedefinieerd die een module nodig heeft. Hierbij zullen vaak carets \(^\) en tildes \(~\) gevonden worden in pakketversies.
-
 ```javascript
 {
   "name": "parktrack",
