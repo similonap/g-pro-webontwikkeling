@@ -26,3 +26,7 @@
 * [labo 2](labo/labo-2.md)
 * [Untitled](labo/untitled.md)
 
+## Extra info
+
+* [Extra info](extra-info/extra-info.md)
+
