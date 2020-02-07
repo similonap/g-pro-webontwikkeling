@@ -53,6 +53,7 @@ npm install -g jsonlint
 jsonlint shopping.json
 ```
 
+ter info: -g = global install  
 OF gebruik de online JSON-validator: [https://jsonlint.com/](https://jsonlint.com/)
 
 ### 3. eenvoudige webserver met JSON
