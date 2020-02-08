@@ -11,6 +11,12 @@ app.get('/’, (request, response) => {…}
 
 Er wordt een route opgesteld die de aanvraag of _request_ opvangt en verder afhandelt. Deze aanvragen kunnen bestaan uit volgende http-request methodes: `get,` `post`, `put`, `use`, `delete`,...
 
+* `get`: Voor het verkrijgen van gegevens van een server. Het gaat dus om een verzoek om informatie. Gegevens op de server worden niet gewijzigd.
+* `post`: Voor aanmaken van nieuwe gegevens op de server of wanneer een bepaalde actie moet ondernomen worden.
+* `put`: Voor het aanpassen van gegevens op de server.
+* `use`: Voor het gebruiken van gegevens op de server.
+* `delete`: Voor het verwijderen van gegevens op de server.
+
 ```javascript
 //voorbeeld van een HTTP get-request
 app.get("/", (req, res) => {
