@@ -12,6 +12,18 @@ app.get('/’, (request, response) => {…}
 Er wordt een route opgesteld die de aanvraag of _request_ opvangt en verder afhandelt. Deze aanvragen kunnen bestaan uit volgende http-request methodes: `get,` `post`, `put`, `use`, `delete`,...
 
 ```javascript
+//voorbeeld van een HTTP get-request
+app.get("/", (req, res) => {
+    res.send("Bericht van de server");
+});
+
+//voorbeeld van een HTTP post-request
+app.post("/niews", (req, res) => {
+    // Voeg nieuws-items toe
+});
+```
+
+```javascript
 // volgorde is zeer belangrijk!
 app.get('/’, (request, response) => {
     res.type('text/html');
