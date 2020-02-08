@@ -35,14 +35,14 @@ const express = require('express');
 const app = express();
 app.set('port', process.env.PORT || 3000);
 
-// custom 404 page
+// pagina 404 (= http-statuscode 'niet gevonden')
 app.use(function(req, res){
 res.type('text/plain');
 res.status(404);
 res.send('404 - Not Found');
 });
 
-// custom 500 page
+// pagina 500 (= http-statuscode 'interne serverfout')
 app.use(function(err, req, res, next){
 console.error(err.stack);
 res.type('text/plain');
