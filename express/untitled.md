@@ -1,2 +1,36 @@
-# Routes & views
+# routes & views
+
+Express staat als server klaar om te luisteren naar vragen of _requests_ van buitenaf. Wel moet er nog een aanreikpunt of endpoint meegegeven worden, vergelijkbaar met paden of webadressen waar een verzoeken naartoe gestuurd kan worden. Het rootpad '/' is standaard, waardoor een request zal gestuurd worden naar het rootdomein, wat tevens endpoint zal zijn.
+
+```javascript
+// '/' = waar
+// request is bijvoorbeeld url Google
+// response is output naar de browser
+app.get('/’, (request, response) => {…}
+```
+
+Er wordt een route opgesteld die de aanvraag of _request_ opvangt en verder afhandelt. Deze aanvragen kunnen bestaan uit volgende http-request methodes: `get,` `post`, `put`, `use`, `delete`,...
+
+```javascript
+app.get('/’, (request, response) => {
+    res.type('text/html');
+    res.send('AP-Hogeschool');
+    }
+app.get(‘/about', (request, response) => {
+    res.type('text/html');
+    res.send('Over AP-Hogeschool');
+}
+app.get(‘/contact', (request, response) => {
+    res.type('text/html');
+    res.send('Contacteer AP-Hogeschool');
+    }
+
+app.use((req, res) => {
+    res.type('text/html');
+    res.status(404);
+    res.send('404 - Not Found’);}
+);
+```
+
+ 
 

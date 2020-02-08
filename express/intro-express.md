@@ -63,20 +63,20 @@ app.get('port') + '; press Ctrl-C to terminate.' );
 ```javascript
 //zonder arrow-functie
 hello = function() {
-  return "Hello World!";
+  return "Hello AP!";
 }
 ```
 
 ```javascript
 // met arrow-functie
 hello = () => {
-  return "Hello World!";
+  return "Hello AP!";
 }
 ```
 
 ```javascript
 //Wanneer een functie met één instructie een waarde retourneert, mogen de haakjes en het woord return verwijderd worden.
-hello = () => "Hello World!";
+hello = () => "Hello AP!";
 ```
 
 meer info: [https://www.w3schools.com/js/js\_arrow\_function.asp](https://www.w3schools.com/js/js_arrow_function.asp)
