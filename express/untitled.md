@@ -64,5 +64,11 @@ app.get(‘/contact', (request, response) => {
 );
 ```
 
- 
+##  views
+
+### model-view-controller
+
+![bron: firebirdsql.org](../.gitbook/assets/image%20%282%29.png)
+
+
 
