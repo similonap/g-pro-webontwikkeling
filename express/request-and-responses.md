@@ -16,3 +16,31 @@ Een **U**niform **R**esource **L**ocator \(afgekort URL\) is een gestructureerde
 * **querystring**: Een querystring wordt meestal gebruikt om bepaalde parameters mee te geven aan de URL, zoals zoektermen van een zoekactie. De querystring volgt na het vraagteken, verschillende parameters in de string worden gescheiden met `&`.
 * **fragment:** Dit wordt gebruikt om naar een specifiek onderdeel van de informatiebron te verwijzen. Bij HTML-pagina's wordt `#` bijvoorbeeld gebruikt voor tekstankers. 
 
+## HTTP-request methodes
+
+* `get`: Voor het verkrijgen van gegevens van een server. Het gaat dus om een verzoek om informatie. Gegevens op de server worden niet gewijzigd.
+  * parameters in url 
+  * vb.: [https://www.google.com/search?client=safari&q=ap+antwerpen](https://www.google.com/search?client=safari&q=ap+antwerpen) 
+  * niet gebruiken bij gevoelige data 
+  * limiet in data lengte
+* `post`: Voor aanmaken van nieuwe gegevens op de server of wanneer een bepaalde actie moet ondernomen worden.
+  * data in request body
+  * geen limiet in data lengte
+  * vb.: uploaden van bestanden, paswoorden,...
+* `put`: Voor het aanpassen van gegevens op de server.
+* `delete`: Voor het verwijderen van gegevens op de server.
+
+ter info: [overzicht alle HTTP-request methodes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
+```javascript
+//voorbeeld van een HTTP get-request
+app.get('/', (req, res) => {
+    res.send("Bericht van de server");
+});
+
+//voorbeeld van een HTTP post-request
+app.post('/nieuws', (req, res) => {
+    // Voeg nieuws-items toe
+});
+```
+
