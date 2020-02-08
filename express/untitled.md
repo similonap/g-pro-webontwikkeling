@@ -12,6 +12,7 @@ app.get('/’, (request, response) => {…}
 Er wordt een route opgesteld die de aanvraag of _request_ opvangt en verder afhandelt. Deze aanvragen kunnen bestaan uit volgende http-request methodes: `get,` `post`, `put`, `use`, `delete`,...
 
 ```javascript
+// volgorde is zeer belangrijk!
 app.get('/’, (request, response) => {
     res.type('text/html');
     res.send('AP-Hogeschool');
@@ -20,16 +21,17 @@ app.get(‘/about', (request, response) => {
     res.type('text/html');
     res.send('Over AP-Hogeschool');
 }
-app.get(‘/contact', (request, response) => {
-    res.type('text/html');
-    res.send('Contacteer AP-Hogeschool');
-    }
 
 app.use((req, res) => {
     res.type('text/html');
     res.status(404);
     res.send('404 - Not Found’);}
 );
+
+app.get(‘/contact', (request, response) => {
+    res.type('text/html');
+    res.send('Contacteer AP-Hogeschool');
+    }
 ```
 
  
