@@ -66,9 +66,15 @@ app.get(‘/contact', (request, response) => {
 
 ##  views
 
-### model-view-controller
+### model-view-controller \(MVC\)
 
 ![bron: firebirdsql.org](../.gitbook/assets/image%20%282%29.png)
+
+Het concept dat aan het Model-View-Controller-patroon ten grondslag ligt -voor het maken van websites en webapplicaties-, splitst een applicatie op in drie delen:
+
+* **controller**: Controllers werken met het model en zorgen voor interactie met de gebruiker. Ze bieden ook _view_-opties aan voor het weergeven van de gebruikersinterface \(UI\). In een MVC-toepassing geeft _view_  enkel data weer, terwijl de controller de invoer verwerkt en reageert op activiteiten van de gebruiker. vb.: De controller kan waarden van een string in een query verwerken en naar het model verzenden, die deze waarden op zijn beurt in een ​​query naar de database kan verzenden.
+* **view**: Dit is het visuele gedeelte van de gebruikersinterface van de applicatie. De gebruikersinterface wordt meestal gemaakt om de data binnen het model weer te geven.
+* **model**: Modelobjecten zijn de delen van de applicatie die de logica voor het werken met data implementeren. Modelobjecten ontvangen doorgaans de status van het model en slaan deze op in de database.
 
 
 
