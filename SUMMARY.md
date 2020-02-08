@@ -12,8 +12,8 @@
 ## Express
 
 * [intro Express](express/intro-express.md)
-* [Routes & views](express/untitled.md)
-* [Request & responses](express/request-and-responses.md)
+* [routes & views](express/untitled.md)
+* [request & responses](express/request-and-responses.md)
 * [RESTful API's](express/restful-apis.md)
 
 ## NoSql-databanken MongoDB
