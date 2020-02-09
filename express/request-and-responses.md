@@ -46,5 +46,15 @@ app.post('/nieuws', (req, res) => {
 
 ## request headers
 
-Wanneer je naar een pagina navigeert, wordt niet alleen de URL doorgegeven aan de server. De browser verzendt veel _onzichtbare_ informatie telkens een website bezocht wordt: de taal afhankelijk van de locatie waar je bent, info over de browser, het besturingssysteem en de hardware,... Al deze informatie wordt verzonden in de eigenschap `headers` van de request. Als je nieuwsgierig bent naar de informatie uw browser verzendt, kunt u een zeer eenvoudige Express-route maken om dat weer te geven informatie:
+Wanneer je naar een pagina navigeert, wordt niet alleen de URL doorgegeven aan de server. De browser verzendt veel _onzichtbare_ informatie telkens een website bezocht wordt: de taal afhankelijk van de locatie waar je bent, info over de browser, het besturingssysteem en de hardware,... Al deze informatie wordt verzonden in de eigenschap `headers` van de request. Door een eenvoudige Express-route te maken kan je deze info weergeven:
+
+```javascript
+app.get('/headers', function(req,res){    	
+	res.set('Content-Type','text/plain');    
+	let s = '';    
+	for(let name in req.headers) 
+		s += name + ': ' + req.headers[name] + '\n';
+	res.send(s);    
+});
+```
 
