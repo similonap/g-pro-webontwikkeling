@@ -46,7 +46,7 @@ app.post('/nieuws', (req, res) => {
 
 ## request headers
 
-Wanneer je naar een pagina navigeert, wordt niet alleen de URL doorgegeven aan de server. De browser verzendt veel _onzichtbare_ informatie telkens een website bezocht wordt: de taal afhankelijk van de locatie waar je bent, info over de browser, het besturingssysteem en de hardware,... Al deze informatie wordt verzonden in de eigenschap `headers` van de request. Door een eenvoudige Express-route te maken kan je deze info weergeven:
+Wanneer je naar een pagina navigeert, wordt niet alleen de URL doorgegeven aan de server. De browser verzendt veel _onzichtbare_ informatie telkens een website bezocht wordt: de taal afhankelijk van de locatie waar je bent, info over de browser, het besturingssysteem en de hardware,... Al deze informatie wordt verzonden in de eigenschap headers van de request. Door een eenvoudige Express-route te maken kan je deze info weergeven:
 
 ```javascript
 app.get('/headers', function(req,res){    	
@@ -57,4 +57,18 @@ app.get('/headers', function(req,res){
 	res.send(s);    
 });
 ```
+
+## response headers
+
+Het antwoord en de verzonden info als reactie op de request wordt niet automatisch getoond in de browser. De info bestaat vooral uit metadata en serverinformatie. Het content-type header geeft aan de browser aan welk soort content wordt doorgegeven, bijvoorbeeld HTML, een afbeelding, CSS, JavaScript,...
+
+Als je effectief wil zien wat qua info verkregen wordt in de header, kan je dit bijvoorbeeld bekijken door een willekeurige webpagina te openen in Google Chrome. Volg dan onderstaande stappen:
+
+* rechtermuisklik 'inspecteren'
+* klik op de tab 'network'
+* herlaadt de pagina
+* klik op het HTML info \(het eerste item bovenaan in de rij\)
+* klik dan op de tab 'header' en dan krijg je de info te zien
+
+
 
