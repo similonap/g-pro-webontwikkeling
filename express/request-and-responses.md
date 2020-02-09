@@ -9,7 +9,7 @@ Een **U**niform **R**esource **L**ocator \(afgekort URL\) is een gestructureerde
 ![](../.gitbook/assets/image%20%284%29.png)
 
 * **protocol**: Een protocol is een gedragsovereenkomst, meestal in de vorm van een aantal uit te voeren stappen. Het protocol wordt genoteerd in de vorm van een korte protocolaanduiding \(vaak een afkorting\) gevolgd door een dubbele punt.
-* **authenticatie**: Authenticatiegegevens, zoals gebruikersnaam en wachtwoord om zo toegang te krijgen tot bijvoorbeeld een systeem of een service.
+* **authenticatie**: Door gebruik te maken van authenticatiegegevens, zoals gebruikersnaam en wachtwoord, krijg je toegang tot bijvoorbeeld een systeem of een service.
 * **domeinnaam**
 * **poortnummer**
 * **padnaam**: De precieze betekenis hangt af van het protocol. Bij FTP verwijst het meestal naar een fysiek bestand, een map of een commando aan een zoekmachine of een database manager.
@@ -46,5 +46,56 @@ app.post('/nieuws', (req, res) => {
 
 ## request headers
 
-Wanneer je naar een pagina navigeert, wordt niet alleen de URL doorgegeven aan de server. De browser verzendt veel _onzichtbare_ informatie telkens een website bezocht wordt: de taal afhankelijk van de locatie waar je bent, info over de browser, het besturingssysteem en de hardware,... Al deze informatie wordt verzonden in de eigenschap `headers` van de request. Als je nieuwsgierig bent naar de informatie uw browser verzendt, kunt u een zeer eenvoudige Express-route maken om dat weer te geven informatie:
+Wanneer je naar een pagina navigeert, wordt niet alleen de URL doorgegeven aan de server. De browser verzendt veel _onzichtbare_ informatie telkens een website bezocht wordt: de taal afhankelijk van de locatie waar je bent, info over de browser, het besturingssysteem en de hardware,... Al deze informatie wordt verzonden in de eigenschap headers van de request. Door een eenvoudige Express-route te maken kan je deze info weergeven:
+
+```javascript
+app.get('/headers', function(req, res){    	
+	res.set('Content-Type','text/plain');    
+	let s = '';    
+	for(let name in req.headers) 
+		s += name + ': ' + req.headers[name] + '\n';
+	res.send(s);    
+});
+```
+
+## response headers
+
+Het antwoord en de verzonden info als reactie op de request wordt niet automatisch getoond in de browser. De info bestaat vooral uit metadata en serverinformatie. Het content-type header geeft aan de browser aan welk soort content wordt doorgegeven, bijvoorbeeld HTML, een afbeelding, CSS, JavaScript,...
+
+Als je effectief wil zien wat qua info verkregen wordt in de header, kan je dit bijvoorbeeld bekijken door een willekeurige webpagina te openen in Google Chrome. Volg dan onderstaande stappen:
+
+* rechtermuisklik 'inspecteren'
+* klik op de tab 'network'
+* herlaadt de pagina
+* klik op het HTML info \(het eerste item bovenaan in de rij\)
+* klik dan op de tab 'header' en dan krijg je de info te zien
+
+### internet media types
+
+Het content-type in de header is van cruciaal belang voor het correct weergeven van de inhoud. Het formaat header content-type is een internetmediatype, dat bestaat uit een type, subtype en optionele parameters. Hieronder enkele voorbeelden: 
+
+* text/html; charset = UTF-8 geeft een type 'tekst' aan, een subtype van HTML en een tekencodering van UTF-8
+* text/plain
+* application/json
+
+ter info: [officiële lijst met overzicht internetmediatypes](https://www.iana.org/assignments/media-types/media-types.xhtml)
+
+## in Express
+
+```javascript
+app.get('/’, (request, response) => {…}
+
+//een array met de genoemde routeparameters
+req.params
+//vb. GET url parameters
+
+//request headers ontvangen van de klant
+req.header
+
+//geeft de HTTP-status code mee
+res.status
+
+// verzendt json naar de klant
+res.json(…)
+```
 
