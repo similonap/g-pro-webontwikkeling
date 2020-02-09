@@ -1,4 +1,4 @@
-# labo 2
+# labo 2: hfdst 2.1 &gt; 2.4
 
 ### 1. gebruiken externe modules in kleur
 

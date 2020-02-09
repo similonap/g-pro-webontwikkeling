@@ -2,20 +2,19 @@
 
 * [00. inleiding](README.md)
 
-## NodeJS & NPM en JSON <a id="nodejs"></a>
+## 1. NodeJS & NPM en JSON <a id="nodejs"></a>
 
-* [01. intro NodeJS](nodejs/1-intro.md)
-* [02. Node Package Manager \(npm\)](nodejs/2-npm.md)
-* [03. JSON \(data formaat\)](nodejs/3-json.md)
-* [04. coding conventions](nodejs/04.-coding-conventions.md)
-* [05. eigen modules](nodejs/4-eigen-modules.md)
+* [1. intro NodeJS](nodejs/1-intro.md)
+* [2. Node Package Manager \(npm\)](nodejs/2-npm.md)
+* [3. JSON \(data formaat\)](nodejs/3-json.md)
+* [4. coding conventions](nodejs/4-coding-conventions.md)
 
-## Express
+## 2. Express <a id="express"></a>
 
-* [intro Express](express/intro-express.md)
-* [routes & views](express/untitled.md)
-* [request & responses](express/request-and-responses.md)
-* [API's](express/apis.md)
+* [1. intro Express](express/intro-express.md)
+* [2. routes & views](express/routes-and-views.md)
+* [3. request & responses](express/request-and-responses.md)
+* [4. API's](express/apis.md)
 
 ## NoSql-databanken MongoDB
 
@@ -23,8 +22,8 @@
 
 ## labo
 
-* [labo 1: hfdst.1-3](labo/labo-1.md)
-* [labo 2](labo/labo-2.md)
+* [labo 1: hfdst 1.1 &gt; 1.3](labo/labo-1.md)
+* [labo 2: hfdst 2.1 &gt; 2.4](labo/labo-2.md)
 
 ## Extra info
 

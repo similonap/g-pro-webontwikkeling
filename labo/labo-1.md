@@ -1,4 +1,4 @@
-# labo 1: hfdst.1-3
+# labo 1: hfdst 1.1 &gt; 1.3
 
 ## 0. installatie
 

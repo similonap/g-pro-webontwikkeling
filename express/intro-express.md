@@ -2,7 +2,7 @@
 description: web application framework
 ---
 
-# intro Express
+# 1. intro Express
 
 ## Wat is Express?
 
@@ -58,20 +58,34 @@ app.get('port') + '; press Ctrl-C to terminate.' );
 
 ### achtergrond-info: arrow-functie in JavaScript
 
-`(req, res) =>` zal je vanaf nu meermaals zien verschijnen in oefeningen. Deze pijl laat ons toe om functies verkort uit te schrijven.
+`(req, res) =>` zal je vanaf nu meermaals zien verschijnen in oefeningen. Deze pijl laat ons toe om functies verkort uit te schrijven. Vanaf nu kiezen we bewust om te werken met de arrow-notatie.
+
+#### functie-notatie \(oude manier\)
 
 ```javascript
-//zonder arrow-functie
-hello = function() {
+//functie-notatie met naam
+function hello(req, res) {
+  return "Hello AP!";
+}
+
+//functie-notatie zonder naam
+function (req, res) {
   return "Hello AP!";
 }
 ```
 
+#### arrow-notatie \(nieuwe manier\)
+
 ```javascript
-// met arrow-functie
-hello = () => {
+//arrow-notatie met naam
+hello = (req, res) => {
   return "Hello AP!";
-}
+} 
+
+//arrow-notatie zonder naam
+(req, res) => {
+  return "Hello AP!";
+} 
 ```
 
 ```javascript
