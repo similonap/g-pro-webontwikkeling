@@ -10,20 +10,20 @@ Express staat als server klaar om te luisteren naar vragen of _requests_ van bui
 // '/' = waar
 // request is bijvoorbeeld url Google
 // response is output naar de browser
-app.get('/’, (req, res) => {…});
+app.get('/’, (request, response) => {…}
 ```
 
 Er wordt een route opgesteld die de aanvraag of _request_ opvangt en verder afhandelt. Deze aanvragen kunnen bestaan uit volgende http-request methodes: `get,` `post`, `put`, `use`, `delete`,...
 
 ```javascript
 // volgorde is zeer belangrijk!
-app.get('/’, (req, res) => {
+app.get('/’, (request, response) => {
     res.type('text/html');
     res.send('AP-Hogeschool');
     }
 );
 
-app.get(‘/about', (req, res) => {
+app.get(‘/about', (request, response) => {
     res.type('text/html');
     res.send('Over AP-Hogeschool');
     }
@@ -36,7 +36,7 @@ app.use((req, res) => {
     }
 );
 
-app.get(‘/contact', (req, res) => {
+app.get(‘/contact', (request, response) => {
     res.type('text/html');
     res.send('Contacteer AP-Hogeschool');
     }
@@ -65,10 +65,10 @@ npm install --save ejs
 ```
 
 ```javascript
-const app = express();
+let app = express();
 
 // set up handlebars view engine
-const ejs= require('ejs');
+let ejs= require('ejs');
 app.set('view engine', 'ejs');
 ```
 

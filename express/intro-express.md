@@ -58,34 +58,20 @@ app.get('port') + '; press Ctrl-C to terminate.' );
 
 ### achtergrond-info: arrow-functie in JavaScript
 
-`(req, res) =>` zal je vanaf nu meermaals zien verschijnen in oefeningen. Deze pijl laat ons toe om functies verkort uit te schrijven. Vanaf nu kiezen we bewust om te werken met de arrow-notatie.
-
-#### functie-notatie \(oude manier\)
+`(req, res) =>` zal je vanaf nu meermaals zien verschijnen in oefeningen. Deze pijl laat ons toe om functies verkort uit te schrijven.
 
 ```javascript
-//functie-notatie met naam
-function hello(req, res) {
-  return "Hello AP!";
-}
-
-//functie-notatie zonder naam
-function (req, res) {
+//zonder arrow-functie
+hello = function() {
   return "Hello AP!";
 }
 ```
 
-#### arrow-notatie \(nieuwe manier\)
-
 ```javascript
-//arrow-notatie met naam
-hello = (req, res) => {
+// met arrow-functie
+hello = () => {
   return "Hello AP!";
-} 
-
-//arrow-notatie zonder naam
-(req, res) => {
-  return "Hello AP!";
-} 
+}
 ```
 
 ```javascript

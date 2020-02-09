@@ -39,7 +39,7 @@ app.get('/api/contactgegevens',(req, res) =>
 
 ## public API's
 
-De volgende web site [https://pokeapi.co/](https://pokeapi.co/) geeft meer info over RESTful API gelinkt aan een zeer uitgebreide database met alle details over de Pokémon games.
+De website [pokeapi](https://pokeapi.co/) geeft meer info over RESTful API gelinkt aan een zeer uitgebreide database met alle details over de Pokémon games.
 
 ```javascript
 npm install request
