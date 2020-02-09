@@ -17,3 +17,42 @@ De REST-architectuur maakt dus gebruik van vier veelgebruikte HTTP-methoden:
 * **POST:** Deze methode wordt geïmplementeerd voor het maken van nieuwe gegevens. 
 * **DELETE:** Deze methode wordt geïmplementeerd voor het verwijderen van gegevens. 
 
+meer info: [https://www.w3schools.in/restful-web-services/intro/](https://www.w3schools.in/restful-web-services/intro/)
+
+### Express API
+
+#### een voorbeeld
+
+```javascript
+const gegevens = 
+	{
+		telefoonnummer:'0123456789',
+		email:'contact@ap.be'
+	};
+app.get('/api/contactgegevens',(req, res) => 
+	{
+		res.type('application/json');
+		res.json(gegevens);
+	}
+);
+```
+
+## public API's
+
+De volgende web site [https://pokeapi.co/](https://pokeapi.co/) geeft meer info over RESTful API gelinkt aan een zeer uitgebreide database met alle details over de Pokémon games.
+
+```javascript
+npm install request
+```
+
+```javascript
+const pokemon= req.query.pokemon; 
+request('https://pokeapi.co/api/v2/pokemon/' + pokemon, 
+(error, response, body) => {
+     if (!error && response.statusCode == 200) {
+          res.type('application/json');
+          res.json(body);
+     }        
+});
+```
+
