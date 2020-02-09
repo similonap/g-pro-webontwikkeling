@@ -70,5 +70,10 @@ Als je effectief wil zien wat qua info verkregen wordt in de header, kan je dit 
 * klik op het HTML info \(het eerste item bovenaan in de rij\)
 * klik dan op de tab 'header' en dan krijg je de info te zien
 
+### internet media types
 
+Het content-type in de header is van cruciaal belang voor het correct weergeven van de inhoud. Het formaat header content-type is een internetmediatype, dat bestaat uit een type, subtype en optionele parameters.   
+vb.:  _text / html; charset = UTF-8_ geeft een type 'tekst' aan, een subtype van 'html' en een tekencodering van UTF-8. 
+
+ter info: [officiële lijst met overzicht internetmediatypes](https://www.iana.org/assignments/media-types/media-types.xhtml)
 
