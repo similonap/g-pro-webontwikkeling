@@ -64,33 +64,30 @@ app.get('port') + '; press Ctrl-C to terminate.' );
 
 ```javascript
 //functie-notatie met naam
-function hello(req, res) {
-  return "Hello AP!";
+function hello(name) {
+  console.log("Hello " + name);
 }
 
-//functie-notatie zonder naam
-function (req, res) {
-  return "Hello AP!";
-}
+//functie-notatie zonder naam (anonieme functie)
+myArrayOfNames.forEach(
+  function (name) {
+    console.log("Hello " + name);
+});
 ```
 
 #### arrow-notatie \(nieuwe manier\)
 
 ```javascript
 //arrow-notatie met naam
-hello = (req, res) => {
-  return "Hello AP!";
-} 
+const hello = (name) => {
+  console.log("Hello " + name);
+}
 
-//arrow-notatie zonder naam
-(req, res) => {
-  return "Hello AP!";
-} 
-```
-
-```javascript
-//Wanneer een functie met één instructie een waarde retourneert, mogen de haakjes en het woord return verwijderd worden.
-hello = () => "Hello AP!";
+//arrow-notatie zonder naam (anonieme functie)
+myArrayOfNames.forEach(
+   (name) => {
+    console.log("Hello " + name);
+});
 ```
 
 meer info: [https://www.w3schools.com/js/js\_arrow\_function.asp](https://www.w3schools.com/js/js_arrow_function.asp)
