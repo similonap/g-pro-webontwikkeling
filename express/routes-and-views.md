@@ -17,13 +17,13 @@ Er wordt een route opgesteld die de aanvraag of _request_ opvangt en verder afha
 
 ```javascript
 // volgorde is zeer belangrijk!
-app.get('/’, (req, res) => {
+app.get('/', (req, res) => {
     res.type('text/html');
     res.send('AP-Hogeschool');
     }
 );
 
-app.get(‘/about', (req, res) => {
+app.get('/about', (req, res) => {
     res.type('text/html');
     res.send('Over AP-Hogeschool');
     }
@@ -36,7 +36,8 @@ app.use((req, res) => {
     }
 );
 
-app.get(‘/contact', (req, res) => {
+// de contact-pagina gaat niet gevonden worden omwille van de volgorde
+app.get('/contact', (req, res) => {
     res.type('text/html');
     res.send('Contacteer AP-Hogeschool');
     }
