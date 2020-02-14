@@ -47,5 +47,5 @@ Hello Joske Vermeulen!
 ### 4. gebruiken externe module moment
 
 * Gebruik de npm module moment \([https://www.npmjs.com/package/moment](https://www.npmjs.com/package/moment)\) om een klokje te maken dat elke seconde de nieuwe tijd laat zien. Maak gebruik van de ingebouwde [setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp) functie.
-* Als extra zou je je scherm kunnen leegmaken elke keer hij de tijd laat zien met de volgende regel code: `process.stdout.write('\033c');` \(niet te kennen of begrijpen\)
+* Als extra zou je je scherm kunnen leegmaken elke keer hij de tijd laat zien met de volgende regel code: `process.stdout.write('\033c');` \(niet te kennen of begrijpen\) of `console.clear()`
 
