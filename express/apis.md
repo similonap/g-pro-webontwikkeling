@@ -9,13 +9,13 @@ Een **Application Programming Interface** \(API\) is een verzameling definities 
 
 ### RESTful API
 
-Een RESTful API \(**RE**presentational **S**tate **T**ransfer\) is een API dat HTTP-requests gebruikt om data te verzenden en aan te passen via `get`, `put`, `post` and `delete`.  
+Een RESTful API \(**RE**presentational **S**tate **T**ransfer\) is een API dat HTTP-requests gebruikt om data te verzenden en aan te passen via GET, PUT, POST and DELETE.  
 De REST-architectuur maakt dus gebruik van vier veelgebruikte HTTP-methoden:
 
-* **get:** Deze methode helpt bij het aanbieden van gegevens met 'read-only access'.
-* **put:** Deze methode wordt geïmplementeerd voor het bijwerken van een bestaande gegevens of het maken van nieuwe.
-* **post:** Deze methode wordt geïmplementeerd voor het maken van nieuwe gegevens. 
-* **delete:** Deze methode wordt geïmplementeerd voor het verwijderen van gegevens. 
+* **GET:** Deze methode helpt bij het aanbieden van gegevens met 'read-only access'.
+* **PUT:** Deze methode wordt geïmplementeerd voor het bijwerken van een bestaande gegevens of het maken van nieuwe.
+* **POST:** Deze methode wordt geïmplementeerd voor het maken van nieuwe gegevens. 
+* **DELETE:** Deze methode wordt geïmplementeerd voor het verwijderen van gegevens. 
 
 meer info: [https://www.w3schools.in/restful-web-services/intro/](https://www.w3schools.in/restful-web-services/intro/)
 
