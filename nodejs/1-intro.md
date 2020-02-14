@@ -37,7 +37,7 @@ Ga stap voor stap doorheen de installatie-wizard. Installeer naast Node.js ook d
 Start Node.js op en voer een eerste eenvoudige JavaScript-code uit. De runtime-omgeving biedt daarvoor twee modi: Node.js in de interactieve modus of de applicatiecode uitvoeren van een eerder aangemaakt JavaScript \(.js\)-bestand. 
 
 * Kies voor de interactieve modus en test deze in de terminal.
-* Start de JavaScript runtime-omgeving via het commando node door 'node' te typen in de terminal \(kan eventueel in de terminal van Visual Studio code\).
+* Start de JavaScript runtime-omgeving via het commando node.
 
 ```bash
 node
