@@ -41,7 +41,7 @@ app.get('/api/contactgegevens',(req, res) =>
 
 De website [pokeapi](https://pokeapi.co/) geeft meer info over RESTful API gelinkt aan een zeer uitgebreide database met alle details over de Pokémon games.
 
-```javascript
+```bash
 npm install request
 ```
 

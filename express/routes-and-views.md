@@ -10,7 +10,7 @@ Express staat als server klaar om te luisteren naar vragen of _requests_ van bui
 // '/' = waar
 // request is bijvoorbeeld url Google
 // response is output naar de browser
-app.get('/’, (req, res) => {…});
+app.get('/', (req, res) => {…});
 ```
 
 Er wordt een route opgesteld die de aanvraag of _request_ opvangt en verder afhandelt. Deze aanvragen kunnen bestaan uit volgende http-request methodes: `get,` `post`, `put`, `use`, `delete`,...
@@ -61,7 +61,7 @@ Het concept dat aan het Model-View-Controller-patroon ten grondslag ligt -voor h
 [EJS](https://ejs.co/) of **Embedded Javascript templating** is een eenvoudig template framework waarmee de HTML-opmaak genereert kan worden met gewone JavaScript.
 
 ```bash
-// installeerde module ejs uit npm
+# installeer de module ejs uit npm
 npm install --save ejs
 ```
 
