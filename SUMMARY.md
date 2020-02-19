@@ -24,6 +24,7 @@
 
 * [labo 1: hfdst 1.1 &gt; 1.3](labo/labo-1.md)
 * [labo 2: hfdst 2.1 &gt; 2.4](labo/labo-2.md)
+* [labo 3: herhaling](labo/labo-3-herhaling.md)
 
 ## Extra info
 
