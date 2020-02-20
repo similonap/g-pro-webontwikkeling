@@ -85,11 +85,11 @@ Maak nu een submap met de naam views met daarin de naam van de lay-out-pagina's 
 
 ```javascript
 app.get('/', (req, res) => 	
-	{res.render('index', });
+	{res.render('index', )});
 app.get('/about', (req, res) => 	
-	{res.render('about', });
+	{res.render('about', )});
 app.get('/contact',(req, res) => 
-	{res.render('contact', });
+	{res.render('contact', )});
 
 ```
 

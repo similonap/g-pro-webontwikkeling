@@ -48,11 +48,11 @@ npm install ejs --save
 
 Maak 2 folders aan in het project: `views` en `public`
 
-## 2. De index-bestand
+## 2. De index file
 
-_tip: Kijk naar de voorbeeldbestanden / slides van de laatste theorieles indien je niet verder kunt._
+_Tip: kijk naar de voorbeeld bestanden / slides van de laatste theorie les indien je niet verder kunt_
 
-1. Maak een index.ejs-bestand aan met een simpele HTML structuur die Hello World bevat, vetgedrukt.
+1. Maak een index.ejs file aan met een simpele HTML structuur die Hello World bevat, vetgedrukt.
 2. Zorg ervoor dat de `localhost:3000/` deze pagina laadt.
 3. Pas de `index.ejs` file en `app.js` file aan zodat:
 
@@ -89,7 +89,7 @@ Je kan in EJS ook Javascript toevoegen die uitgevoerd wordt op de server en zo n
 
 app.js route code:
 
-```javascript
+```text
 app.get('/', (req,res) => {
     res.render('index',{'toonHelloWorld': true});
 });
@@ -97,13 +97,13 @@ app.get('/', (req,res) => {
 
 index.ejs code:
 
-```javascript
+```text
 <% if(toonHelloWorld) { %>
-    <h1>Hello World</h1>
+    <h1>Hello World<h1>
 <% } %>
 ```
 
-In dit geval wordt &lt;h1&gt;Hello World&lt;/h1&gt; getoond op de client. Wanneer we de waarde false megeven, wordt dit stukje HTML-code niet getoond.
+In dit geval wordt &lt;h1&gt;Hello World&lt;/h1&gt; getoond op de client. Wanneer we de waarde false megeven, wordt dit stukje HTML code niet getoond.
 
 Pas nu pokemons.ejs aan zodat je niet zelf 5 maal de code herhaalt voor elke Pokemon, maar een **for loop** maakt die elke Pokemon's naam en animatie toont.
 
