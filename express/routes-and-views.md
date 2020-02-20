@@ -90,7 +90,6 @@ app.get('/about', (req, res) =>
 	{res.render('about', )});
 app.get('/contact',(req, res) => 
 	{res.render('contact', )});
-
 ```
 
 ### statische content
@@ -110,6 +109,6 @@ De echte kracht van views is dat ze dynamische informatie kunnen bevatten, bijvo
 app.get('/contact',(req, res) => 
 	{res.render('contact', {naam_variable:  'waarde'})
 	}
-	);
+);
 ```
 
