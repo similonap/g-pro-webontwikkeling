@@ -108,6 +108,8 @@ De echte kracht van views is dat ze dynamische informatie kunnen bevatten, bijvo
 
 ```javascript
 app.get('/contact',(req, res) => 
-	{res.render('contact', {naam_variable:  'waarde'})});
+	{res.render('contact', {naam_variable:  'waarde'})
+	}
+	);
 ```
 
