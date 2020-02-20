@@ -1,6 +1,6 @@
 # labo 3: herhaling
 
-_Dit is 1 grote oefening. Werk elke opdracht af in hetzelfde project. Je eindigt dit labo met 1 web applicatie._
+_Dit is 1 grote oefening. Werk elke opdracht af in hetzelfde project. Je eindigt dit labo met 1 web-applicatie._
 
 ## 1. Maak het project aan
 
