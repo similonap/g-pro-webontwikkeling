@@ -107,7 +107,7 @@ app.use(express.static(__dirname + '/public'));
 De echte kracht van views is dat ze dynamische informatie kunnen bevatten, bijvoorbeeld via `<%= naam_variabel %>`
 
 ```javascript
-app.get('/contact',(req, res) => 
+app.get('/contact',(req, res)) => 
 	{res.render('contact', {naam_variable:  'waarde'});
 ```
 
