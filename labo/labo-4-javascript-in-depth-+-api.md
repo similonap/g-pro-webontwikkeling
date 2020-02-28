@@ -1,0 +1,76 @@
+# Labo 4: Javascript in-depth + API
+
+### FizzBuzz
+
+**Dit is een bekende sollicitatievraag bij bedrijven:**
+
+Schrijf een programma dat getallen van 1 tot 100 print. Maar voor veelvouden van 3 print "Fizz" in plaats van het getal en voor veelvouden van 5 print "Buzz". Voor getallen die veelvouden zijn 3 en 5 print je "FizzBuzz". 
+
+Voorbeeld output: 
+
+```text
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz 
+11
+Fizz
+13
+14
+FizzBuzz
+16
+```
+
+### Cocktails zoeken
+
+We gaan gebruik maken van een publieke API om cocktails op te zoeken met hun eerste letter. 
+
+{% embed url="https://www.thecocktaildb.com/api.php?ref=apilist.fun" %}
+
+Maak een nieuw project aan en installeer de request module en de readline-sync module. 
+
+```text
+npm install --save request readline-sync
+```
+
+De eerste library is al bekend van de theorie.  Je kan er eenvoudig requests mee maken naar een API. De tweede library is een library voor input te vragen aan de gebruiker \( een beetje zoals Console.ReadLine in C\#\):
+
+```text
+var readlineSync = require('readline-sync');
+ 
+// Wait for user's response.
+var userName = readlineSync.question('May I have your name? ');
+console.log('Hi ' + userName + '!');
+```
+
+Schrijf nu een programma dat een bepaalde string zoekt in de cocktail API. Maak gebruik van de volgende API call:
+
+```text
+https://www.thecocktaildb.com/api/json/v1/1/search.php?s=<searchstring>
+```
+
+Loop over alle cocktails en print de naam van de cocktail in de console
+
+Voorbeeld output:
+
+```text
+Naar welke cocktail wil je zoeken? Mar
+
+Martini
+Tia-Maria
+Margarita
+Bob Marley
+Martinez 2
+Aquamarine
+Bloody Mary
+...
+```
+
+
+

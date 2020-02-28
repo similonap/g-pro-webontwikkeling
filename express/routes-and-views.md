@@ -85,12 +85,11 @@ Maak nu een submap met de naam views met daarin de naam van de lay-out-pagina's 
 
 ```javascript
 app.get('/', (req, res) => 	
-	{res.render('index', });
+	{res.render('index', )});
 app.get('/about', (req, res) => 	
-	{res.render('about', });
+	{res.render('about', )});
 app.get('/contact',(req, res) => 
-	{res.render('contact', });
-
+	{res.render('contact', )});
 ```
 
 ### statische content
@@ -108,6 +107,8 @@ De echte kracht van views is dat ze dynamische informatie kunnen bevatten, bijvo
 
 ```javascript
 app.get('/contact',(req, res) => 
-	{res.render(‘contact’, {naam_variable:  ‘waarde’});
+	{res.render('contact', {naam_variable:  'waarde'})
+	}
+);
 ```
 
