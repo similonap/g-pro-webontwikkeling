@@ -29,13 +29,14 @@ FizzBuzz
 
 ### Cocktails zoeken
 
-We gaan gebruik maken van een publieke API om cocktails op te zoeken met hun eerste letter. 
+We gaan gebruik maken van een publieke API om cocktails op te zoeken aan de hand van hun naam. Een overzicht van de API kan je op de volgende pagina vinden.
 
 {% embed url="https://www.thecocktaildb.com/api.php?ref=apilist.fun" %}
 
 Maak een nieuw project aan en installeer de request module en de readline-sync module. 
 
 ```text
+npm init
 npm install --save request readline-sync
 ```
 
@@ -49,17 +50,20 @@ var userName = readlineSync.question('May I have your name? ');
 console.log('Hi ' + userName + '!');
 ```
 
-Schrijf nu een programma dat een bepaalde string zoekt in de cocktail API. Maak gebruik van de volgende API call:
+Schrijf nu een programma dat een bepaalde string vraagt aan de gebruiker. Als de gebruiker niets ingeeft moet het programma een foutmelding geven. Als het niet leeg is dan moet je de string gebruiken om te zoeken naar cocktails met de volgende API call:
 
 ```text
 https://www.thecocktaildb.com/api/json/v1/1/search.php?s=<searchstring>
 ```
 
-Loop over alle cocktails en print de naam van de cocktail in de console
+Loop over alle cocktails en print de naam van de cocktail in de console.
 
-Voorbeeld output:
+**Voorbeeld output:**
 
 ```text
+Naar welke cocktail wil je zoeken?
+De zoekstring mag niet leeg zijn.
+
 Naar welke cocktail wil je zoeken? Mar
 
 Martini
@@ -71,6 +75,4 @@ Aquamarine
 Bloody Mary
 ...
 ```
-
-
 
