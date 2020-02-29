@@ -1,6 +1,6 @@
-# Labo 4: Javascript in-depth + API
+# labo 4: Javascript in-depth + API
 
-### FizzBuzz
+### 1. FizzBuzz
 
 **Dit is een bekende sollicitatievraag bij bedrijven:**
 
@@ -27,7 +27,26 @@ FizzBuzz
 16
 ```
 
-### Cocktails zoeken
+### 2. Getallen zoeken
+
+```text
+var items = [2, 5, 3, 7, 8, 10, 15, 18, 24, 111, 12, 19, 87];
+
+const search = (items, number) => {
+    // vul aan
+}
+```
+
+schrijf een functie die een getal zoekt in de bovenstaande array en de index teruggeeft in de array.
+
+**Voorbeeld**:
+
+```text
+ console.log(search(items, 5)); // 1 
+ console.log(search(items, 15)); // 6
+```
+
+### 3. Cocktails zoeken
 
 We gaan gebruik maken van een publieke API om cocktails op te zoeken aan de hand van hun naam. Een overzicht van de API kan je op de volgende pagina vinden.
 
@@ -37,15 +56,15 @@ Maak een nieuw project aan en installeer de request module en de readline-sync m
 
 ```text
 npm init
-npm install --save request readline-sync
+npm install --save node-fetch readline-sync
 ```
 
 De eerste library is al bekend van de theorie.  Je kan er eenvoudig requests mee maken naar een API. De tweede library is een library voor input te vragen aan de gebruiker \( een beetje zoals Console.ReadLine in C\#\):
 
 ```text
+// Voorbeeld gebruik:
 var readlineSync = require('readline-sync');
- 
-// Wait for user's response.
+
 var userName = readlineSync.question('May I have your name? ');
 console.log('Hi ' + userName + '!');
 ```
@@ -75,4 +94,6 @@ Aquamarine
 Bloody Mary
 ...
 ```
+
+\*\*\*\*
 
