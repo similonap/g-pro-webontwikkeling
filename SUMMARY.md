@@ -29,5 +29,5 @@
 
 ## Extra info
 
-* [Extra info](extra-info/extra-info.md)
+* [extra info](extra-info/extra-info.md)
 
