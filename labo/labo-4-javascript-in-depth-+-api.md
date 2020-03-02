@@ -6,7 +6,7 @@
 
 Schrijf een programma dat getallen van 1 tot 100 print. Maar voor veelvouden van 3 print "Fizz" in plaats van het getal en voor veelvouden van 5 print "Buzz". Voor getallen die veelvouden zijn 3 en 5 print je "FizzBuzz". 
 
-Voorbeeld output: 
+voorbeeld output: 
 
 ```text
 1
@@ -29,8 +29,8 @@ FizzBuzz
 
 ### 2. Getallen zoeken
 
-```text
-var items = [2, 5, 3, 7, 8, 10, 15, 18, 24, 111, 12, 19, 87];
+```javascript
+let items = [2, 5, 3, 7, 8, 10, 15, 18, 24, 111, 12, 19, 87];
 
 const search = (items, number) => {
     // vul aan
@@ -39,9 +39,9 @@ const search = (items, number) => {
 
 schrijf een functie die een getal zoekt in de bovenstaande array en de index teruggeeft in de array.
 
-**Voorbeeld**:
+voorbeeld:
 
-```text
+```javascript
  console.log(search(items, 5)); // 1 
  console.log(search(items, 15)); // 6
 ```
@@ -54,18 +54,18 @@ We gaan gebruik maken van een publieke API om cocktails op te zoeken aan de hand
 
 Maak een nieuw project aan en installeer de request module en de readline-sync module. 
 
-```text
+```bash
 npm init
 npm install --save node-fetch readline-sync
 ```
 
-De eerste library is al bekend van de theorie.  Je kan er eenvoudig requests mee maken naar een API. De tweede library is een library voor input te vragen aan de gebruiker \( een beetje zoals Console.ReadLine in C\#\):
+De eerste library is al bekend van de theorie.  Je kan er eenvoudig requests mee maken naar een API. De tweede library is een library voor input te vragen aan de gebruiker \(een beetje zoals Console.ReadLine in C\#\):
 
-```text
+```javascript
 // Voorbeeld gebruik:
-var readlineSync = require('readline-sync');
+let readlineSync = require('readline-sync');
 
-var userName = readlineSync.question('May I have your name? ');
+let userName = readlineSync.question('May I have your name? ');
 console.log('Hi ' + userName + '!');
 ```
 
@@ -77,7 +77,7 @@ https://www.thecocktaildb.com/api/json/v1/1/search.php?s=<searchstring>
 
 Loop over alle cocktails en print de naam van de cocktail in de console.
 
-**Voorbeeld output:**
+voorbeeld output:
 
 ```text
 Naar welke cocktail wil je zoeken?
