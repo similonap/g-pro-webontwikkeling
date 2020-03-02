@@ -2,6 +2,16 @@
 
 * [00. inleiding](README.md)
 
+## JavaScript
+
+* [01. Programmeren](javascript/01-programmeren.md)
+* [02. Basis instructies Javascript](javascript/02-basis-instructies-javascript.md)
+* [03. Functies, methods en objects](javascript/03-functies-methods-en-objects.md)
+* [04. Decisions en loops](javascript/04-decisions-en-loops.md)
+* [05. Document Object Model](javascript/05-document-object-model.md)
+* [06. Events](javascript/06-events.md)
+* [07. Bibliotheken](javascript/07-bibliotheken.md)
+
 ## 1. NodeJS & NPM en JSON <a id="nodejs"></a>
 
 * [1. intro NodeJS](nodejs/1-intro.md)
