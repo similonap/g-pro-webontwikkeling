@@ -3,12 +3,23 @@
 ### 1. Strings omdraaien
 
 * schrijf een functie `reverseString`die een string omdraait
-* voorbeeld input x = **hello**; verwachte return waarde: **olleh**
+* voorbeeld input:  **hello**; verwachte return waarde: **olleh**
 * **TIP:** een string kan je omdraaien met 
-  * x.split\(""\).reverse\(\).join\(""\)
-  * of met een for lus die van achteraan de string gaat naar het begin van de string.
+  * **x.split\(""\).reverse\(\).join\(""\)**
+    * Dit zal eerst de string omzetten naar een array via split\(""\)
+    * vervolgens kan een ingebouwde reverse functie deze array omdraaien
+    * join zorgt er weer voor dat de array naar een string wordt omgezet.
+  * **of met een for lus die van achteraan de string gaat naar het begin van de string.**
 
-### 2. Hondenleeftijd berekenen
+### 2. Palindroom
+
+* Schrijf een functie isPalindroom die 
+  * 1 argument heeft: een string
+  * teruggeeft of de meegegeven string een palindroom is
+* voorbeeld input: **radar** verwachte return waarde: **true**
+* voorbeeld input: **hond** verwachte return waarde: **false**
+
+### 3. Hondenleeftijd berekenen
 
 * Schrijf een functie genaamd `calculateDogAge`die:
   * 1 argument heeft: de leeftijd van je hond
