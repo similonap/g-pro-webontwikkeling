@@ -1,6 +1,14 @@
 # labo 5: Functies
 
-### 1. Hondenleeftijd berekenen
+### 1. Strings omdraaien
+
+* schrijf een functie `reverseString`die een string omdraait
+* voorbeeld input x = **hello**; verwachte return waarde: **olleh**
+* **TIP:** een string kan je omdraaien met 
+  * x.split\(""\).reverse\(\).join\(""\)
+  * of met een for lus die van achteraan de string gaat naar het begin van de string.
+
+### 2. Hondenleeftijd berekenen
 
 * Schrijf een functie genaamd `calculateDogAge`die:
   * 1 argument heeft: de leeftijd van je hond
