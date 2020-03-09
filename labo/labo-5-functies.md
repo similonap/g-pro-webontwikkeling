@@ -18,6 +18,7 @@
   * teruggeeft of de meegegeven string een palindroom is
 * voorbeeld input: **radar** verwachte return waarde: **true**
 * voorbeeld input: **hond** verwachte return waarde: **false**
+* **TIP**: Je hebt al in oefening 1 een handige functie geschreven om hier bij te helpen
 
 ### 3. Hondenleeftijd berekenen
 
