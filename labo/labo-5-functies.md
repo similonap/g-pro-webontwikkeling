@@ -87,7 +87,7 @@ Happy Birthday
 ### 6. Hondenleeftijd berekenen
 
 * Maak een bestand `6_hondenleeftijd.js` aan.
-* Schrijf een functie genaamd `calculateDogAge`die:
+* Schrijf hier een functie genaamd `calculateDogAge`die:
   * 1 argument heeft: de leeftijd van je hond
   * de leeftijd van je hond berekent: 1 mensenjaar is 7 hondenjaren
   * die deze leeftijd terug geeft \(via return\)
