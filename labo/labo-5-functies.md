@@ -1,8 +1,19 @@
 # labo 5: Functies
 
-### 1. Strings omdraaien
+### 1. Maak het project aan
 
-* schrijf een functie `reverseString`die een string omdraait
+Open Visual Studio en open een nieuwe folder voor het project. Test dat je in de juiste folder zit door 
+
+```text
+pwd
+```
+
+te typen in de Terminal.
+
+### 2. Strings omdraaien
+
+* Maak een bestand `1_reverse_string.js` aan 
+* Schrijf een functie `reverseString`die een string omdraait
 * voorbeeld input:  **hello**; verwachte return waarde: **olleh**
 * **TIP:** een string kan je omdraaien met 
   * **x.split\(""\).reverse\(\).join\(""\)**
@@ -11,8 +22,9 @@
     * join zorgt er weer voor dat de array naar een string wordt omgezet.
   * **of met een for lus die van achteraan de string gaat naar het begin van de string.**
 
-### 2. Palindroom
+### 3. Palindroom
 
+* Maak een bestand `2_is_palindroom.js`aan.
 * Schrijf een functie `isPalindroom` die 
   * 1 argument heeft: een string
   * teruggeeft of de meegegeven string een palindroom is
@@ -20,8 +32,11 @@
 * voorbeeld input: **hond** verwachte return waarde: **false**
 * **TIP**: Je hebt al in oefening 1 een handige functie geschreven om hier bij te helpen
 
+Wat is een palindroom? [http://www.leukespreuk.nl/special\_palindromen.htm](http://www.leukespreuk.nl/special_palindromen.htm)
+
 ### 3. **setTimeout**
 
+* Maak een bestand `3_setimeout.js` aan.
 * setTimeout is een ingebouwde functie in javascript die een bepaalde functie aanroept na het aantal meegegeven milli seconden.
 * Voorbeeld gebruik:
 
@@ -38,6 +53,7 @@
 
 ### 4. klokje met setInterval
 
+* Maak een bestand `4_setinterval.js`aan.
 * **setInterval** is een ingebouwde functie die een bepaalde functie om de zoveel tijd zal uitvoeren.
 * Maak een klokje dat de tijd om de seconde op het scherm afprint.
 
@@ -50,7 +66,8 @@
 
 ### 5. Hieperdepiep... Hoera!
 
-* Schrijf een functie `hieperdepiep` die
+* Maak een bestand `5_hieperdepiep.js`aan.
+* Schrijf hier een functie `hieperdepiep` die
   * 2 argumenten aanvaard:
     * 1ste argument: de leeftijd van de persoon
     * 2de argument: een callback functie
@@ -69,6 +86,7 @@ Happy Birthday
 
 ### 6. Hondenleeftijd berekenen
 
+* Maak een bestand `6_hondenleeftijd.js` aan.
 * Schrijf een functie genaamd `calculateDogAge`die:
   * 1 argument heeft: de leeftijd van je hond
   * de leeftijd van je hond berekent: 1 mensenjaar is 7 hondenjaren
