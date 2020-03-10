@@ -8,7 +8,13 @@ Open Visual Studio en open een nieuwe folder voor het project. Test dat je in de
 pwd
 ```
 
-te typen in de Terminal.
+te typen in de Terminal. Maak een nieuwe npm package met bijbehorende package.json door 
+
+```text
+npm init
+```
+
+te doen. De default waarden zullen hier voldoende zijn.
 
 ### 2. Strings omdraaien
 
