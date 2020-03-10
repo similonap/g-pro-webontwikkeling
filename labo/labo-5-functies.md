@@ -20,7 +20,7 @@
 * voorbeeld input: **hond** verwachte return waarde: **false**
 * **TIP**: Je hebt al in oefening 1 een handige functie geschreven om hier bij te helpen
 
-### 4. **setTimeout**
+### 3. **setTimeout**
 
 * setTimeout is een ingebouwde functie in javascript die een bepaalde functie aanroept na het aantal meegegeven milli seconden.
 * Voorbeeld gebruik:
@@ -36,33 +36,38 @@
 * Probeer dit een keer uit!
 * Pas de functie aan zodat ze pas na 5 seconden word aangeroepen.
 
-### 5. klokje met setInterval
+### 4. klokje met setInterval
 
 * **setInterval** is een ingebouwde functie die een bepaalde functie om de zoveel tijd zal uitvoeren.
 * Maak een klokje dat de tijd om de seconde op het scherm afprint.
-* **Gebruik hiervoor het Date object.**
-  * Hoe uren verkrijgen? new Date\(\).getHours\(\);  Hoe minuten verkijgen? new Date\(\).getMinutes\(\); ...
 
-### 6. Hieperdepiep... Hoera!
+```text
+15:03:28
+15:03:29
+15:03:30
+...
+```
+
+### 5. Hieperdepiep... Hoera!
 
 * Schrijf een functie `hieperdepiep` die
   * 2 argumenten aanvaard:
     * 1ste argument: de leeftijd van de persoon
     * 2de argument: een callback functie
-  * eerst voor elk jaar van de leeftijd van de persoon 'Hieperdepiep hoera' op het scherm toont
+  * Voor het eerste jaar toon: 'Hieperdepiep Hoera' Voor het 2de jaar toon: 'Hieperdepieperdepiep Hoera' Voor het 3de jaar toon: 'Hieperdepieperdepieperdepiep Hoera' ... enz
   * nadat er voor elk jaar Hieperdepiep Hoera is gezegd moet de meegegeven callback uitgevoerd worden
 * Voorbeeld output voor `hierpdepiep(5, () => { console.log('Happy Birthday'); });`
 
 ```text
 Hieperdepiep Hoera
-Hieperdepiep Hoera
-Hieperdepiep Hoera
-Hieperdepiep Hoera
-Hieperdepiep Hoera
+Hieperdepieperdepiep Hoera
+Hieperdepieperdepieperdepiep Hoera
+Hieperdepieperdepieperdepieperdepiep Hoera
+Hieperdepieperdepieperdepieperdepieperdepiep Hoera
 Happy Birthday
 ```
 
-### 7. Hondenleeftijd berekenen
+### 6. Hondenleeftijd berekenen
 
 * Schrijf een functie genaamd `calculateDogAge`die:
   * 1 argument heeft: de leeftijd van je hond
