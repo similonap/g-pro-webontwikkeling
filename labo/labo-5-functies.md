@@ -105,3 +105,25 @@ Happy Birthday
   * als return waarde de functie `(age) => { return calculateAnimalAge(age, conversionRatio); }`  terugggeeft.
   * Gebruik deze functie om de functie calculateHamsterAge te definiëren en gebruik deze om de leeftijd van een hamster van een half jaar te berekenen.
 
+### Extra Oefeningen
+
+#### Konami Code
+
+* Maak een bestand `extra_konami.js` met de volgende inhoud: 
+
+```text
+const readline = require('readline');
+
+readline.emitKeypressEvents(process.stdin);
+process.stdin.setRawMode(true);
+
+process.stdin.on('keypress', (str, key) => {
+    
+})
+```
+
+* Deze code zorgt ervoor dat er een callback wordt opgeroepen bij het intoetsen van een toets op je keyboard. 
+* Zorg ervoor dat je het programma kan stoppen door X in te toetsen.
+  * Je kan het programma stoppen door `process.exit()` uit te voeren. 
+* Zorg ervoor dat je het programma kan stoppen door de KONAMI code in te geven.  \(wikipedia\) \(of ↑↑↓↓←→←→BA\)
+
