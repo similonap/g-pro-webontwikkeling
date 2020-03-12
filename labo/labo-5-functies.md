@@ -102,8 +102,8 @@ Happy Birthday
 * zorg ervoor dat  calculateDogAge deze functie aanroept zodat je niet twee keer dezelfde code hebt staan.
 * **Uitbreiding 2:** Maak een nieuwe functie `calculateAnimalAgeFunctional` die 
   * 1 argument heeft: de omzettingsverhouding
-  * als return waarde de functie `(age) => { return calculateAnimalAge(age, conversionRatio); }`  terugggeeft.
-  * Gebruik deze functie om de functie calculateHamsterAge te definiëren en gebruik deze om de leeftijd van een hamster van een half jaar te berekenen.
+  * als return waarde de functie `(age) => { return calculateAnimalAge(age, conversionRatio); }`  teruggeeft.
+  * Gebruik deze variabele om de functie calculateHamsterAge te definiëren en gebruik deze om de leeftijd van een hamster van een half jaar te berekenen.
 
 ### Extra Oefeningen
 
