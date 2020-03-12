@@ -76,7 +76,7 @@ Wat is een palindroom? [http://www.leukespreuk.nl/special\_palindromen.htm](http
 * Schrijf hier een functie `hieperdepiep` die
   * 2 argumenten aanvaard:
     * 1ste argument: de leeftijd van de persoon
-    * 2de argument: een callback functie
+    * 2de argument: een callback functie  \(artikel: [Wat is een callback-functie?](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)\)
   * Voor het eerste jaar toon: 'Hieperdepiep Hoera' Voor het 2de jaar toon: 'Hieperdepieperdepiep Hoera' Voor het 3de jaar toon: 'Hieperdepieperdepieperdepiep Hoera' ... enz
   * nadat er voor elk jaar Hieperdepiep Hoera is gezegd moet de meegegeven callback uitgevoerd worden
 * Voorbeeld output voor `hierpdepiep(5, () => { console.log('Happy Birthday'); });`
