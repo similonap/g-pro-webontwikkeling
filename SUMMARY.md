@@ -38,6 +38,7 @@
 * [labo 4: JavaScript in-depth + API](labo/labo-4-javascript-in-depth-+-api.md)
 * [labo 5: functies](labo/labo-5-functies.md)
 * [labo extra: oefeningen JS 1](labo/labo-extra-oefeningen-js-1.md)
+* [labo extra: oefeningen JS 2](labo/labo-extra-oefeningen-js-2.md)
 
 ## Extra info
 
