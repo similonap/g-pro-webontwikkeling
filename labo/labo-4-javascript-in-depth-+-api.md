@@ -1,4 +1,4 @@
-# labo 4: Javascript in-depth + API
+# labo 4: JavaScript in-depth + API
 
 ### 1. FizzBuzz
 

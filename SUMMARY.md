@@ -35,8 +35,9 @@
 * [labo 1: hfdst 1.1 &gt; 1.3](labo/labo-1.md)
 * [labo 2: hfdst 2.1 &gt; 2.4](labo/labo-2.md)
 * [labo 3: herhaling](labo/labo-3-herhaling.md)
-* [labo 4: Javascript in-depth + API](labo/labo-4-javascript-in-depth-+-api.md)
-* [labo 5: Functies](labo/labo-5-functies.md)
+* [labo 4: JavaScript in-depth + API](labo/labo-4-javascript-in-depth-+-api.md)
+* [labo 5: functies](labo/labo-5-functies.md)
+* [labo extra: oefeningen JS 1](labo/labo-extra-oefeningen-js-1.md)
 
 ## Extra info
 

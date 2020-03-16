@@ -1,4 +1,4 @@
-# labo 5: Functies
+# labo 5: functies
 
 ### 1. Maak het project aan
 
