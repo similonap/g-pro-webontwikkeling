@@ -1,0 +1,2 @@
+# JS - filter method \(array\)
+

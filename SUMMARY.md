@@ -29,6 +29,9 @@
 ## 3. functioneel programmeren
 
 * [JS - sort an array of objects](3.-functioneel-programmeren/js-sort-an-array-of-objects.md)
+* [JS - map method \(array\)](3.-functioneel-programmeren/js-map-method-array.md)
+* [JS - filter method \(array\)](3.-functioneel-programmeren/js-filter-method-array.md)
+* [JS - reduce method \(array\)](3.-functioneel-programmeren/js-reduce-method-array.md)
 
 ## NoSql-databanken MongoDB
 

@@ -1,0 +1,2 @@
+# JS - reduce method \(array\)
+
