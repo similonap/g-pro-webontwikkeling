@@ -8,3 +8,17 @@ Mapping is een interessante functionele programmeertechniek voor het bewerken va
 array.map(function(currentValue,index,arr), thisValue)
 ```
 
+## parameters en argumenten
+
+`function(currentValue, index, arr)`is een functie die voor elk element in de array uitgevoerd zal worden \(**verplichte parameter**\)
+
+* `currentValue` __is de waarde van het lopende element \(**verplicht argument**\)
+* `index` is de array-index van het lopende element \(**optioneel argument**\)
+* `arr` is de array waarvan het lopende element deel van uitmaakt \(**optioneel argument**\)
+
+`thisValue` is een waarde die aan de functie meegegeven kan worden en die als haar "this" waarde kan optreden \(**optionele parameter**\)
+
+
+
+
+
