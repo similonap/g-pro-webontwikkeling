@@ -18,7 +18,29 @@ array.map(function(currentValue,index,arr), thisValue)
 
 `thisValue` is een waarde die aan de functie meegegeven kan worden en die als haar "this" waarde kan optreden \(**optionele parameter**\)
 
+## toepassing
 
+Onderstaande code is een klassiek, procedurele, maar omslachtige manier om een vrij eenvoudige taak uit te voeren, namelijk het verdubbelen van alle getallen in een array.
+
+```javascript
+let numberList = [6, 7, 8, 9];
+let newNumberList = [];
+for(let i = 0; i < numberList.length; i++) {
+    newNumberList[i] = numberList[i] * 2;
+}
+console.log("The list of doubled numbers: ", newNumberList); // [2, 4, 6, 8]
+```
+
+Dit kan beter en een pak efficiënter. Wat als we gewoon de getallen in de array op een manier zouden kunnen verdubbelen om deze elementen nadien in de array toe te passen?   
+Er dus geen lus meer nodig en de getallen hoeven niet handmatig toegevoegd te worden aan een array. De  intentie wordt gedefinieerd en de `map` -methode doet verder zijn werk.
+
+```javascript
+let numberList = [3, 2, 6, 5];
+let newNumberList = numberList.map(function(number){
+    return number * 2;
+});
+console.log("The doubled numbers are", newNumberList); // [6, 4, 12, 10]
+```
 
 
 
