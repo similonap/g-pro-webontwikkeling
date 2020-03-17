@@ -36,7 +36,7 @@ Maak een bestand `capitalize.js` aan met de volgende inhoud:
 let names = ['joske','franske','donald','achmed']
 ```
 
-Maak een variabele **capitalNames** die een array van alle bovenstaande namen bevat maar in hoofdletters. Gebruik hiervoor ook de functie [toUpperCase\(\)](https://www.w3schools.com/jsref/jsref_touppercase.asp)
+Maak een variabele **capitalNames** die een array van alle bovenstaande namen bevat maar in hoofdletters. Gebruik hiervoor ook de functie [toUpperCase\(\)](https://www.w3schools.com/jsref/jsref_touppercase.asp). Laat deze zien in het terminal venster.
 
 ### 4.  Pokemon 
 
