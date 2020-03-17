@@ -16,7 +16,29 @@ npm init
 
 te doen. De default waarden zullen hier voldoende zijn.
 
-### 3.  Pokemon 
+### 2. Rest Operator
+
+Maak een bestand `rest.js` aan met de volgende inhoud:
+
+```javascript
+let numbers1 = [1,2,3];
+let numbers2 = [4,5,6];
+let numbers3 = [7,8,9];
+```
+
+Maak een variabele **allNumbers** die een array van alle getallen bevat en laat deze zien in het terminal venster.
+
+### 3. Omzetten naar hoofdletters
+
+Maak een bestand `capitalize.js` aan met de volgende inhoud:
+
+```javascript
+let names = ['joske','franske','donald','achmed']
+```
+
+Maak een variabele **capitalNames** die een array van alle bovenstaande namen bevat maar in hoofdletters. Gebruik hiervoor ook de functie [toUpperCase\(\)](https://www.w3schools.com/jsref/jsref_touppercase.asp)
+
+### 4.  Pokemon 
 
 Maan een bestand `pokemon.js` aan met de volgende inhoud:
 
