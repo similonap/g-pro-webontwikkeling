@@ -89,5 +89,13 @@ let starterPokemonGen1 = [
 1. Maak een variabele **sumOfAllXpOfWeakPokemon**. ****Zorg ervoor dat deze de som van de xp waarden van alle **weakPokemon** bevat. _\(Je kan deze verkrijgen door eerst de filter functie te gebruiken en vervolgens de map functie te gebruiken\)_
 2. Gebruik **console.log** om deze te laten zien in je terminal venster.
 
+**Sorteren**
+
+1. Maak een variabele **sortedStarters**. Zorg ervoor dat deze een array bevat die pokemon bevat die gesorteerd zijn van lage xp naar hoge xp.
+2. Gebruik **console.log** om deze te laten zien in je terminal venster.
+3. **Extra:** Zorg ervoor dat als twee pokemon gelijke xp hebben dat deze dan alfabetisch gesorteerd worden op naam.
+
+\*\*\*\*
+
 
 
