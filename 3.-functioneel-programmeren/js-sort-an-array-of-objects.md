@@ -7,7 +7,7 @@ Deze methoden zijn native beschikbaar in elke recente browser en in Node.js. Het
 
 meer info: [artikel](https://gofore.com/en/why-you-should-replace-foreach/) over het nut van het gebruik van `map` en `filter` functies
 
-## Array - sort and array of objects
+## sort and array of objects \(array\)
 
 Om een array van objecten te sorteren in een bepaalde volgorde kan de verleiding groot zijn om op een JavaScript-bibliotheek beroep te doen. Vooraleer je dat echter doet, is het nuttig om te leren hoe je een array van objecten kan ordenen met de inheemse `Array.sort` functie. In [dit artikel](https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/) leer je hoe je een array van objecten zonder al te veel moeite in JavaScript ordent.
 
@@ -52,7 +52,91 @@ Sorteerfunctie bepaalt welk element groter of kleiner is. Stel dat er 2 variabel
 * sorteerfunctie moet &gt; 0 teruggeven als **a &gt; b**
 * sorteerfunctie moet 0 teruggeven als **a === b**
 
+In onderstaand voorbeeld worden getallen vergeleken.
 
+```javascript
+const sortingNumbers = (a,b) => {
+    if(a<b) return -1;
+    if(a>b) return 1;
+    return 0;
+}
+```
+
+Hierna kan deze functie doorgegeven worden aan sort.
+
+```javascript
+const arr = [3,2,12,22,4];
+arr.sort(sortingNumbers);
+// arr = [ 2, 3, 4, 12, 22 ]
+```
+
+Het kan ook nog een stuk eenvoudiger.
+
+```javascript
+const arr = [3,2,12,22,4];
+arr.sort((a,b) => {
+    if(a<b) return -1;
+    if(a>b) return 1;
+    return 0;
+});
+// arr = [ 2, 3, 4, 12, 22 ]
+```
+
+... of nog korter.
+
+```javascript
+const arr = [3,2,12,22,4];
+arr.sort((a,b) => {
+    return a-b;
+});
+// arr = [ 2, 3, 4, 12, 22 ]
+```
+
+## sort functies & objecten
+
+```javascript
+const arr = [
+    {name:'George', age:33},
+    {name:'Abe', age:20},
+    {name:'Mabel', age:29}
+];
+```
+
+```javascript
+arr.sort((a,b)=>{
+    const name1 = a.name.toUpperCase();
+    const name2 = b.name.toUpperCase();
+    if(name1 < name2 ) return -1;
+    if(name1 > name2 ) return 1;
+    return 0;
+}
+);
+
+/*
+[
+    { name: 'Abe', age: 20 },
+    { name: 'George', age: 33 },
+    { name: 'Mabel', age: 29 }
+]
+*/
+```
+
+```javascript
+arr.sort((a,b)=>{
+    if(a.age < b.age ) return -1;
+    if(a.age > b.age ) return 1;
+    return 0;
+}
+);
+
+/*
+[
+    { name: 'Abe', age: 20 },
+    { name: 'Mabel', age: 29 },
+    { name: 'George', age: 33 }
+]
+*/
+```
 
 
 
