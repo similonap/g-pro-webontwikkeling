@@ -68,7 +68,7 @@ console.log("The list of doubled and incremented numbers: ", newNumberList); // 
 
 ## afspraken omtrent gebruik
 
-Je moet wel rekening houden met enkele 'regels' voor de `map` functies. JavaScript verplicht het niet om die regels na te leven. De regels toch naleven maakt het een stuk makkelijker om te begrijpen wat de code doet.
+Hou best rekening met enkele onderstaande regels voor de `map` functies. JavaScript verplicht je niet om deze regels na te leven, maar het maakt het begrijpen van waat de code exact doet een stuk gemakkelijker.
 
 ### invoer- vs uitvoerelementen
 
