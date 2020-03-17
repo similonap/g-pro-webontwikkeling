@@ -1,7 +1,8 @@
 # JS - map method \(array\)
 
-Mapping is een interessante functionele programmeertechniek voor het bewerken van alle elementen in een array en het retourneren van een array van dezelfde lengte met getransformeerde inhoud. De `map` methode kan je enigszins vergelijken met een `for each` lus, maar dan specifiek **voor het omzetten van waarden**. Eén invoerwaarde komt zo overeen met één getransformeerde output waarde.  
-Een map neemt dus een array, voert voor elk element binnen de array een bewerking uit en geeft de getransformeerde waarden terug binnen een nieuwe array.
+Mapping is een interessante functionele programmeertechniek voor het bewerken van alle elementen in een array en het retourneren van een array van dezelfde lengte met getransformeerde inhoud.   
+De `map` methode kan je enigszins vergelijken met een `for each` lus, maar dan specifiek **voor het omzetten van waarden**. Eén invoerwaarde komt zo overeen met één getransformeerde output waarde.  
+Een **map** neemt dus een array, voert voor elk element binnen de array een bewerking uit en geeft de getransformeerde waarden terug binnen een nieuwe array.
 
 ## syntax
 
