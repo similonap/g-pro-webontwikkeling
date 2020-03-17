@@ -82,7 +82,7 @@ let starterPokemonGen1 = [
 1. Maak een variable **sumOfAllXp.** Zorg ervoor dat deze de som van de xp waarden van alle pokemon bevat. _\(Gebruik hiervoor de reduce functie voor arrays\)_
 2. Gebruik **console.log** om deze om te laten zien in je terminal venster.
 3. Maak een variabele **strongestPokemon**. Zorg ervoor dat deze de pokemon bevat met de hoogste xp waarde.
-4. gebruik **console.log** om deze om te laten zien in je terminal venster.
+4. Gebruik **console.log** om deze om te laten zien in je terminal venster.
 
 **Combineren \(Reduce + Filter** \)
 
