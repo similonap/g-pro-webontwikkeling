@@ -2,7 +2,7 @@
 
 ### 1. Maak het project aan
 
-Open Visual Studio en open een nieuwe folder voor het project. Test dat je in de juiste folder zit door 
+Open Visual Studio Code en open een nieuwe folder voor het project. Test dat je in de juiste folder zit door 
 
 ```text
 pwd
