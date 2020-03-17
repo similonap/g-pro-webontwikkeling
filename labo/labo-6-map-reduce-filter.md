@@ -16,7 +16,7 @@ npm init
 
 te doen. De default waarden zullen hier voldoende zijn.
 
-### 2.  Pokemon 
+### 3.  Pokemon 
 
 Maan een bestand `pokemon.js` aan met de volgende inhoud:
 
