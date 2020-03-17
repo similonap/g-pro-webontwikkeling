@@ -1,6 +1,7 @@
 # JS - map method \(array\)
 
-Mapping is een interessante functionele programmeertechniek voor het bewerken van alle elementen in een array en het retourneren van een array van dezelfde lengte met getransformeerde inhoud. De `map` methode kan je enigszins vergelijken met een `for each` lus, maar dan specifiek **voor het omzetten van waarden**. Eén invoerwaarde komt zo overeen met één getransformeerde output waarde.
+Mapping is een interessante functionele programmeertechniek voor het bewerken van alle elementen in een array en het retourneren van een array van dezelfde lengte met getransformeerde inhoud. De `map` methode kan je enigszins vergelijken met een `for each` lus, maar dan specifiek **voor het omzetten van waarden**. Eén invoerwaarde komt zo overeen met één getransformeerde output waarde.  
+Een map neemt dus een array, voert voor elk element binnen de array een bewerking uit en geeft de getransformeerde waarden terug binnen een nieuwe array.
 
 ## syntax
 
@@ -76,7 +77,7 @@ Het aantal invoerelementen met gelijk zijn aan het aantal uitvoerelementen. Je k
 
 ### invoerwaarden niet muteren
 
-De callback functies mogen geen ingevoerde waarden muteren. Dit betekent dat je moet geen objecten of arrays rechtstreeks vanuit je callback functies mag wijzigen. Je kan best de invoerwaarde van een object of een array klonen het in plaats daarvan, en de kopie ervan wijzigen.  
+De callback-functies mogen geen ingevoerde waarden muteren. Dit betekent dat je geen objecten of arrays rechtstreeks vanuit je callback-functies mag wijzigen. Je kan best de invoerwaarde van een object of een array klonen het in plaats daarvan, en de kopie ervan wijzigen.  
   
 Op deze manier is er een garantie dat je callback geen neveneffecten veroorzaakt. Dat wil zeggen dat, wat er ook gebeurt in je callback, het alleeninvloed heeft op de kopie. Dit zorgt voor betrouwbare code.  
   
