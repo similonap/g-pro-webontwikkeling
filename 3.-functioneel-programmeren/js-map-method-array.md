@@ -70,15 +70,13 @@ console.log("The list of doubled and incremented numbers: ", newNumberList); // 
 
 Hou best rekening met enkele onderstaande regels voor de `map` functies. JavaScript verplicht je niet om deze regels na te leven, maar het maakt het begrijpen van waat de code exact doet een stuk gemakkelijker.
 
-### invoer- vs uitvoerelementen
+### aantal invoerelementen = aantal uitvoerelementen
 
-Het aantal invoerelementen is gelijk aan het aantal uitvoerelementen  
-Je kan in de `map` methode geen 4 waarden invoeren, en er slechts 3 terugkrijgen. Als de bron-array X aantal elementen heeft, zal de resulterende array ook X aantal elementen bevatten. Elk uitvoerelement komt overeen met het invoerelement in dezelfde positie. Ze worden nooit rond geschud.
+Het aantal invoerelementen met gelijk zijn aan het aantal uitvoerelementen. Je kan in de `map` methode dus geen 4 waarden invoeren en er slechts 3 terugkrijgen. Als de bron array x aantal elementen heeft, zal de resulterende array ook x aantal elementen bevatten. Elk uitvoerelement komt dus overeen met het invoerelement in dezelfde positie. Ze worden nooit rond geschud.
 
 ### invoerwaarden niet muteren
 
-De callback functies mogen geen ingevoerde waarden muteren  
-Dit betekent dat je moet geen objecten of arrays rechtstreeks vanuit je callback functies mag wijzigen. Je kan best de invoerwaarde van een object of een array klonen het in plaats daarvan, en de kopie ervan wijzigen.  
+De callback functies mogen geen ingevoerde waarden muteren. Dit betekent dat je moet geen objecten of arrays rechtstreeks vanuit je callback functies mag wijzigen. Je kan best de invoerwaarde van een object of een array klonen het in plaats daarvan, en de kopie ervan wijzigen.  
   
 Op deze manier is er een garantie dat je callback geen neveneffecten veroorzaakt. Dat wil zeggen dat, wat er ook gebeurt in je callback, het alleeninvloed heeft op de kopie. Dit zorgt voor betrouwbare code.  
   
