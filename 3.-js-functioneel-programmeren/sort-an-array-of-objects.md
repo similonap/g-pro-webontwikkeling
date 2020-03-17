@@ -1,9 +1,10 @@
 # sort an array of objects
 
-## Inleiding functioneel programmeren
+{% embed url="https://youtu.be/jA55W\_d6uFY?t=289" %}
 
-In dit hoofdstuk leren we binnen JavaScript functioneel programmeren. Hiervoor maken we gebruik van hogere-ordefuncties `map`, `filter`, `reduce` binnen het `array` object.  
-Deze methoden zijn native beschikbaar in elke recente browser en in Node.js. Het gebruik van deze functies is eigenlijk zeer eenvoudig, waardoor elke beginnende ontwikkelaar in eenvoudige scripts nuttige dingen kan realiseren.
+## inleiding functioneel programmeren
+
+Binnen JavaScript kan functioneel geprogrammeerd worden door o.a. gebruik te maken van hogere-ordefuncties `map`, `filter`, `reduce` binnen het `array` object. Deze methoden zijn native beschikbaar in elke recente browser en in Node.js. Het gebruik van deze functies is eigenlijk zeer eenvoudig, waardoor elke beginnende ontwikkelaar in eenvoudige scripts nuttige dingen kan realiseren.
 
 meer info: [artikel](https://gofore.com/en/why-you-should-replace-foreach/) over het nut van het gebruik van `map` en `filter` functies
 
