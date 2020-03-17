@@ -26,6 +26,10 @@
 * [3. request & responses](express/request-and-responses.md)
 * [4. API's](express/apis.md)
 
+## 3. functioneel programmeren
+
+* [JS - sort an array of objects](3.-functioneel-programmeren/js-sort-an-array-of-objects.md)
+
 ## NoSql-databanken MongoDB
 
 * [Untitled](nosql-databanken-mongodb/untitled.md)
