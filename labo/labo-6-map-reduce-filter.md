@@ -8,7 +8,7 @@ Open Visual Studio Code en open een nieuwe folder voor het project. Test dat je 
 pwd
 ```
 
-te typen in de Terminal. Maak een nieuwe npm package met bijbehorende package.json door 
+te typen in de Terminal. Maak een nieuwe npm-package met bijbehorende package.json door 
 
 ```text
 npm init
