@@ -77,13 +77,11 @@ Het aantal invoerelementen met gelijk zijn aan het aantal uitvoerelementen. Je k
 
 ### invoerwaarden niet muteren
 
-De callback-functies mogen geen ingevoerde waarden muteren. Dit betekent dat je geen objecten of arrays rechtstreeks vanuit je callback-functies mag wijzigen. Je kan best de invoerwaarde van een object of een array klonen het in plaats daarvan, en de kopie ervan wijzigen.  
+De callback-functies mogen geen ingevoerde waarden muteren. Dit betekent dat je geen objecten of arrays rechtstreeks vanuit je callback-functies mag wijzigen. Je kan best de invoerwaarde van een object of een array klonen en de kopie ervan wijzigen.  
+Op deze manier is er een garantie dat je callback geen neveneffecten veroorzaakt. Dus wat er ook gebeurt in je callback, het zal alleen invloed hebben op de kopie, wat zorgt voor betrouwbare code.  
   
-Op deze manier is er een garantie dat je callback geen neveneffecten veroorzaakt. Dat wil zeggen dat, wat er ook gebeurt in je callback, het alleeninvloed heeft op de kopie. Dit zorgt voor betrouwbare code.  
-  
-Je kan een array in Javascript met de `array.slice (0)` methode klonen. Dat is echter ondiep klonen, namelijk als de waarden in de array zelf arrays of objecten zijn, hebben die nog steeds dezelfde waarden als in de originele array.  
-  
-Diepe-klonen maken van een object is ingewikkelder. In een CommonJS omgeving \(Node.js, Webpack, Browserify, ...\), kan je gebruik maken van de `Xtend` module. In het slechtste geval maak je zelf een functie:
+Je kan een array in JavaScript met de `array.slice (0)` methode klonen. Dat is echter **ondiep klonen**, namelijk als de waarden in de array zelf arrays of objecten zijn, hebben die nog steeds dezelfde waarden als in de originele array.  
+**Diep klonen** maken van een object is ingewikkelder. In een CommonJS omgeving \(Node.js, Webpack, Browserify, ...\), kan je gebruik maken van de `Xtend` module. In het slechtste geval maak je zelf een functie:
 
 ```javascript
 functie clone (o) {
@@ -96,22 +94,19 @@ functie clone (o) {
 let cloned = clone(originalObject);
 ```
 
-Er is een uitzondering op deze regel, maar we dat later krijgt - gewoon aannemen dat deze regel altijd van toepassing, tenzij anders aangegeven.
+### geen neveneffecten veroorzaken
 
-### geen neveneffecten
-
-Geen neveneffecten veroorzaken  
 Doe nooit iets in een `map` methode dat de 'state' ergens anders wijzigt.
 
-### delay door transformatie waarden?
+### delay door transformatie waarden
 
-Maar vertragen die callbacks en al dat klonen niet het programma? Daarover hoef je je geen zorgen te maken. Deze operaties lopen als een trein in Javascript, vooral in de V8-gebaseerde engines zoals Node.js. Code schrijf je in de eerste plaats voor de leesbaarheid. Prestatie komt op de tweede plaats. Het is veel gemakkelijker om leesbare code te optimaliseren, dan geoptimaliseerde code leesbaar te maken.
+**Vertragen de callbacks en het klonen het programma niet?**   
+Deze operaties lopen als een trein in Javascript en vooral dan in de V8-gebaseerde engines zoals Node.js. Code schrijf je in de eerste plaats voor de leesbaarheid en prestaties komen op de tweede plaats. Het is immers veel gemakkelijker om leesbare code te optimaliseren, dan geoptimaliseerde code leesbaar te maken.
 
-Maar wat als ik wil alleen een deel van de waarden te transformeren?
-
-Misschien is uw bron array heeft een aantal waarden die u wilt transformeren, en een aantal waarden die u wil gewoon helemaal weg te gooien. Dat is niet mogelijk met kaart alleen, het aantal invoerwaarden en het aantal uitvoerwaarden voor een kaart gesprek altijd gelijk.
-
-En met `map` kan je meer dan eenvoudige transformaties uitvoeren. Je methode kan gebruik maken van twee extra parameters, de lopende `index` en de `array` zelf. In het volgende voorbeeld:
+**Wat als ik enkel een deel van de waarden wil transformeren?**  
+Misschien heeft `array` een aantal waarden die getransformeerd moeten worden en een aantal waarden die gewoon dienen weggegooid te worden. Dit is niet mogelijk met `map` alleen, het aantal invoerwaarden en aantal uitvoerwaarden voor `map` moet altijd gelijk blijven.  
+Met `map` kan je meer dan eenvoudige transformaties uitvoeren. Deze methode kan gebruik maken van twee extra parameters, de lopende `index` en de `array` zelf.   
+In het onderstaande voorbeeld wordt het volgende element gebruikt om de transformatie uit te voeren.
 
 ```javascript
 let starter = [1, 2, 3];
@@ -127,8 +122,6 @@ function multiplyByNextElement (value, i, a) {
 let newA = starter.map(multiplyByNextElement);
 console.log(newA); // Outputs: [2, 6, 3]
 ```
-
-wordt het volgende element gebruikt om de transformatie uit te voeren.
 
 
 
