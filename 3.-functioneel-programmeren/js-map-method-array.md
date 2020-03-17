@@ -20,7 +20,7 @@ array.map(function(currentValue,index,arr), thisValue)
 
 ## toepassing
 
-Onderstaande code is een klassiek, procedurele, maar omslachtige manier om een vrij eenvoudige taak uit te voeren, namelijk het verdubbelen van alle getallen in een array.
+Onderstaande code is een klassieke en procedurele, maar omslachtige manier om een vrij eenvoudige taak uit te voeren, namelijk het verdubbelen van alle getallen in een array.
 
 ```javascript
 let numberList = [6, 7, 8, 9];
@@ -42,5 +42,26 @@ let newNumberList = numberList.map(function(number){
 console.log("The doubled numbers are", newNumberList); // [6, 4, 12, 10]
 ```
 
+Dit kan ook makkelijk geketend worden.
 
+```javascript
+let numberList = [1, 2, 3, 4];
+let newNumberList = numberList.map(function(number){
+    return number * 2;
+}).map(function(number){
+    return number + 1;
+});
+console.log("The list of doubled and incremented numbers: ", newNumberList); // [3, 5, 7, 9]
+```
+
+De intentie kan ook in een benoemde functie gedefinieerd worden die verschillende keren na elkaar wordt opgeroepen. Om bijvoorbeeld een getal te verviervoudigen kan de methode `double` twee keer aan elkaar geketend worden.
+
+```javascript
+let numberList = [1, 2, 3, 4];
+let double = function(a) {
+ return a * 2;
+}
+let newNumberList = numberList.map(double).map(double);
+console.log("The list of doubled and incremented numbers: ", newNumberList); // [4,8,12,16]
+```
 
