@@ -1,4 +1,4 @@
-# JS - sort an array of objects
+# sort an array of objects
 
 ## Inleiding functioneel programmeren
 
@@ -10,6 +10,8 @@ meer info: [artikel](https://gofore.com/en/why-you-should-replace-foreach/) over
 ## sort and array of objects \(array\)
 
 Om een array van objecten te sorteren in een bepaalde volgorde kan de verleiding groot zijn om op een JavaScript-bibliotheek beroep te doen. Vooraleer je dat echter doet, is het nuttig om te leren hoe je een array van objecten kan ordenen met de inheemse `Array.sort` functie. In [dit artikel](https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/) leer je hoe je een array van objecten zonder al te veel moeite in JavaScript ordent.
+
+## toepassing
 
 Sorteer de elementen. Dit past de array zelf aan \(niet via return-waarde\).
 

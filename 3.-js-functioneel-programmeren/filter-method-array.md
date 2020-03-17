@@ -1,4 +1,4 @@
-# JS - filter method \(array\)
+# filter method \(array\)
 
 De filter-methode retourneert een array gevuld met array-elementen die aan een test voldoen. De test wordt in de vorm van een functie als parameter meegegeven. De filter-methode wordt niet uitgevoerd op de array-elementen zonder waarden. De filter-methode zal de oorspronkelijke array niet muteren.
 

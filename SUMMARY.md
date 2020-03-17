@@ -26,12 +26,12 @@
 * [3. request & responses](express/request-and-responses.md)
 * [4. API's](express/apis.md)
 
-## 3. functioneel programmeren
+## 3. JS - functioneel programmeren
 
-* [JS - sort an array of objects](3.-functioneel-programmeren/js-sort-an-array-of-objects.md)
-* [JS - map method \(array\)](3.-functioneel-programmeren/js-map-method-array.md)
-* [JS - filter method \(array\)](3.-functioneel-programmeren/js-filter-method-array.md)
-* [JS - reduce method \(array\)](3.-functioneel-programmeren/js-reduce-method-array.md)
+* [sort an array of objects](3.-js-functioneel-programmeren/sort-an-array-of-objects.md)
+* [map method \(array\)](3.-js-functioneel-programmeren/map-method-array.md)
+* [filter method \(array\)](3.-js-functioneel-programmeren/filter-method-array.md)
+* [reduce method \(array\)](3.-js-functioneel-programmeren/reduce-method-array.md)
 
 ## NoSql-databanken MongoDB
 
