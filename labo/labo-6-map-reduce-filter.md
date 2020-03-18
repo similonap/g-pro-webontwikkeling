@@ -44,12 +44,12 @@ Maan een bestand `pokemon.js` aan met de volgende inhoud:
 
 ```javascript
 let starterPokemonGen1 = [
-    {name: 'Bulbasaur', xp: 30, type: 'grass'}
+    {name: 'Bulbasaur', xp: 30, type: 'grass'},
     {name: 'Charmander', xp: 50, type: 'fire'},
     {name: 'Squirtle', xp: 45, type: 'water}
 ];
 let starterPokemonGen2 = [
-    {name: 'Chikorita', xp: 30, type: 'grass'}
+    {name: 'Chikorita', xp: 30, type: 'grass'},
     {name: 'Cyndaquil', xp: 50, type: 'fire'},
     {name: 'Totodile', xp: 45, type: 'water'}
 ];
