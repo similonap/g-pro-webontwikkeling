@@ -48,7 +48,7 @@ let starterPokemonGen1 = [
     {name: 'Charmander', xp: 50, type: 'fire'},
     {name: 'Squirtle', xp: 45, type: 'water}
 ];
-let starterPokemonGen1 = [
+let starterPokemonGen2 = [
     {name: 'Chikorita', xp: 30, type: 'grass'}
     {name: 'Cyndaquil', xp: 50, type: 'fire'},
     {name: 'Totodile', xp: 45, type: 'water'}
