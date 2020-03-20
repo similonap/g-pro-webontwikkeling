@@ -93,8 +93,8 @@ const clone = (o) => {
     return newO;
  }
 
- let originalObject = {'name':'joske'}
- let cloned = clone(originalObject);
+let originalObject = {'name':'joske'}
+let cloned = clone(originalObject);
 ```
 
 ### geen neveneffecten veroorzaken
