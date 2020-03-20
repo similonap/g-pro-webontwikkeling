@@ -85,14 +85,16 @@ Je kan een array in JavaScript met de `array.slice (0)` methode klonen. Dat is e
 **Diep klonen** maken van een object is ingewikkelder. In een CommonJS omgeving \(Node.js, Webpack, Browserify, ...\), kan je gebruik maken van de `Xtend` module. In het slechtste geval maak je zelf een functie:
 
 ```javascript
-functie clone (o) {
-   let newO = {};
-   for (let keyin o) {
-      newO [key] = o[key];
-   }
-   return newO;
-}
-let cloned = clone(originalObject);
+const clone = (o) => {
+    let newO = {};
+    for (let key in o) {
+       newO [key] = o[key];
+    }
+    return newO;
+ }
+
+ let originalObject = {'name':'joske'}
+ let cloned = clone(originalObject);
 ```
 
 ### geen neveneffecten veroorzaken
