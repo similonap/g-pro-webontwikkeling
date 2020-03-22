@@ -16,7 +16,39 @@ npm init
 
 te doen. De default waarden zullen hier voldoende zijn.
 
-### **2.** Recursie: Spaces
+### **2. Scope + Recursie: Som**
+
+maak een bestand `sum.js` met de volgende inhoud:
+
+```javascript
+let sum = (n) => {
+    sum = 0;
+    for (i=0;i<=n;i++) {
+        sum += i;
+    }
+    return sum;
+}
+```
+
+**Opdracht:** Geef de output van de volgende statements zonder deze echt uit te voeren
+
+```text
+console.log(sum(2));
+```
+
+```text
+console.log(i);
+```
+
+```text
+console.log(sum(2));
+```
+
+**Let op:** De laatste wordt een 2de keer uitgevoerd. Dit is **geen vergissing**!
+
+**Opdracht:** Herschrijf nu deze functie door gebruik te maken van recursie.
+
+### **3.** Recursie: Spaces
 
 Maak een bestand `spaces.js` met de volgende inhoud: 
 
@@ -43,7 +75,7 @@ console.log(spaces(10) + 'Hey');
 
 **Opdracht:** Herschrijf deze functie zodat ze recursie gebruikt.
 
-### 3. Recursie: faculteit
+### 4. Recursie: faculteit
 
 Maak een bestand `faculteit.js` met de volgende inhoud: 
 
@@ -73,7 +105,7 @@ console.log(factorial(5));
 
 **Opdracht:** Herschrijf deze functie zodat ze recursie gebruikt.
 
-### 4. Recursie: som van een array
+### 5. Recursie: som van een array
 
 Maak een bestand `arraysum.js` met de volgende inhoud: 
 
