@@ -48,7 +48,36 @@ console.log(sum(2));
 
 **Opdracht:** Herschrijf nu deze functie door gebruik te maken van recursie.
 
-### **3.** Recursie: Spaces
+### **3. Recursie: Fibonacci**
+
+maak een bestand `fibonacci.js` met de volgende inhoud:
+
+```javascript
+const fibonacci = (n) => {
+    if (n == 1 || n == 2) {
+        return 1;
+    }
+    return fibonacci(n-1)+fibonacci(n-2);
+}
+```
+
+**Opdracht:** Geef de output van de volgende statements zonder deze echt uit te voeren
+
+```text
+console.log(fibonacci(1));
+```
+
+```text
+console.log(fibonacci(2));
+```
+
+```text
+console.log(fibonacci(6));
+```
+
+**Opdracht:** Gebruik deze functie om de 20 eerste getallen van fibonacci te tonen op je scherm. 
+
+### **4.** Recursie: Spaces
 
 Maak een bestand `spaces.js` met de volgende inhoud: 
 
@@ -75,7 +104,7 @@ console.log(spaces(10) + 'Hey');
 
 **Opdracht:** Herschrijf deze functie zodat ze recursie gebruikt.
 
-### 4. Recursie: faculteit
+### 5. Recursie: faculteit
 
 Maak een bestand `faculteit.js` met de volgende inhoud: 
 
@@ -105,7 +134,7 @@ console.log(factorial(5));
 
 **Opdracht:** Herschrijf deze functie zodat ze recursie gebruikt.
 
-### 5. Recursie: som van een array
+### 6. Recursie: som van een array
 
 Maak een bestand `arraysum.js` met de volgende inhoud: 
 
@@ -132,7 +161,11 @@ console.log(sum(array));
 **Opdracht:** 
 
 * Herschrijf deze functie zodat ze recursie gebruikt.
-* **Extra:** herschrijf deze functie gebruikmakende van de reduce functie uit vorig labo
+* **Extra:** herschrijf deze functie gebruikmakende van de reduce functie uit vorig labo.
+
+
+
+
 
 
 
