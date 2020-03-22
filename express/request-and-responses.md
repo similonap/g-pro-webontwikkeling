@@ -6,7 +6,7 @@ Een **U**niform **R**esource **L**ocator \(afgekort URL\) is een gestructureerde
 
 ![](../.gitbook/assets/image.png)
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 * **protocol**: Een protocol is een gedragsovereenkomst, meestal in de vorm van een aantal uit te voeren stappen. Het protocol wordt genoteerd in de vorm van een korte protocolaanduiding \(vaak een afkorting\) gevolgd door een dubbele punt.
 * **authenticatie**: Door gebruik te maken van authenticatiegegevens, zoals gebruikersnaam en wachtwoord, krijg je toegang tot bijvoorbeeld een systeem of een service.

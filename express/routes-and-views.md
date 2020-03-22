@@ -48,7 +48,7 @@ app.get('/contact', (req, res) => {
 
 ### model-view-controller \(MVC\)
 
-![bron: firebirdsql.org](../.gitbook/assets/image%20%283%29.png)
+![bron: firebirdsql.org](../.gitbook/assets/image%20%284%29.png)
 
 Het concept dat aan het Model-View-Controller-patroon ten grondslag ligt -voor het maken van websites en webapplicaties-, splitst een applicatie op in drie delen:
 

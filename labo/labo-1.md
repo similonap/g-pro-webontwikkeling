@@ -6,7 +6,7 @@
 
 Volg deze instructies \(de lijn die je moet copy pasten staat onder de afbeelding\)
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 ```text
 "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
