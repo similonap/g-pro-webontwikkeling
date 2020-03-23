@@ -5,7 +5,7 @@
 **Recursie** \(recursion\) is wanneer een functie zichzelf oproept. 
 
 ```javascript
-const factorial(x) => {
+const factorial = (x) => {
   if (x < 0) return;
   if (x === 0) return 1;
   return x * factorial(x - 1);
@@ -36,7 +36,7 @@ if(something bad happened){ STOP };
 Zie de termination condition als een **noodrem**. Het wordt daar geplaatst in het geval van slechte invoer, om zo te voorkomen dat de recursie ooit wordt uitgevoerd. 
 
 ```javascript
-const factorial(x) => {
+const factorial = (x) => {
   if (x < 0) return; // is termination condition of beëindigingsvoorwaarde
   if (x === 0) return 1;
   return x * factorial(x - 1);
@@ -58,7 +58,7 @@ if(this happens) { Yay! We're done };
 Daar waar de terminal condition een verzamelpunt of _catch-all_ is voor slechte data, is het basisscenario het doel van de recursieve functie. Base cases bevinden zich meestal binnen een `if-statement`. 
 
 ```javascript
-const factorial(x) => {
+const factorial = (x) => {
   if (x < 0) return; // is termination condition of beëindigingsvoorwaarde
   if (x === 0) return 1; // is base case of basisscenario
   return x * factorial(x - 1);
@@ -75,7 +75,7 @@ In het faculteitvoorbeeld is  `if (x === 0) return 1;` het basisscenario. Van zo
 De recursie is de functie die zichzelf oproept. 
 
 ```javascript
-const factorial(x) => {
+const factorial = (x) => {
   if (x < 0) return; // is termination condition of beëindigingsvoorwaarde
   if (x === 0) return 1; // is base case of basisscenario
   return x * factorial(x - 1); // is de recursion of recursieve functie
@@ -84,12 +84,12 @@ factorial(3);
 // 6
 ```
 
-In het faculteitvoorbeeld is  `return x * facultorial (x - 1);` de plaats waar de recursie daadwerkelijk plaatsvindt. De waarde van het getal x wordt geretourneerd en vermenigvuldigd met de waarde van de faculteit \(x-1\) op dat moment.
+In het faculteitvoorbeeld is  `return x * factorial (x - 1);` de plaats waar de recursie daadwerkelijk plaatsvindt. De waarde van het getal x wordt geretourneerd en vermenigvuldigd met de waarde van de faculteit \(x-1\) op dat moment.
 
 dus de drie hoofdkenmerken samengevat:
 
 ```javascript
-function factorial(x) {
+const factorial = (x) => {
   // TERMINATION
   if (x < 0) return;  
   
@@ -178,7 +178,7 @@ factorial(3) returns 3 * factorial(2)  => 3 * 2 * 1 * 1
 Onderstaande code komt uit een populair voorbeeld van het internet om 'reversing' uit te leggen. Weet wel dat er een meer efficiënte manier bestaat, maar deze code is dus geschreven met als doel het nog beter begrijpen van de recursieve functie.
 
 ```javascript
-function revStr(str){
+const revStr = (str) => {
   if (str === '') return '';
   return revStr(str.substr(1)) + str[0];
 }
