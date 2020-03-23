@@ -191,59 +191,12 @@ revStr('cat');
 
 ### in detail
 
-In dit voorbeeld wordt de string 'cat' ontvangen. van `factorial(3-1)`.
+In dit voorbeeld wordt de string 'cat' omgedraaid. De functie wordt hiervoor aangeroepen en de string 'cat' wordt doorgegeven.
 
 ```javascript
-return 3 * factorial(2);
+revStr('cat');
 ```
 
-Wanneer`factorial(2)` wordt uitgevoerd, zijn beide if-statements wederom niet van toepassing en biedt de recursie zich aan. Het gehele getal 2 wordt geretourneerd en vermenigvuldigd met de waarde van `factorial (2-1)`. 
-
-```javascript
-return 2 * factorial(1#);
-```
-
-Wanneer`factorial(1)`wordt uitgevoerd, zijn beide if-statements wederom niet van toepassing en biedt de recursie zich aan. Het gehele getal 1 wordt geretourneerd en vermenigvuldigd met de waarde van `factorial (1-1)`. 
-
-```javascript
-return 1 * factorial(0);
-```
-
-Wanneer`factorial(0)`wordt uitgevoerd, gebeurt er iets anders. Nul is de base case of basisscenario, zodat wanneer de if-statement slaagt de functie 1 retourneert.
-
-```javascript
-if (x === 0) return 1;
-```
-
-De functie is eindelijk afgerond. De recursie is een groep geneste functies die worden aanroepen. Bij geneste functies komt de meest interne geneste functie als eerste terug.
-
-`factorial(0)` returns **1**  
-`factorial(1)` returns `1 * factorial(0)`, of **1 \* 1**  
-`factorial(2)` returns `2 * factorial(1)`, of **2 \* 1 \* 1**  
-`factorial(3)` returns 3 `* factorial(2)`, of **3 \* 2 \* 1 \* 1**
-
-```javascript
-return 1 * 1 * 2 * 3
-// 6
-```
-
-### anders gestructureerd
-
-```javascript
-factorial(3) returns 3 * factorial(2)
-factorial(2) returns 2 * factorial(1)
-factorial(1) returns 1 * factorial(0)
-factorial(0) returns 1
-
-// Binnen base case of het basisscenario zal 
-//de functie retourneren van binnen naar buiten:
-factorial(0) returns 1                 => 1
-factorial(1) returns 1 * factorial(0)  => 1 * 1
-factorial(2) returns 2 * factorial(1)  => 2 * 1 * 1
-factorial(3) returns 3 * factorial(2)  => 3 * 2 * 1 * 1
-
-// 3 * 2 * 1 * 1 = 6
-```
-
-
+De recursieve functie wordt uitgevoerd. In JavaScript retourneert de methode`substr ()`een string die begint op een specifieke locatie, hier dus `'cat'.substr (1) === 'at'`  
+`str [0]` geeft het karakter bij die index in de string, dus hier `cat [0] === 'c'`
 
