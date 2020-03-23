@@ -1,6 +1,6 @@
 # scope in JS
 
-## definitie
+## .definitie
 
 De **scope** is de toegankelijkheid of bereik van variabelen, functies of objecten in een bepaald deel van de code tijdens runtime.   
 Variabelen in JS zijn gedefinieerd in een functie **scope**. Concreet betekent dit dat als een variabele gedefinieerd is binnen een functie, deze enkel zichtbaar is binnen de functie en dus onzichtbaar buiten de functie. De **scope** van een variabele is dus het stuk code waarin de variabele bestaat en dus gebruikt kan worden. Scopes zijn ontstaan ​​toen het principe van het minste privilege werd toegepast bij het ontwerpen van programmeertalen.
