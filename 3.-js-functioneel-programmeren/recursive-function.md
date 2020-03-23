@@ -139,3 +139,15 @@ Wanneer`factorial(0)`wordt uitgevoerd, gebeurt er iets anders. Nul is de base ca
 if (x === 0) return 1;
 ```
 
+De functie is eindelijk afgerond. De recursie is een groep geneste functies die worden aanroepen. Bij geneste functies komt de meest interne geneste functie als eerste terug.
+
+`factorial(0)` returns **1**  
+`factorial(1)` returns `1 * factorial(0)`, of **1 \* 1**  
+`factorial(2)` returns `2 * factorial(1)`, of **2 \* 1 \* 1**  
+`factorial(3)` returns 3 `* factorial(2)`, of **3 \* 2 \* 1 \* 1**
+
+```javascript
+return 1 * 1 * 2 * 3
+// 6
+```
+
