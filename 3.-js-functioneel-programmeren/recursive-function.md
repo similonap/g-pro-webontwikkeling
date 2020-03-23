@@ -173,8 +173,9 @@ factorial(3) returns 3 * factorial(2)  => 3 * 2 * 1 * 1
 
 ## toepassing 2
 
-**Wat gebeurt er als een string moet omgedraaid worden?**  
-Onderstaande code komt uit een populair voorbeeld van het internet om 'reversing' uit te leggen. Weet wel dat er een meer efficiënte bestaat, maar deze code is dus geschreven met als doel het nog beter begrijpen van de recursieve functie.
+**Wat gebeurt er als een string moet omgedraaid worden?**
+
+Onderstaande code komt uit een populair voorbeeld van het internet om 'reversing' uit te leggen. Weet wel dat er een meer efficiënte manier bestaat, maar deze code is dus geschreven met als doel het nog beter begrijpen van de recursieve functie.
 
 ```javascript
 function revStr(str){
@@ -199,4 +200,38 @@ revStr('cat');
 
 De recursieve functie wordt uitgevoerd. In JavaScript retourneert de methode`substr ()`een string die begint op een specifieke locatie, hier dus `'cat'.substr (1) === 'at'`  
 `str [0]` geeft het karakter bij die index in de string, dus hier `cat [0] === 'c'`
+
+```javascript
+return revStr(str.substr(1)) + str[0];
+
+// SAME AS
+return revStr('at') + 'c'
+```
+
+De recursieve functie wordt terug uitgevoerd.
+
+```javascript
+return revStr(str.substr(1)) + str[0];
+
+// SAME AS
+return revStr('t') + 'a'
+```
+
+En de recursieve functie wordt voor een laatste keer uitgevoerd.
+
+```javascript
+return revStr(str.substr(1)) + str[0];
+
+// SAME AS
+return revStr('') + 't'
+```
+
+Nu wordt de base case aangeroepen en die retourneert een lege string.
+
+```javascript
+if (str === '') return '';
+```
+
+  
+
 
