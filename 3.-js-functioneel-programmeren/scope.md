@@ -99,11 +99,20 @@ Het meest belangrijke om te onthouden is dat de lexicale scope **niet achterwaar
 
 ### block scope
 
+Block statements zoals _if_ en _switch_ conditions, of _for_ en _while_ loops en {} creëren -in tegenstelling tot functions- geen nieuwe scope. Variabelen die binnen een block scope gedefinieerd zijn, blijven binnen de scope waarin ze al zaten.
+
+```javascript
+// global
+let name = "Mouse";
+{
+  // local
+  let name = "Cat";
+  console.log(name); // Cat
+}
+console.log(name); // Mouse
+```
 
 
-
-
-### public & private scopes
 
 
 
