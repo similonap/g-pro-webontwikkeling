@@ -232,6 +232,32 @@ Nu wordt de base case aangeroepen en die retourneert een lege string.
 if (str === '') return '';
 ```
 
+De functie is eindelijk afgerond en alles zal teruggegeven worden in omgekeerde volgorde.
+
+```javascript
+return ‘’ + ‘t’ + ‘a’ + ‘c’
+// tac
+```
+
+### anders gestructureerd
+
+```javascript
+revStr('cat')  returns revStr('at') + 'c'
+revStr('at')   returns revStr('t') +  'a'
+revStr('t')    returns revStr('') +   't'
+revStr('')     returns               ''
+```
+
+Dit zijn allemaal geneste functies die worden aangeroepen. Wanneer geneste functies worden aangeroepen, keert de meest interne geneste functie als eerste terug. Dit initialiseert het omkeren zodat ze terug in de juiste volgorde komen te staan.
+
+```javascript
+revStr('')     returns                ''  => ''
+revStr('t')    returns revStr('') +   't' => '' + 't'
+revStr('at')   returns revStr('t') +  'a' => '' + 't' + 'a'
+revStr('cat')  returns revStr('at') + 'c' => '' + 't' + 'a' + 'c'
+// tac
+```
+
   
 
 
