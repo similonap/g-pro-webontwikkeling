@@ -36,6 +36,10 @@
 * [closures](3.-js-functioneel-programmeren/closures.md)
 * [recursive](3.-js-functioneel-programmeren/recursive.md)
 
+## asynchroon programmeren
+
+* [Untitled](asynchroon-programmeren/untitled.md)
+
 ## NoSql-databanken MongoDB
 
 * [Untitled](nosql-databanken-mongodb/untitled.md)
