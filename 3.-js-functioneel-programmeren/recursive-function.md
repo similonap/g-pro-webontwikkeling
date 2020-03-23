@@ -171,3 +171,79 @@ factorial(3) returns 3 * factorial(2)  => 3 * 2 * 1 * 1
 
 
 
+## toepassing 2
+
+**Wat gebeurt er als een string moet omgedraaid worden?**  
+Onderstaande code komt uit een populair voorbeeld van het internet om 'reversing' uit te leggen. Weet wel dat er een meer efficiënte bestaat, maar deze code is dus geschreven met als doel het nog beter begrijpen van de recursieve functie.
+
+```javascript
+function revStr(str){
+  if (str === '') return '';
+  return revStr(str.substr(1)) + str[0];
+}
+revStr('cat');
+// tac
+```
+
+1. `str === ""` is ons basisscenario. Wanneer de string geen karakters meer bevat, is de functie geslaagd. 
+2. `return revStr(str.substr(1)) + str[0];` is waar de recursie plaatsvindt. 
+3. Hier is er geen termination condition of **beëindigingsvoorwaarde.** In deze toepassing komt de base case overeen met de termination case. Er kan geen tekenreeks verkrijgen worden die negatieve tekens heeft. dus zolang er alleen strings in de functie worden ingevoerd, zit alles goed.
+
+### in detail
+
+In dit voorbeeld wordt de string 'cat' ontvangen. van `factorial(3-1)`.
+
+```javascript
+return 3 * factorial(2);
+```
+
+Wanneer`factorial(2)` wordt uitgevoerd, zijn beide if-statements wederom niet van toepassing en biedt de recursie zich aan. Het gehele getal 2 wordt geretourneerd en vermenigvuldigd met de waarde van `factorial (2-1)`. 
+
+```javascript
+return 2 * factorial(1#);
+```
+
+Wanneer`factorial(1)`wordt uitgevoerd, zijn beide if-statements wederom niet van toepassing en biedt de recursie zich aan. Het gehele getal 1 wordt geretourneerd en vermenigvuldigd met de waarde van `factorial (1-1)`. 
+
+```javascript
+return 1 * factorial(0);
+```
+
+Wanneer`factorial(0)`wordt uitgevoerd, gebeurt er iets anders. Nul is de base case of basisscenario, zodat wanneer de if-statement slaagt de functie 1 retourneert.
+
+```javascript
+if (x === 0) return 1;
+```
+
+De functie is eindelijk afgerond. De recursie is een groep geneste functies die worden aanroepen. Bij geneste functies komt de meest interne geneste functie als eerste terug.
+
+`factorial(0)` returns **1**  
+`factorial(1)` returns `1 * factorial(0)`, of **1 \* 1**  
+`factorial(2)` returns `2 * factorial(1)`, of **2 \* 1 \* 1**  
+`factorial(3)` returns 3 `* factorial(2)`, of **3 \* 2 \* 1 \* 1**
+
+```javascript
+return 1 * 1 * 2 * 3
+// 6
+```
+
+### anders gestructureerd
+
+```javascript
+factorial(3) returns 3 * factorial(2)
+factorial(2) returns 2 * factorial(1)
+factorial(1) returns 1 * factorial(0)
+factorial(0) returns 1
+
+// Binnen base case of het basisscenario zal 
+//de functie retourneren van binnen naar buiten:
+factorial(0) returns 1                 => 1
+factorial(1) returns 1 * factorial(0)  => 1 * 1
+factorial(2) returns 2 * factorial(1)  => 2 * 1 * 1
+factorial(3) returns 3 * factorial(2)  => 3 * 2 * 1 * 1
+
+// 3 * 2 * 1 * 1 = 6
+```
+
+
+
