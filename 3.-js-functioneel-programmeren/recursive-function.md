@@ -104,5 +104,38 @@ factorial(3);
 // 6
 ```
 
+## toepassing 1 - in detail
 
+### functiestroom factorial
+
+**Wat gebeurt er als de functie factorial wordt aangeroepen?**  
+Door het aanroepen wordt de waarde 3 doorgegeven:
+
+```javascript
+factorial(3);
+```
+
+Dit resulteert dat de functie wordt uitgevoerd, waarin beide if-statements niet van toepassing zijn en de recursie dus aan de orde is. hierbij wordt het gehele getal 3 doorgegeven en vermenigvuldigd met de waarde van `factorial(3-1)`.
+
+```javascript
+return 3 * factorial(2);
+```
+
+Wanneer`factorial(2)` wordt uitgevoerd, zijn beide if-statements wederom niet van toepassing en biedt de recursie zich aan. Het gehele getal 2 wordt geretourneerd en vermenigvuldigd met de waarde van `factorial (2-1)`. 
+
+```javascript
+return 2 * factorial(1#);
+```
+
+Wanneer`factorial(1)`wordt uitgevoerd, zijn beide if-statements wederom niet van toepassing en biedt de recursie zich aan. Het gehele getal 1 wordt geretourneerd en vermenigvuldigd met de waarde van `factorial (1-1)`. 
+
+```javascript
+return 1 * factorial(0);
+```
+
+Wanneer`factorial(0)`wordt uitgevoerd, gebeurt er iets anders. Nul is de base case of basisscenario, zodat wanneer de if-statement slaagt de functie 1 retourneert.
+
+```javascript
+if (x === 0) return 1;
+```
 
