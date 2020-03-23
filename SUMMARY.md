@@ -32,13 +32,14 @@
 * [map method \(array\)](3.-js-functioneel-programmeren/map-method-array.md)
 * [filter method \(array\)](3.-js-functioneel-programmeren/filter-method-array.md)
 * [reduce method \(array\)](3.-js-functioneel-programmeren/reduce-method-array.md)
-* [scope](3.-js-functioneel-programmeren/scope.md)
-* [closures](3.-js-functioneel-programmeren/closures.md)
-* [recursive](3.-js-functioneel-programmeren/recursive.md)
+* [recursive function](3.-js-functioneel-programmeren/recursive-function.md)
+* [scope in JS](3.-js-functioneel-programmeren/scope.md)
+* [closures in JS](3.-js-functioneel-programmeren/closures-in-js.md)
 
 ## asynchroon programmeren
 
-* [Untitled](asynchroon-programmeren/untitled.md)
+* [theorie async](asynchroon-programmeren/untitled/README.md)
+  * [fetch voor API-calls](asynchroon-programmeren/untitled/fetch-voor-api-calls.md)
 
 ## NoSql-databanken MongoDB
 

@@ -1,4 +1,4 @@
-# scope
+# scope in JS
 
 Variabelen in JS zijn gedefinieerd in een functie **scope**. Concreet betekent dit dat als een variabele gedefinieerd is binnen een functie, deze enkel zichtbaar is binnen de functie en dus onzichtbaar buiten de functie. De **scope** van een variabele is dus het stuk code waarin de variabele bestaat en dus gebruikt kan worden.
 
