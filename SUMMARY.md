@@ -32,6 +32,9 @@
 * [map method \(array\)](3.-js-functioneel-programmeren/map-method-array.md)
 * [filter method \(array\)](3.-js-functioneel-programmeren/filter-method-array.md)
 * [reduce method \(array\)](3.-js-functioneel-programmeren/reduce-method-array.md)
+* [scope](3.-js-functioneel-programmeren/scope.md)
+* [closures](3.-js-functioneel-programmeren/closures.md)
+* [recursive](3.-js-functioneel-programmeren/recursive.md)
 
 ## NoSql-databanken MongoDB
 
