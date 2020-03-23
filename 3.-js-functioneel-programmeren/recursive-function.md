@@ -106,7 +106,7 @@ factorial(3);
 
 ## toepassing 1 - in detail
 
-### functiestroom factorial
+### functiestroom faculteit
 
 **Wat gebeurt er als de functie factorial wordt aangeroepen?**  
 Door het aanroepen wordt de waarde 3 doorgegeven:
