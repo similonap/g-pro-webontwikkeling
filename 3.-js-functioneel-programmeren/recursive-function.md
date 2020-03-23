@@ -204,7 +204,7 @@ De recursieve functie wordt uitgevoerd. In JavaScript retourneert de methode`sub
 ```javascript
 return revStr(str.substr(1)) + str[0];
 
-// SAME AS
+// zelfde als
 return revStr('at') + 'c'
 ```
 
@@ -213,7 +213,7 @@ De recursieve functie wordt terug uitgevoerd.
 ```javascript
 return revStr(str.substr(1)) + str[0];
 
-// SAME AS
+// zelfde als
 return revStr('t') + 'a'
 ```
 
@@ -222,7 +222,7 @@ En de recursieve functie wordt voor een laatste keer uitgevoerd.
 ```javascript
 return revStr(str.substr(1)) + str[0];
 
-// SAME AS
+// zelfde als
 return revStr('') + 't'
 ```
 
