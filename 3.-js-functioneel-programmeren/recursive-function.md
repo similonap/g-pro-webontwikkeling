@@ -72,5 +72,37 @@ In het faculteitvoorbeeld is  `if (x === 0) return 1;` het basisscenario. Van zo
 
 ### recursion
 
+De recursie is de functie die zichzelf oproept. 
+
+```javascript
+const factorial(x) => {
+  if (x < 0) return; // is termination condition of beëindigingsvoorwaarde
+  if (x === 0) return 1; // is base case of basisscenario
+  return x * factorial(x - 1); // is de recursion of recursieve functie
+}
+factorial(3);
+// 6
+```
+
+In het faculteitvoorbeeld is  `return x * facultorial (x - 1);` de plaats waar de recursie daadwerkelijk plaatsvindt. De waarde van het getal x wordt geretourneerd en vermenigvuldigd met de waarde van de faculteit \(x-1\) op dat moment.
+
+dus de drie hoofdkenmerken samengevat:
+
+```javascript
+function factorial(x) {
+  // TERMINATION
+  if (x < 0) return;  
+  
+  // BASE
+  if (x === 0) return 1;  
+  
+  // RECURSION
+  return x * factorial(x - 1);
+}
+
+factorial(3);
+// 6
+```
+
 
 
