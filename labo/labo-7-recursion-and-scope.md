@@ -167,7 +167,7 @@ console.log(em('daar'));
 // <em>daar</em>
 ```
 
-Vervolledig de functie tags zodat de code hierboven werkt. De tags functie moet een functie teruggeven die gebruik maakt van closure.
+Vervolledig de functie tags zodat de code hierboven werkt. De tags functie moet een functie teruggeven die gebruik maakt van closure. De tags functie bepaalt welke HTML tag gebruikt zal worden. De teruggegeven functie plaatst een string tussen deze tags.
 
 Hint: kijk naar het count voorbeeld van de theorie
 
