@@ -1,4 +1,4 @@
-# recursive function
+# recursieve functie
 
 ## definitie
 

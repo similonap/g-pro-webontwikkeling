@@ -32,7 +32,7 @@
 * [map method \(array\)](3.-js-functioneel-programmeren/map-method-array.md)
 * [filter method \(array\)](3.-js-functioneel-programmeren/filter-method-array.md)
 * [reduce method \(array\)](3.-js-functioneel-programmeren/reduce-method-array.md)
-* [recursive function](3.-js-functioneel-programmeren/recursive-function.md)
+* [recursieve functie](3.-js-functioneel-programmeren/recursieve-functie.md)
 * [scope in JS](3.-js-functioneel-programmeren/scope.md)
 * [closures in JS](3.-js-functioneel-programmeren/closures-in-js.md)
 
