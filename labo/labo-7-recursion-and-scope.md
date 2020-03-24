@@ -18,35 +18,19 @@ npm init
 
 te doen. De default waarden zullen hier voldoende zijn.
 
-### **2. Scope + Recursie: Som**
+### **2. Recursie: Som**
 
 maak een bestand `sum.js` met de volgende inhoud:
 
 ```javascript
-let sum = (n) => {
-    sum = 0;
+const sum = (n) => {
+    let sum = 0;
     for (i=0;i<=n;i++) {
         sum += i;
     }
     return sum;
 }
 ```
-
-**Opdracht:** Geef de output van de volgende statements zonder deze echt uit te voeren
-
-```text
-console.log(sum(2));
-```
-
-```text
-console.log(i);
-```
-
-```text
-console.log(sum(2));
-```
-
-**Let op:** De laatste wordt een 2de keer uitgevoerd. Dit is **geen vergissing**!
 
 **Opdracht:** Herschrijf nu deze functie door gebruik te maken van recursie.
 
