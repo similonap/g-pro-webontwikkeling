@@ -149,9 +149,27 @@ console.log(sum(array));
 * Herschrijf deze functie zodat ze recursie gebruikt.
 * **Extra:** herschrijf deze functie gebruikmakende van de reduce functie uit vorig labo.
 
+### 7. Closure: een tag functie
 
+Maak een bestand `tags.js` met de volgende inhoud: 
 
+```javascript
+let tags = (tagName) => {
+    //vul aan
+}
 
+let strong = tags('strong');
+let em = tags('em');
+
+console.log(strong('hallo'));
+// <strong>hallo</strong>
+console.log(em('daar'));
+// <em>daar</em>
+```
+
+Vervolledig de functie tags zodat de code hierboven werkt. De tags functie moet een functie teruggeven die gebruik maakt van closure.
+
+Hint: kijk naar het count voorbeeld van de theorie
 
 
 
