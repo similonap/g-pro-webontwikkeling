@@ -95,7 +95,7 @@ console.log(spaces(10) + 'Hey');
 Maak een bestand `faculteit.js` met de volgende inhoud: 
 
 ```javascript
-const faculteit = (n) => {
+const factorial = (n) => {
     if (n === 0 || n === 1) {
         return 1;
     }
