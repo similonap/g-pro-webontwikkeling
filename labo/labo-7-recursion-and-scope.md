@@ -90,9 +90,9 @@ console.log(spaces(10) + 'Hey');
 
 **Opdracht:** Herschrijf deze functie zodat ze recursie gebruikt.
 
-### 5. Recursie: faculteit
+### 5. Recursie: factorial
 
-Maak een bestand `faculteit.js` met de volgende inhoud: 
+Maak een bestand `factorial.js` met de volgende inhoud: 
 
 ```javascript
 const factorial = (n) => {
