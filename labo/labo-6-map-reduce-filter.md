@@ -1,5 +1,7 @@
 # labo 6: map/reduce/filter
 
+{% embed url="https://youtu.be/jA55W\_d6uFY" %}
+
 ### 1. Maak het project aan
 
 Open Visual Studio Code en open een nieuwe folder voor het project. Test dat je in de juiste folder zit door 

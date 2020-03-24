@@ -1,4 +1,6 @@
-# labo 7: recursion and scope
+# labo 7: recursie en scope
+
+{% embed url="https://www.youtube.com/watch?v=LhKdZtWuXUU" %}
 
 ### 1. Maak het project aan
 

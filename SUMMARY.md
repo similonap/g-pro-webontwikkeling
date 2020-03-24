@@ -53,7 +53,7 @@
 * [labo 4: JavaScript in-depth + API](labo/labo-4-javascript-in-depth-+-api.md)
 * [labo 5: functies](labo/labo-5-functies.md)
 * [labo 6: map/reduce/filter](labo/labo-6-map-reduce-filter.md)
-* [labo 7: recursion and scope](labo/labo-7-recursion-and-scope.md)
+* [labo 7: recursie en scope](labo/labo-7-recursion-and-scope.md)
 * [labo extra: oefeningen JS 1](labo/labo-extra-oefeningen-js-1.md)
 * [labo extra: oefeningen JS 2](labo/labo-extra-oefeningen-js-2.md)
 
