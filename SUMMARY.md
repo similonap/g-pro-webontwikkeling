@@ -41,6 +41,10 @@
 * [theorie async](asynchroon-programmeren/untitled/README.md)
   * [fetch voor API-calls](asynchroon-programmeren/untitled/fetch-voor-api-calls.md)
 
+## monitoraat
+
+* [monitoraat](monitoraat/js-werken-met-objecten.md)
+
 ## NoSql-databanken MongoDB
 
 * [Untitled](nosql-databanken-mongodb/untitled.md)
@@ -56,6 +60,7 @@
 * [labo 7: recursie en scope](labo/labo-7-recursion-and-scope.md)
 * [labo extra: oefeningen JS 1](labo/labo-extra-oefeningen-js-1.md)
 * [labo extra: oefeningen JS 2](labo/labo-extra-oefeningen-js-2.md)
+* [labo 8: Asynchronous JavaScript](labo/labo-8-asynchronous-javascript.md)
 
 ## Extra info
 
