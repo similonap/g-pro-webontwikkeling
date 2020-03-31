@@ -42,6 +42,9 @@ Dit zijn 2 functies die een promise terug geven. Ze simuleren een trage som func
 
 1. Roep de `slowSum` functie aan met de getallen 1 en 5 en zorg dat ze het resultaat van deze functie op het scherm laat zien.
 2. Roep de `slowSum` functie opnieuw aan met de getallen 1 en 5 maar zorg deze keer dat na het optellen de vermenigvuldigings functie \``slowMult` wordt aangeroepen dat het resultaat vermenigvuldigd met 2 en dan op het scherm laat zien.
+3. Maak een eigen `slowDiv` functie dat een deling doet \(laat deze 1000 milliseconden duren\). Zorg ervoor dat als je een deling door nul doet dat je de promise afkeurt met de melding "You cannot divide by zero".
+4. Roep deze functie aan met de getallen 6 en 3 en laat het resultaat op het scherm zien.
+5. Roep deze functie aan met de getallen 6 en 0 en laat de error op het scherm zien.
 
 **Verwachte output:**
 
