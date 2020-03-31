@@ -51,7 +51,27 @@ Dit zijn 2 functies die een promise terug geven. Ze simuleren een trage som func
 12
 ```
 
+### **3. Promises.all en fetch**
 
+maak een bestand `cocktail.js` en installeer de dependency node-fetch:
 
-\*\*\*\*
+```text
+npm install node-fetch --save
+```
+
+Maak gebruik van `Promise.all` om de drie volgende cocktails via de cocktail api met de volgende ids in te lezen: **11000**, **11001**, **11002** en vervolgens de naam van de drie cocktails op het scherm te laten zien. 
+
+Je kan een cocktail via een id via de volgende api call binnenhalen:
+
+```text
+https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11000
+```
+
+**Verwachte output:**
+
+```text
+Mojito
+Old Fashioned
+Long Island Tea
+```
 
