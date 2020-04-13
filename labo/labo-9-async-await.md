@@ -89,17 +89,5 @@ joske.vermeulen@student.ap.be
 2. Maak  in `read_file.js` een functie `readFile` aan met een argument filename die een Promise teruggeeft die het bovenste stuk code gebruikt om een file te lezen. Roep de `resolve` functie aan als de file kan gelezen worden \(dus als `err` leeg is\) en `reject` functie als er een error is. 
 3. Roep deze functie aan met als argument het email.txt bestand. Maak gebruik van het **await** keyword.
 
-de functie zal er ongeveer zo uitzien:
-
-```text
-const readFile = (filename) => {
-    return new Promise((resolve, reject) => {
-        // Hier de code om het bestand te lezen
-    });
-}
-```
-
-
-
 
 
