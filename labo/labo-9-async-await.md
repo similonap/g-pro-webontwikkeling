@@ -67,5 +67,27 @@ It was raining cats and dogs the other day. I almost stepped in a poodle.
 What did the Zen Buddist say to the hotdog vendor? Make me one with everything.
 ```
 
+### 3. Een bestand lezen
+
+Maak een bestand `read_file.js` aan met de volgende inhoud. Dit stuk code zal een bestand uitlezen van het file systeem en dit uitprinten op het scherm.
+
+```javascript
+var fs = require('fs');
+ 
+fs.readFile('email.txt', 'utf8', function(err, contents) {
+    console.log(contents);
+});
+```
+
+Maak een bestand aan `email.txt` en zet daar in je AP email adres en NIETS anders. bijvoorbeeld:
+
+```text
+joske.vermeulen@student.ap.be
+```
+
+1. Probeer eerst of deze code werkt!
+2. Maak  in `read_file.js` een functie `readFile` aan met een parameter filename die een Promise teruggeeft die het bovenste stuk code gebruikt om een file te lezen. Roep de `resolve` functie aan als de file kan gelezen worden \(dus als `err` leeg is\) en `reject` functie als er een error is. 
+3. Roep deze functie aan met als argument het email.txt bestand. Maak gebruik van het **await** keyword.
+
 
 
