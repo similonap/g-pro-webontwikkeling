@@ -38,8 +38,12 @@
 
 ## asynchroon programmeren
 
-* [theorie async](asynchroon-programmeren/untitled/README.md)
-  * [fetch voor API-calls](asynchroon-programmeren/untitled/fetch-voor-api-calls.md)
+* [asynchroon programmeren](asynchroon-programmeren/untitled.md)
+* [blocking code](asynchroon-programmeren/fetch-voor-api-calls.md)
+* [threads](asynchroon-programmeren/threads/README.md)
+  * [callbacks](asynchroon-programmeren/threads/callbacks.md)
+* [promises](asynchroon-programmeren/promises.md)
+* [async / await](asynchroon-programmeren/async-await.md)
 
 ## monitoraat
 
@@ -58,8 +62,8 @@
 * [labo 5: functies](labo/labo-5-functies.md)
 * [labo 6: map/reduce/filter](labo/labo-6-map-reduce-filter.md)
 * [labo 7: recursie en scope](labo/labo-7-recursion-and-scope.md)
-* [labo 8: Asynchronous JavaScript](labo/labo-8-asynchronous-javascript.md)
-* [labo 9: Async/await](labo/labo-9-async-await.md)
+* [labo 8: asynchronous JavaScript](labo/labo-8-asynchronous-javascript.md)
+* [labo 9: async en await](labo/labo-9-async-await.md)
 * [labo extra: oefeningen JS 1](labo/labo-extra-oefeningen-js-1.md)
 * [labo extra: oefeningen JS 2](labo/labo-extra-oefeningen-js-2.md)
 

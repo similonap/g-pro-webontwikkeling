@@ -1,4 +1,4 @@
-# labo 9: Async/await
+# labo 9: async en await
 
 ### 1. Maak het project aan
 

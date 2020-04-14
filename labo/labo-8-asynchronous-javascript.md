@@ -1,4 +1,4 @@
-# labo 8: Asynchronous JavaScript
+# labo 8: asynchronous JavaScript
 
 ### 1. Maak het project aan
 
