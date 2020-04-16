@@ -38,11 +38,12 @@
 
 ## asynchroon programmeren
 
-* [asynchroon programmeren](asynchroon-programmeren/untitled.md)
-* [blocking code](asynchroon-programmeren/fetch-voor-api-calls.md)
+* [inleiding](asynchroon-programmeren/inleiding.md)
+* [blocking code](asynchroon-programmeren/blocking-code.md)
 * [threads](asynchroon-programmeren/threads.md)
-* [promises](asynchroon-programmeren/promises.md)
+* [asynchroon programmeren](asynchroon-programmeren/asynchroon-programmeren.md)
 * [callbacks](asynchroon-programmeren/callbacks.md)
+* [promises](asynchroon-programmeren/promises.md)
 * [async / await](asynchroon-programmeren/async-await.md)
 
 ## monitoraat

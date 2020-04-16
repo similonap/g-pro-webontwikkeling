@@ -1,4 +1,4 @@
-# asynchroon programmeren
+# inleiding
 
 Hieronder zullen een aantal belangrijke concepten besproken worden met betrekking tot asynchroon programmeren en hoe dit eruit ziet in zowel webbrowsers als JavaScript.
 
