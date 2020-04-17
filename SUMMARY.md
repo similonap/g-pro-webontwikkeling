@@ -42,7 +42,7 @@
 * [blocking code](asynchroon-programmeren/blocking-code.md)
 * [threads](asynchroon-programmeren/threads.md)
 * [asynchroon programmeren](asynchroon-programmeren/asynchroon-programmeren.md)
-* [callbacks](asynchroon-programmeren/callbacks.md)
+* [asynchronous callbacks](asynchroon-programmeren/asynchronous-callbacks.md)
 * [promises](asynchroon-programmeren/promises.md)
 * [async / await](asynchroon-programmeren/async-await.md)
 
