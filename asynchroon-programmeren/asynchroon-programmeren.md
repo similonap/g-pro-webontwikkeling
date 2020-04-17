@@ -26,6 +26,15 @@ console.log('data content: ' + JSON.stringify(data));
 ```
 
 In voorbeeld 2 wordt er gestart met 2 variabelen: `let data` wordt niet gedefinieerd en `let fakeFetch`. De fakeFetch maakt gebruik van een setTimeout\(\), een functie die wordt uitgevoerd binnen x aantal seconden en fetch gaat een return van de data van de API geven binnen een aantal seconden. Er zit dus een vertraging op van hoe snel de data in de variabele terecht komt.  
- In de functie wordt na 2 seconden een object aangemaakt voor de data die terugkomt - en dus wordt de data van de functie fakeFetch met een delay van 2 seconden \(2000 milliseconden\) getoond in de terminal.  
+ In de functie wordt na 2 seconden een object aangemaakt voor de data die terugkomt - en dus wordt de data van de functie fakeFetch met een delay van 2 seconden \(2000 milliseconden\) getoond in de terminal.
+
+```javascript
+$ node voorbeeld2
+data content: undefined
+data is klaar // dit wordt in de terminal weergegeven na 2 seconden
+```
+
+De vraagt blijft... hoe geraken we aan de data in voorbeeld 1 en voorbeeld 2?  
+Een eerste oplossing zijn callbacks   
 
 
