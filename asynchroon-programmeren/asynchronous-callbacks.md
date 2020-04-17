@@ -9,8 +9,7 @@ btn.addEventListener('click', () => {
 alert('event listener added')
 ```
 
-De tweede parameter is de callback-functie. De listener wordt geregistreerd, maar verder wordt hier niets mee gedaan. De alert 'even listener added' wordt wel uitgevoerd.  
-De callback wordt geregistreerd, maar pas uitgevoerd wanneer de gebruiker effectief op button drukt.
+De tweede parameter is de callback-functie. De listener wordt geregistreerd, maar verder wordt hier niets mee gedaan. De alert 'even listener added' wordt wel uitgevoerd. De callback wordt geregistreerd, maar pas uitgevoerd wanneer de gebruiker effectief op button drukt.
 
 
 
