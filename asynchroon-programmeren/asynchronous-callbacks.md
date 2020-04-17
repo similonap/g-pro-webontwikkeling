@@ -1,6 +1,6 @@
 # asynchronous callbacks
 
-bv. in web client code
+Asynchrone callbacks binnen web client code kwamen reeds aan bod in het vak 'webtechnologie', namelijk de EventListeners gelinkt aan bijvoorbeeld buttons.
 
 ```javascript
 btn.addEventListener('click'
@@ -10,10 +10,8 @@ alert('You clicked me!');
 alert('event listener added')
 ```
 
-tweede parameter is callback functie   
-listener wordt geregistreerd   
-alert 'even listener added' wordt uitgevoerd   
-callback wordt pas uitgevoerd wanneer gebruiker op button drukt
+De tweede parameter is de callback-functie. De listener wordt geregistreerd  en de alert 'even listener added' wordt uitgevoerd.  
+De callback wordt geregistreerd, maar pas uitgevoerd wanneer de gebruiker effectief op button drukt.
 
 
 
