@@ -34,7 +34,7 @@ data content: undefined
 data is klaar // dit wordt in de terminal weergegeven na 2 seconden
 ```
 
-De vraagt blijft... hoe geraken we aan de data in voorbeeld 1 en voorbeeld 2?  
-Een eerste oplossing zijn callbacks   
+Modern software-ontwerp draait steeds meer om het gebruik van asynchrone programmering, zodat programma's meer dan één ding tegelijk kunnen doen. Naarmate je nieuwere en krachtigere API's gebruikt, zul je meer gevallen vinden waarbij de enige manier om dingen te doen het asynchroon programmeren is.   
+Vroeger was het moeilijk om asynchrone code te schrijven. maar vandaag is dat gelukkig een stuk eenvoudiger geworden. In het volgende hoofdstuk bekijken we waarom asynchrone code zo belangrijk is en hoe code kan geschreven worden die enkele van de hierboven beschreven problemen vermijdt.  
 
 
