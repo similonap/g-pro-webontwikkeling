@@ -1,8 +1,12 @@
 # promises
 
-nieuwe manier om async code te schrijven "ik beloof met een resultaat te komen zodra ik klaar ben" beter overzicht dankzij chaining ook indien fouten zich voordoen!
+Promises zijn de nieuwe stijl van asynchroon code schrijven die veelal in moderne web-API's gebruikt wordt. Concreet beloof 'promises' met een resultaat te komen van zodra die klaar is. Door het gebruik van promises wordt er propere code geschreven en is er een beter overzicht dankzij chaining, handig wanneer er zich ook fouten voordoen.
 
-een promise is: een tussentijdse staat van een operatie pending, niet succesvol, niet gefaald een belofte dat een resultaat eraan komt wanneer die klaar is: vervuld: je kan nu iets doen met resultaat afgekeurd: je krijgt een reden
+Een promise is een tussentijdse staat van een operatie, volop bezig \(**pending**\) om de server te raadplegen, maar de uitkomst is nog niet geweten, niet succesvol, niet gefaald   
+een belofte dat een resultaat eraan komt   
+wanneer die klaar is:   
+vervuld: je kan nu iets doen met resultaat   
+afgekeurd: je krijgt een reden
 
 
 
