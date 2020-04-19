@@ -1,5 +1,7 @@
 # asynchronous callbacks
 
+### voorbeeld EventListener
+
 Asynchrone callbacks binnen **web client code** kwamen reeds aan bod in het vak 'webtechnologie', namelijk de **EventListener** gelinkt aan bijvoorbeeld buttons.
 
 ```javascript
@@ -13,7 +15,9 @@ De tweede parameter is de callback-functie. De listener wordt geregistreerd, maa
 
 
 
-het fakeFetch voorbeeld met callback
+### voorbeeld 2 \(fakeFetch met callback\)
+
+Aan de variabele fakeFetch wordt een callback meegegeven \(callback mag ook anders noemen\). De callback wordt pas uitgevoerd als de data geladen is. Concreet wordt de code als callback-functie meegegeven aan fakeFetch. De callback wordt dus pas uitgevoerd als de setTimeout compleet is.
 
 ```javascript
 let data = undefined
@@ -31,7 +35,13 @@ fakeFetch(
 );
 ```
 
+Onderstaande uitkomst wordt in de terminal getoond als resultaat van bovenstaande code . Let wel, de volgorde van de uitkomst is veranderd tegenover de uitkomst van voorbeeld 2 uit het vorige topic onder 'asynchroon programmeren'.
 
+```javascript
+$ node voorbeeld2
+data is klaar // dit wordt in de terminal weergegeven na 2 seconden
+data content:{"name":"sven","age":"39"}
+```
 
 wanneer code klaar is, roept die zelf de volgende code op \(callback\)
 
