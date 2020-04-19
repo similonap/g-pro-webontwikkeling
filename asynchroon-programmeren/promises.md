@@ -14,11 +14,11 @@ promise.catch(...) // wanneer die afgekeurd is, doe ...
 ```javascript
 let done = true;
 const isItDone = new Promise((resolve, reject) => {
-if (done) {
-resolve("Done")
-} else {
-reject("Not done")
-}
+    if (done) {
+        resolve("Done")
+    } else {
+        reject("Not done")
+    }
 });
 ```
 
