@@ -36,7 +36,7 @@ fakeFetch(
 Onderstaande uitkomst wordt in de terminal getoond als resultaat van bovenstaande code . Let wel, de volgorde van de uitkomst is veranderd tegenover de uitkomst van voorbeeld 2 uit het vorige topic onder 'asynchroon programmeren'.
 
 ```javascript
-$ node voorbeeld2
+$ node voorbeeld2.js
 data is klaar // dit wordt in de terminal weergegeven na 2 seconden
 data content:{'name':'sven','age':'39}
 ```
@@ -57,7 +57,7 @@ funcA(()=>console.log('done'));
 ```
 
 ```javascript
-$ node callbackHell
+$ node callbackHell.js
 done
 ```
 

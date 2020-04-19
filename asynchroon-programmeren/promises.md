@@ -16,7 +16,7 @@ promise.then(...); // wanneer die vervuld is, doe ...
 promise.catch(...) // wanneer die afgekeurd is, doe ...
 ```
 
-
+## maken van promise
 
 ```javascript
 let done = true;
@@ -30,23 +30,35 @@ const isItDone = new Promise((resolve, reject) => {
 });
 ```
 
-Er is een variabele done. De variabele isItDone geeft een promise terug. Deze promise verwacht een anonieme functie met twee parameters:
+Er is een variabele `done`. De variabele `isItDone` geeft een promise terug. Deze promise verwacht een anonieme functie met twee parameters:
 
 * resolve\(result\) stuurt object \(of boodschap\) terug als promise vervuld is 
   * `then(a => {})` waar a === result 
 * reject\(error\) stuurt object \(of boodschap\) terug als promise afgekeurd is 
   * `catch(a => {})` waar a === error
 
-De promise in bovenstaande code werd aangemaakt, uitgevoerd, maar binnen de code werd er niets mee gedaan.
+De promise in bovenstaande code werd aangemaakt, uitgevoerd, maar binnen de code werd er niets mee gedaan. Hij zal dus een promise terug geven, maar niet de waarde.
 
 ```javascript
-isItDone
-    .then(msg => {
-    console.log(msg)
-    })
-    .catch(err => {
-    console.error(err)
-    })
+let done = true;
+
+const isItDone = new Promise((resolve, reject) => {
+    if (done) {
+        resolve('done')
+    } else {
+        reject('not done')
+    }
+});
+isItDone.then(msg => console.log(msg)); //in terminal (2)
+isItDone.catch(err => console.log(err));
+
+console.log('code afgelopen'); //in terminal (1)
+```
+
+```javascript
+$node test.js
+code afgelopen // uitkomst van regel 13
+done // uitkomst van regel 10
 ```
 
 vb. fetch!
