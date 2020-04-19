@@ -41,7 +41,7 @@ data is klaar // dit wordt in de terminal weergegeven na 2 seconden
 data content:{"name":"sven","age":"39"}
 ```
 
-### voorbeeld hell
+### voorbeeld callbackHell
 
 Stel... er is een callback die een callback doet, die op zijn beurt ook een callback doet en die op zijn beurt terug een callback doet... en dan pas klaar is. Dat vraagt om potentiële problemen.  
 funcA krijgt een callback mee, die gaat naar funcB die ook een callback meekrijgt, en dat tot funcD benaderd wordt.  
