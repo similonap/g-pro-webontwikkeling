@@ -38,7 +38,7 @@ Onderstaande uitkomst wordt in de terminal getoond als resultaat van bovenstaand
 ```javascript
 $ node voorbeeld2
 data is klaar // dit wordt in de terminal weergegeven na 2 seconden
-data content:{"name":"sven","age":"39"}
+data content:{'name':'sven','age':'39}
 ```
 
 ### voorbeeld callbackHell

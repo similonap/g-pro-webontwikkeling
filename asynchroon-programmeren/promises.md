@@ -2,32 +2,42 @@
 
 Promises zijn de nieuwe stijl van asynchroon code schrijven die veelal in moderne web-API's gebruikt wordt. Concreet beloof 'promises' met een resultaat te komen van zodra die klaar is. Door het gebruik van promises wordt er propere code geschreven en is er een beter overzicht dankzij chaining, handig wanneer er zich ook fouten voordoen.
 
+## definitie
+
 Een promise is een tussentijdse staat van een operatie, volop bezig \(**pending**\) om de server te raadplegen, maar de uitkomst is nog niet geweten, of het al dan niet succesvol was of net niet en dus gefaald heeft.   
-Een promises is dus een belofte dat er een resultaat aan staat te komen. Wanneer de promise **vervuld** is, dan kan er met het resultaat iets gedaan worden. Indien de promise echter werd **afgekeurd,** zal ook de reden waarom meegegeven worden. De promise bevat dus **niet** het resultaat.
+Een promises is dus een belofte dat er een resultaat aan staat te komen. Wanneer de promise **vervuld** is, dan kan er met het resultaat iets gedaan worden. Indien de promise echter werd **afgekeurd,** zal ook de reden waarom meegegeven worden. De promise **bevat dus niet het resultaat**.
+
+## structuur
 
 ```javascript
+// Dit is dus de structuur van promise.
 let promise = fetch('...'); // pending
-promise.then(...) // wanneer die vervuld is, doe ...
+promise.then(...); // wanneer die vervuld is, doe ...
 promise.catch(...) // wanneer die afgekeurd is, doe ...
 ```
 
+
+
 ```javascript
 let done = true;
+
 const isItDone = new Promise((resolve, reject) => {
     if (done) {
-        resolve("Done")
+        resolve('Done')
     } else {
-        reject("Not done")
+        reject('Not done')
     }
 });
 ```
 
-resolve\(result\) stuurt object terug als promise vervuld is   
-then\(a =&gt; {}\) waar a === result   
-reject\(error\) stuurt object terug als promise afgekeurd is   
-catch\(a =&gt; {}\) waar a === error
+Er is een variabele done. De variabele isItDone geeft een promise terug. Deze promise verwacht een anonieme functie met twee parameters:
 
+* resolve\(result\) stuurt object \(of boodschap\) terug als promise vervuld is 
+  * `then(a => {})` waar a === result 
+* reject\(error\) stuurt object \(of boodschap\) terug als promise afgekeurd is 
+  * `catch(a => {})` waar a === error
 
+De promise in bovenstaande code werd aangemaakt, uitgevoerd, maar binnen de code werd er niets mee gedaan.
 
 ```javascript
 isItDone
@@ -110,6 +120,6 @@ console.log(pokemon[1].name);
 console.log(pokemon[2].name);
 }
 )
-console.log("Code done");
+console.log('Code done');
 ```
 
