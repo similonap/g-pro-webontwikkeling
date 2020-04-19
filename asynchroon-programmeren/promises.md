@@ -2,13 +2,8 @@
 
 Promises zijn de nieuwe stijl van asynchroon code schrijven die veelal in moderne web-API's gebruikt wordt. Concreet beloof 'promises' met een resultaat te komen van zodra die klaar is. Door het gebruik van promises wordt er propere code geschreven en is er een beter overzicht dankzij chaining, handig wanneer er zich ook fouten voordoen.
 
-Een promise is een tussentijdse staat van een operatie, volop bezig \(**pending**\) om de server te raadplegen, maar de uitkomst is nog niet geweten, niet succesvol, niet gefaald   
-een belofte dat een resultaat eraan komt   
-wanneer die klaar is:   
-vervuld: je kan nu iets doen met resultaat   
-afgekeurd: je krijgt een reden
-
-
+Een promise is een tussentijdse staat van een operatie, volop bezig \(**pending**\) om de server te raadplegen, maar de uitkomst is nog niet geweten, of het al dan niet succesvol was of net niet en dus gefaald heeft.   
+Een promises is dus een belofte dat er een resultaat aan staat te komen. Wanneer het resultaat er is én het is voldaan, dan kan er met het resultaat iets gedaan worden. Indien de uitkomst echter werd afgekeurd zal ook de reden waarom meegegeven worden.
 
 ```javascript
 let promise = fetch('...'); // pending
