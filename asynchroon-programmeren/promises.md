@@ -105,19 +105,19 @@ weight: 60 // uitkomst van regel 9
 
 ```javascript
 const fetch = require('node-fetch');
-let ditto = {};
-fetch('https://pokeapi.co/api/v2/pokemon/ditto/')
-.then(response => response.json())
-.then(json => {
-ditto = json;
-console.log('JSON loaded into ditto');
-console.log('weight: ' + JSON.stringify(ditto.weight));
-})
-.catch(err => {
-console.log('Something went wrong: ' + err.message);
-});
+let pikachu = {};
+fetch('https://pokeapi.co/api/v2/pokemon/pikachu/')
+    .then(response => response.json())
+    .then(json => {
+        pikachu = json;
+        console.log('JSON loaded into pikachu');
+        console.log('weight: ' + JSON.stringify(pikachu.weight));
+    })
+    .catch(err => {
+        console.log('Something went wrong: ' + err.message);
+    });
 console.log('code finished');
-console.log('ditto === ' + JSON.stringify(ditto));
+console.log('pikachu === ' + JSON.stringify(pikachu));
 ```
 
 ## multiple promises
