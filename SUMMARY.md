@@ -44,6 +44,7 @@
 * [asynchroon programmeren](asynchroon-programmeren/asynchroon-programmeren.md)
 * [asynchronous callbacks](asynchroon-programmeren/asynchronous-callbacks.md)
 * [promises](asynchroon-programmeren/promises.md)
+* [exceptions](asynchroon-programmeren/exceptions.md)
 * [async / await](asynchroon-programmeren/async-await.md)
 
 ## monitoraat
