@@ -120,6 +120,9 @@ console.log('code finished');
 console.log('pikachu === ' + JSON.stringify(pikachu));
 ```
 
+Door gebruik te maken van [chaining](https://javascript.info/promise-chaining) kan er propere en meer overzichtelijkere code geschreven worden. Door chaining wordt er met [`then`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#Improvements_with_promises) gewerkt in plaats van `promise1`, `promise2` en `promise3`.  
+Door te werken met chains worden meerdere asynchrone acties na elkaar gekoppeld, omdat elk `.then()`blok een nieuwe belofte retourneert die wordt opgelost wanneer het `.then()`blok is uitgevoerd.
+
 ## multiple promises
 
 Verschillende promises   
