@@ -43,15 +43,15 @@ De promise in bovenstaande code werd aangemaakt, uitgevoerd, maar binnen de code
 let done = true;
 
 const isItDone = new Promise((resolve, reject) => {
-    //js voert promise uit (2)
+    // js voert promise uit (2)
     if (done) {
-        resolve('done') //resolve wordt uitgestuurd (3)
+        resolve('done') // resolve wordt uitgestuurd (3)
     } else {
         reject('not done')
     }
 });
 // dit gebeurt er als promise gelukt is
-isItDone.then(msg => console.log(msg)); //en msg word uitgestuurd(4)
+isItDone.then(msg => console.log(msg)); // en msg word uitgestuurd(4)
 // dit gebeurt er als promise faalt
 isItDone.catch(err => console.error(err));
 
@@ -71,24 +71,34 @@ done // uitkomst van regel 12
 Voor onderstaand voorbeeld dient eerst fetch geïnstalleerd te worden.
 
 ```javascript
-$npm install node fetch
+$npm install node-fetch --save
 ```
 
 ```javascript
 const fetch = require('node-fetch');
-let ditto = {};
-let promise1 = fetch('https://pokeapi.co/api/v2/pokemon/ditto/');
+let pikachu = {};
+//promise 1 doet een fetch en maakt connectie met de server
+let promise1 = fetch('https://pokeapi.co/api/v2/pokemon/pikachu/');
+// uitkomst van promise2 is geen waarde maar een promise
 let promise2 = promise1.then(response => response.json());
-let promise3 = promise2.then(json => {
-    ditto = json;
-    console.log('JSON loaded into ditto');
-    console.log('weight: ' +JSON.stringify(ditto.weight));
+let promise3 = promise2.then(json => {pikachu = json;
+    console.log('JSON loaded into pikachu');
+    console.log('weight: ' +JSON.stringify(pikachu.weight));
 });
 let errorCatching = promise3.catch(err => {
     console.log('Something went wrong: ' + err.message);
 })
 console.log('code finished');
-console.log('ditto === ' + JSON.stringify(ditto));
+console.log('pikachu === ' + JSON.stringify(pikachu));
+```
+
+```javascript
+// uitkomst in terminal van bovenstaande code 
+$ node test.js
+code finished // uitkomst van regel 14
+pikachu === {} // uitkomst van regel 15
+JSON loaded into pikachu // uitkomst van regel 8
+weight: 60 // uitkomst van regel 9
 ```
 
 ### fetch met chains
