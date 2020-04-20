@@ -32,9 +32,9 @@ const isItDone = new Promise((resolve, reject) => {
 
 Er is een variabele `done`. De variabele `isItDone` geeft een promise terug. Deze promise verwacht een anonieme functie met twee parameters:
 
-* resolve\(result\) stuurt object \(of boodschap\) terug als promise vervuld is 
+* [resolve](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve)\(result\) stuurt object \(of boodschap\) terug als promise vervuld is 
   * `then(a => {})` waar a === result 
-* reject\(error\) stuurt object \(of boodschap\) terug als promise afgekeurd is 
+* [reject](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject)\(error\) stuurt object \(of boodschap\) terug als promise afgekeurd is 
   * `catch(a => {})` waar a === error
 
 De promise in bovenstaande code werd aangemaakt, uitgevoerd, maar binnen de code werd er niets mee gedaan. Hij zal dus een promise terug geven, maar niet de waarde.
