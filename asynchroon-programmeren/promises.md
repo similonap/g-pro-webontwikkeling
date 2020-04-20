@@ -109,6 +109,7 @@ De uitkomst van de terminal hierboven is tevens ook de uitkomst van de code hier
 const fetch = require('node-fetch');
 let pikachu = {};
 fetch('https://pokeapi.co/api/v2/pokemon/pikachu/')
+// als de fetch/promise klaar ben
     .then(response => response.json())
     .then(json => {
         pikachu = json;
