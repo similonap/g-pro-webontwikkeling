@@ -53,10 +53,12 @@ const isItDone = new Promise((resolve, reject) => {
 // dit gebeurt er als promise gelukt is
 isItDone.then(msg => console.log(msg)); //en msg word uitgestuurd(4)
 // dit gebeurt er als promise faalt
-isItDone.catch(err => console.log(err));
+isItDone.catch(err => console.error(err));
 
 console.log('code afgelopen'); //in terminal (1)
 ```
+
+extra uitleg over [console.error](https://www.w3schools.com/jsref/met_console_error.asp)
 
 ```javascript
 $node test.js
@@ -66,18 +68,24 @@ done // uitkomst van regel 12
 
 ### promise met fetch
 
+```
+$npm install node fetch
+```
+
+Voor onderstaand voorbeeld dient eerst fetch geïnstalleerd te worden.
+
 ```javascript
 const fetch = require('node-fetch');
 let ditto = {};
 let promise1 = fetch('https://pokeapi.co/api/v2/pokemon/ditto/');
 let promise2 = promise1.then(response => response.json());
 let promise3 = promise2.then(json => {
-ditto = json;
-console.log('JSON loaded into ditto');
-console.log('weight: ' +JSON.stringify(ditto.weight));
+    ditto = json;
+    console.log('JSON loaded into ditto');
+    console.log('weight: ' +JSON.stringify(ditto.weight));
 });
 let errorCatching = promise3.catch(err => {
-console.log('Something went wrong: ' + err.message);
+    console.log('Something went wrong: ' + err.message);
 })
 console.log('code finished');
 console.log('ditto === ' + JSON.stringify(ditto));
