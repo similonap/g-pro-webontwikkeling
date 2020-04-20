@@ -103,7 +103,7 @@ weight: 60 // uitkomst van regel 9
 
 ### fetch met chains
 
-De uitkomst van de terminal hierboven is tevens ook de uitkomst van de code hieronder. Door gebruik te maken van [chaining](https://javascript.info/promise-chaining) kan voorgaand voorbeeld overzichtelijker geschreven worden. Er wordt met [`then`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#Improvements_with_promises) gewerkt in plaats van `promise1`, `promise2` en `promise3`. Door te werken met chains worden meerdere asynchrone acties na elkaar gekoppeld, omdat elk `.then()`blok een nieuwe belofte retourneert die wordt opgelost wanneer het `.then()`blok is uitgevoerd.
+De uitkomst van de terminal hierboven is tevens ook de uitkomst van de code hieronder. Door gebruik te maken van [chaining](https://javascript.info/promise-chaining) kan voorgaand voorbeeld overzichtelijker en mooi geschreven worden. Er wordt met [`then`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#Improvements_with_promises) gewerkt in plaats van `promise1`, `promise2` en `promise3`. Door te werken met chains worden meerdere asynchrone acties na elkaar gekoppeld, omdat elk `.then()`blok een nieuwe belofte retourneert die wordt opgelost wanneer het `.then()`blok uitgevoerd is.
 
 ```javascript
 const fetch = require('node-fetch');
