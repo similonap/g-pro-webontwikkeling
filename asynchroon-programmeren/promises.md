@@ -126,8 +126,10 @@ console.log('pikachu === ' + JSON.stringify(pikachu));
 
 ## multiple promises
 
-Verschillende promises   
-combineren van de resultaten
+In een vorige oefening waren er tegelijkertijd een `multiply` en een `sum` naast elkaar, waarmee iets moest gebeuren, maar de know-how om de resultaten samen te brengen en verder te gaan ontbrak.   
+Of je wil in de vorige oefening nog een andere pokemon 'fetchen', hoe moet je verder als ze allebei klaar zijn?
+
+Concreet zijn er verschillende promises die elk in een variabele gestoken kunnen worden. Op zich retourneert een promise geen waarden. Het combineren van deze promises gebeurt door ze in een array te steken met een [promise.all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all), die pas kan uitgevoerd worden als promises `a`, `b` en `c` klaar zijn. Dan pas kan promise.all resultaten geven.
 
 ```javascript
 let a = fetch(url1);
@@ -138,7 +140,7 @@ Promise.all([a, b, c]).then(values => {
 });
 ```
 
-then\(values =&gt; { wordt pas uitgevoerd als   
+`then(values => {` wordt pas uitgevoerd als   
 promise a klaar is EN   
 promise b klaar is EN   
 promise c klaar is
@@ -157,6 +159,15 @@ console.log(pokemon[1].name);
 console.log(pokemon[2].name);
 }
 )
-console.log('Code done');
+console.log('code done');
+```
+
+```javascript
+// uitkomst in terminal van bovenstaande code 
+$ node test2.js
+code done // uitkomst van regel 12
+ditto // uitkomst van regel 7
+pikachu // uitkomst van regel 8
+charmander // uitkomst van regel 9
 ```
 

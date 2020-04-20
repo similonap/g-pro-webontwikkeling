@@ -47,13 +47,13 @@
 * [exceptions](asynchroon-programmeren/exceptions.md)
 * [async / await](asynchroon-programmeren/async-await.md)
 
-## monitoraat
-
-* [monitoraat](monitoraat/js-werken-met-objecten.md)
-
 ## NoSql-databanken MongoDB
 
 * [Untitled](nosql-databanken-mongodb/untitled.md)
+
+## monitoraat
+
+* [monitoraat](monitoraat/js-werken-met-objecten.md)
 
 ## labo
 
