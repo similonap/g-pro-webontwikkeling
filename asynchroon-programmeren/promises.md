@@ -68,11 +68,11 @@ done // uitkomst van regel 12
 
 ### promise met fetch
 
+Voor onderstaand voorbeeld dient eerst fetch geïnstalleerd te worden.
+
 ```javascript
 $npm install node fetch
 ```
-
-Voor onderstaand voorbeeld dient eerst fetch geïnstalleerd te worden.
 
 ```javascript
 const fetch = require('node-fetch');
