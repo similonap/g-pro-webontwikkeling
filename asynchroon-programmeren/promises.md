@@ -58,7 +58,8 @@ isItDone.catch(err => console.error(err));
 console.log('code afgelopen'); //in terminal (1)
 ```
 
-extra uitleg over [console.error](https://www.w3schools.com/jsref/met_console_error.asp)
+extra uitleg over [console.error](https://www.w3schools.com/jsref/met_console_error.asp)  
+extra uitleg over [catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
 
 ```javascript
 $node test.js
