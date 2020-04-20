@@ -68,7 +68,7 @@ done // uitkomst van regel 12
 
 ### promise met fetch
 
-```
+```javascript
 $npm install node fetch
 ```
 
