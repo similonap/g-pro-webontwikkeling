@@ -16,7 +16,7 @@ promise.then(...); // wanneer die vervuld is, doe ...
 promise.catch(...) // wanneer die afgekeurd is, doe ...
 ```
 
-## maken van promise
+## maken van een promise
 
 ```javascript
 let done = true;
@@ -43,13 +43,16 @@ De promise in bovenstaande code werd aangemaakt, uitgevoerd, maar binnen de code
 let done = true;
 
 const isItDone = new Promise((resolve, reject) => {
+    //js voert promise uit (2)
     if (done) {
-        resolve('done')
+        resolve('done') //resolve wordt uitgestuurd (3)
     } else {
         reject('not done')
     }
 });
-isItDone.then(msg => console.log(msg)); //in terminal (2)
+// dit gebeurt er als promise gelukt is
+isItDone.then(msg => console.log(msg)); //en msg word uitgestuurd(4)
+// dit gebeurt er als promise faalt
 isItDone.catch(err => console.log(err));
 
 console.log('code afgelopen'); //in terminal (1)
@@ -57,11 +60,11 @@ console.log('code afgelopen'); //in terminal (1)
 
 ```javascript
 $node test.js
-code afgelopen // uitkomst van regel 13
-done // uitkomst van regel 10
+code afgelopen // uitkomst van regel 16
+done // uitkomst van regel 12
 ```
 
-vb. fetch!
+### promise met fetch
 
 ```javascript
 const fetch = require('node-fetch');
@@ -80,7 +83,7 @@ console.log('code finished');
 console.log('ditto === ' + JSON.stringify(ditto));
 ```
 
-vb. fetch met chains
+### fetch met chains
 
 ```javascript
 const fetch = require('node-fetch');
