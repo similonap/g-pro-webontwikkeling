@@ -1,8 +1,8 @@
 # exceptions
 
-## error handling 'old school'
+## vroeger: error handling
 
-Om fouten binnen de code te behandelen werden tot nu toe twee manier gebruikt.   
+Om **fouten binnen de code te behandelen** werden tot nu toe twee manier gebruikt.   
 Ten eerste kan er binnen het schrijven van code gewerkt worden met het **opsplitsen van code** in 'gewone code' en de code die specifiek geschreven wordt om fouten te behandelen.   
 Een tweede manier is door het **opvangen van fouten** zodat de applicatie correct kan blijven doorlopen, er ondertussen mogelijke errors gelogd kunnen worden waarvan de gebruiker geen of enkel de nuttige foutmeldingen vermeld krijgt.
 
@@ -125,7 +125,7 @@ console.log('This code must be reached no matter what');
 
 De code als geheel is niet meer overzichtelijk, aangezien error handling en 'normale' code gemengd worden.
 
-## error handling met exceptions
+## nu: error handling met exceptions
 
 Let in het volgende voorbeeld op de logica van **wat gedaan wordt met error message,** die niet in een functie bepaald wordt. De functie wordt uitgevoerd, maar als er een probleem is, wordt er een error-code 
 
@@ -137,7 +137,6 @@ let add = (a,b) =>{
     }
     return a + b;
 }
-
 let mult = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
     {
@@ -152,11 +151,9 @@ try{
     let e = add(d,c);
     console.log(e);
 }
-
 catch(exc){
     console.log(exc);
 }
-
 finally{
     console.log('This code must be reached no matter what');
 }
@@ -165,7 +162,7 @@ finally{
 ```javascript
 $node test.js
 add: only use numbers // uitkomst van regel 4
-This code must be reached no matter what // uitkomst van regel 29
+This code must be reached no matter what // uitkomst van regel 26
 ```
 
 ## exceptions
