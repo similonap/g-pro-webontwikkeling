@@ -75,9 +75,9 @@ if(d === false){
 // mult geeft error
 let e = add(d,c);
 if(e === false){ 
-// Een return buiten een functie -in main JS-bestand-laat programma stoppen.
-// In Express loopt het programma gewoon verder, tenzij return op einde code.
     return;
+    // Een return buiten een functie -in main JS-bestand-laat programma stoppen.
+    // In Express loopt het programma gewoon verder, tenzij return op einde code.
 }
 ```
 
