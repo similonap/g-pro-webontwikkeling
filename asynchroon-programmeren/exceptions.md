@@ -129,6 +129,13 @@ De code als geheel is niet meer overzichtelijk, aangezien error handling en 'nor
 
 Let in het volgende voorbeeld op de logica van **wat gedaan wordt met error message,** die niet in een functie bepaald wordt. De functie wordt uitgevoerd, maar bij een probleem is, wordt er een error-code gegooid door middel van `throw`.
 
+In onderstaand voorbeeld staan logica en error handling mooi **apart neergeschreven**. De **universele error-aanpak** van het 'gooien' \(`throw`\) van een foutmelding \(error\), maakt dat er geen extra afspraken nodig zijn bij het schrijven van code, zoals voorheen wel het geval was. Aangezien de error handling nu slechts op **één plek** staat, kan de manier van behandelen van de errors makkelijk aangepast worden: 
+
+* log naar de console
+* bewaar boodschap in database
+* verberg boodschap voor gebruiker en zorg dat applicatie blijft draaien
+* ...
+
 ```javascript
 let add = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
@@ -171,61 +178,58 @@ This code must be reached no matter what // uitkomst van regel 26
 
 ## exceptions
 
-Voor het afhandelen van fouten maakt JavaScript gebruik van exceptions, een mechanisme voor exception handling. De gedachte achter deze manier van werken is de volgende: Stel dat er op een bepaalde plaats binnen een programma plots een onverwachte situatie ontstaat, zal de runtime-omgeving of programmeur een exception opgooien \(`throw`\), die nadien op een andere plaats binnen het programma opgevangen \(`catch`\) en afgehandeld wordt. 
+Voor het afhandelen van fouten maken moderne, objectgeoriënteerde talen als JavaScript gebruik van exceptions, een mechanisme voor exception handling. De gedachte achter deze manier van werken is de volgende: Stel dat er op een bepaalde plaats binnen een programma plots een onverwachte situatie ontstaat, zal de runtime-omgeving of programmeur een exception opgooien \(`throw`\), die nadien op een andere plaats binnen het programma opgevangen \(`catch`\) en afgehandeld wordt. 
 
-### voordelen
-
-In bovenstaande voorbeeld staan logica en error handling mooi **apart neergeschreven**. De **universele error-aanpak** van het 'gooien' \(`throw`\) van een foutmelding \(error\), maakt dat er geen extra afspraken nodig zijn bij het schrijven van code, zoals voorheen wel het geval was. Aangezien de error handling nu slechts op **één plek** staat, kan de manier van behandelen van de errors makkelijk aangepast worden: 
-
-* log naar de console
-* bewaar boodschap in database
-* verberg boodschap voor gebruiker en zorg dat applicatie blijft draaien
-* ...
-
-### structuur
+#### structuur
 
 * `throw`
 * `try` / `catch`
 * `finally`
 * call stack
 
-## exception: throw
+### throw
 
-* "gooit" een foutmelding
+Het keyword throw stelt een programmeur in staat om een exception op te gooien. Throw kan gebruikt worden in combinatie met een string, number of object, maar er kan met de error ook een boodschap meegegeven worden:
 
 ```javascript
+// gooi (throw) een foutmelding (error)
 let isFout = true;
 if(isFout){
-  throw 'Er is een fout'
+  throw 'Er is een fout';
 }
 ```
 
-* gooi string, nummer, object...
-
 ```javascript
+// gooi (throw) een string, number, object...
 let isFout = true;
 if(isFout){
 throw {waar:'Optellen', wat:'a is geen getal'}
 }
 ```
 
-## exception: finally
+### try / catch
 
-* mooi afronden van je code
-* wordt altijd uitgevoerd, met of zonder expections
+Het opvangen van een exception gebeurt met de constructie try-catch.   
+Als er bij de verwerking van `try` een exception optreedt, wordt instant overgegaan naar de code van `catch` en die code uitgevoerd. Indien er geen exception optreedt wordt `catch` en zijn bijhorende code overgeslagen. De parameter van exception bevat extra informatie, die in `catch` gebruikt kan worden. Helaas is deze info afhankelijk van de browser die op dat moment gebruikt wordt, maar gelukkig hebben alle browsers een gemeenschappelijke property message.
 
 ```javascript
 try{
+// code die mogelijk een exception kan opgooien
 add('geen getal', 1);
 }
 catch(exception)
 {
-//do something with exception
+// wat er moet gebeuren bij een exception
 }
 finally {
-// this code always runs
+// code die altijd wordt uitgevoerd
 }
 ```
+
+### finally
+
+* mooi afronden van je code
+* wordt altijd uitgevoerd, met of zonder exceptions
 
 ## exception: call stack
 
