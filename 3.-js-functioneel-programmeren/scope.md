@@ -114,7 +114,3 @@ console.log(name); // Mouse
 
 
 
-
-
-
-

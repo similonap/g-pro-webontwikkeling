@@ -1,6 +1,6 @@
 # exceptions
 
-## vroeger: error handling
+## error handling vroeger...
 
 Om **fouten binnen de code te behandelen** werden tot nu toe twee manier gebruikt.   
 Ten eerste kan er binnen het schrijven van code gewerkt worden met het **opsplitsen van code** in 'gewone code' en de code die specifiek geschreven wordt om fouten te behandelen.   
@@ -125,9 +125,9 @@ console.log('This code must be reached no matter what');
 
 De code als geheel is niet meer overzichtelijk, aangezien error handling en 'normale' code gemengd worden.
 
-## nu: error handling met exceptions
+## ... en nu met exceptions
 
-Let in het volgende voorbeeld op de logica van **wat gedaan wordt met error message,** die niet in een functie bepaald wordt. De functie wordt uitgevoerd, maar als er een probleem is, wordt er een error-code 
+Let in het volgende voorbeeld op de logica van **wat gedaan wordt met error message,** die niet in een functie bepaald wordt. De functie wordt uitgevoerd, maar bij een probleem is, wordt er een error-code gegooid door middel van `throw`.
 
 ```javascript
 let add = (a,b) =>{
@@ -169,12 +169,12 @@ This code must be reached no matter what // uitkomst van regel 26
 
 ### voordelen
 
-* logica en error handling mooi apart
-* universele aanpak "gooien" error \(geen extra afspraken nodig\)
-* error handling op 1 plek = gemakkelijk aanpassen van manier van behandelen
-  * bv. log naar de console
-  * bv. bewaar boodschap in database
-  * bv. verberg boodschap voor gebruiker en zorg dat applicatie blijft draaien
+In bovenstaande voorbeeld staan logica en error handling mooi **apart neergeschreven**. De **universele aanpak** van het 'gooien' \(`throw`\) van een error, maakt dat er geen extra afspraken nodig zijn bij het schrijven van code, zoals voorheen wel het geval was. Aangezien de error handling nu slechts op **één plek** staat, kan de manier van behandelen van de errors makkelijk aangepast worden: 
+
+* log naar de console
+* bewaar boodschap in database
+* verberg boodschap voor gebruiker en zorg dat applicatie blijft draaien
+* ...
 
 ### basics
 
