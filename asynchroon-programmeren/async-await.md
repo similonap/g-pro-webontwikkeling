@@ -13,11 +13,17 @@ $ node test.js
 Hello
 ```
 
-async voor functie:
+Het woord `async` voor functie plaatsen maakt dat de code niet geblokkeerd wordt. Door deze toevoeging van async wordt geen waarde \(dus geen message 'Hello'\) teruggegeven, maar wel een promise.
 
 ```javascript
-const hello = async () => { return "Hello" };
-hello(); // geeft nu promise terug ipv "Hello"
+const hello = async () => { return 'Hello' };
+let message = hello();
+console.log(message); // geeft nu promise terug ipv "Hello"
+```
+
+```javascript
+$ node test.js
+Promise {'Hello'}
 ```
 
 await zorgt dat code wacht op het resultaat van een promise   
@@ -41,7 +47,7 @@ let response = await result.json();
 console.log(response.name);
 }
 doFetch();
-console.log("code done");
+console.log('code done');
 ```
 
 ```javascript
@@ -64,7 +70,7 @@ doFetch('2');
 doFetch('3');
 doFetch('4');
 doFetch('5');
-console.log("code done");
+console.log('code done');
 ```
 
 ```text
@@ -86,9 +92,9 @@ let done = false;
 
 const isItDone = new Promise((resolve, reject) => {
     if (done) {
-        resolve("Done")
+        resolve('Done')
     } else {
-        reject("Not done")
+        reject('Not done')
     }
 });
 
