@@ -1,7 +1,6 @@
 # async / await
 
-andere manier om promises te schrijven   
-duidelijkere syntax
+Async/await is een andere manier om promises te schrijven, waarbij de syntax veel duidelijkere is. Dit mag enkel gebruikt worden in asynchrone functies
 
 ```javascript
 const hello = () => { return "Hello" };
@@ -12,12 +11,11 @@ async voor functie:
 
 ```javascript
 const hello = async () => { return "Hello" };
-hello();
+hello(); // geeft nu promise terug ipv "Hello"
 ```
 
-geeft nu promise terug ipv "Hello"
-
-await zorgt dat code wacht op het resultaat van een promise wanneer promise voltooid is, krijg je waarde terug
+await zorgt dat code wacht op het resultaat van een promise   
+wanneer promise voltooid is, krijg je waarde terug
 
 ```javascript
 const doFetch = async () => {
@@ -27,9 +25,7 @@ let result = await fetch(...);
 }
 ```
 
-enkel gebruiken in async functies
-
-geen nood aan al die "then" chains
+#### voorbeeld zonder "then" chains
 
 ```javascript
 const fetch = require('node-fetch');
@@ -42,7 +38,13 @@ doFetch();
 console.log("code done");
 ```
 
-test dit voorbeeld, kijk naar volgorde console.log
+```javascript
+$ node test.js
+code done
+ditto
+```
+
+#### voorbeeld met uitkomst terminal \(volgorde output console.log!\)
 
 ```javascript
 const fetch = require('node-fetch');
@@ -57,6 +59,16 @@ doFetch('3');
 doFetch('4');
 doFetch('5');
 console.log("code done");
+```
+
+```text
+$ node test.js
+code done
+bulbasaur 1
+ivysaur 2
+charmeleon 5
+charmander 4
+venusaur 3
 ```
 
 ## exceptions
@@ -86,6 +98,11 @@ let run = async() =>{
 run();
 ```
 
+```javascript
+$ node test.js
+Not done
+```
+
 correcte methode voor fetch:
 
 ```javascript
@@ -104,5 +121,8 @@ doFetch();
 console.log('code done');
 ```
 
-
+```javascript
+$ node test.js
+Not done
+```
 
