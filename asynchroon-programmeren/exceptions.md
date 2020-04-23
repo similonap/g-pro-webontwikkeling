@@ -178,7 +178,7 @@ This code must be reached no matter what // uitkomst van regel 26
 
 ## exceptions
 
-Voor het afhandelen van fouten maken moderne, objectgeoriënteerde talen als JavaScript gebruik van exceptions, een mechanisme voor exception handling. De gedachte achter deze manier van werken is de volgende: Stel dat er op een bepaalde plaats binnen een programma plots een onverwachte situatie ontstaat, zal de runtime-omgeving of programmeur een exception opgooien \(`throw`\), die nadien op een andere plaats binnen het programma opgevangen \(`catch`\) en afgehandeld wordt. 
+Voor het afhandelen van fouten maken moderne, objectgeoriënteerde talen als JavaScript gebruik van exceptions, een mechanisme voor exception handling. De gedachte achter deze manier van werken is de volgende: Stel dat er op een bepaalde plaats binnen een programma plots een onverwachte situatie ontstaat, zal de runtime-omgeving of programmeur een exception opgooien met een `throw`, die nadien op een andere plaats binnen het programma opgevangen en afgehandeld wordt met een `catch`. 
 
 #### structuur
 
@@ -189,7 +189,7 @@ Voor het afhandelen van fouten maken moderne, objectgeoriënteerde talen als Jav
 
 ### throw
 
-Het keyword throw stelt een programmeur in staat om een exception op te gooien. Throw kan gebruikt worden in combinatie met een string, number of object, maar er kan met de error ook een boodschap meegegeven worden:
+Het keyword throw stelt een programmeur in staat om een exception op te gooien. Throw kan gebruikt worden in combinatie met een string, number of object, maar er kan samen met de error ook een boodschap meegegeven worden:
 
 ```javascript
 // gooi (throw) een foutmelding (error)
@@ -209,7 +209,7 @@ throw {waar:'Optellen', wat:'a is geen getal'}
 
 ### try / catch
 
-Het opvangen van een exception gebeurt met de constructie try-catch.   
+Het opvangen van een exception gebeurt dus met de constructie try-catch.   
 Als er bij de verwerking van `try` een exception optreedt, wordt instant overgegaan naar de code van `catch` en die code uitgevoerd. Indien er geen exception optreedt wordt `catch` en zijn bijhorende code overgeslagen. De parameter van exception bevat extra informatie, die in `catch` gebruikt kan worden. Helaas is deze info afhankelijk van de browser die op dat moment gebruikt wordt, maar gelukkig hebben alle browsers een gemeenschappelijke property message.
 
 ```javascript
@@ -227,6 +227,8 @@ finally {
 ```
 
 ### finally
+
+De try-catch-constructie kent nog een optioneel onderdeel finallydat gebruikt kan worden voor ’cleanup code’. Als een finally-blok aanwezig is, wordt de code ervan altijd uitgevoerd, ook al treedt er geen exception op.
 
 * mooi afronden van je code
 * wordt altijd uitgevoerd, met of zonder exceptions
