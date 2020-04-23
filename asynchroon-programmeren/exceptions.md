@@ -228,10 +228,7 @@ finally {
 
 ### finally
 
-De try-catch-constructie kent nog een optioneel onderdeel finallydat gebruikt kan worden voor ’cleanup code’. Als een finally-blok aanwezig is, wordt de code ervan altijd uitgevoerd, ook al treedt er geen exception op.
-
-* mooi afronden van je code
-* wordt altijd uitgevoerd, met of zonder exceptions
+Om de code mooi af te ronden heeft de constructie try-catch een optioneel onderdeel `finally`, waarvan de code altijd wordt uitgevoerd, met of zonder exceptions.
 
 ## exception: call stack
 
