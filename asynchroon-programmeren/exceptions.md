@@ -52,6 +52,8 @@ let mult = (a,b) =>{
 
 Hoe moeten al deze fouten behandeld worden?
 
+#### originele error-code \( in 3 lijnen\)
+
 ```javascript
 let c = add('not a number', 3);
 // add geeft error
@@ -59,6 +61,8 @@ let d = mult('again, not a number', 4);
 // mult geeft error
 let e = add(d,c);
 ```
+
+#### error-code met if \(voor testen exceptions\)
 
 Er komt een 'check' na elke functie call, maar elke keer als er iets fout loopt, stopt het programma. 
 
@@ -101,6 +105,8 @@ if(e === false){
 console.log('This code must be reached no matter what');
 ```
 
+#### error-code met if en voorwaarden, zodat code niet stopt
+
 ```javascript
 let c = add('not a number', 3);
 if(c !== false){
@@ -113,13 +119,13 @@ if(c !== false){
     }
 }
 
-// more code that must be run
+// meer code die uitgevoerd wordt
 console.log('This code must be reached no matter what');
 ```
 
-"messy": error handling en "normale" code gemengd
+De code als geheel is niet meer overzichtelijk, aangezien error handling en 'normale' code gemengd worden.
 
-### error handling through exceptions
+## error handling met exceptions
 
 merk op: logica **wat gedaan wordt met error message** niet in functie bepaald
 
