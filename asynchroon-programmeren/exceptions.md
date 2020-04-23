@@ -6,9 +6,11 @@ Om fouten binnen de code te behandelen werden tot nu toe twee manier gebruikt.
 Ten eerste kan er binnen het schrijven van code gewerkt worden met het **opsplitsen van code** in 'gewone code' en de code die specifiek geschreven wordt om fouten te behandelen.   
 Een tweede manier is door het **opvangen van fouten** zodat de applicatie correct kan blijven doorlopen, er ondertussen mogelijke errors gelogd kunnen worden waarvan de gebruiker geen of enkel de nuttige foutmeldingen vermeld krijgt.
 
+### voorbeeld met één functie
+
 ```javascript
 let add = (a,b) =>{
-    if(isNaN(a)|| isNaN(b))
+    if(isNaN(a)|| isNaN(b)) // error code binnen functie
     {
         console.log("Error: only numbers")
         return false;
@@ -18,15 +20,15 @@ let add = (a,b) =>{
 
 let c = add("not a number", 3);
 
-if(c !== false)
+if(c !== false) // error code buiten functie
 {
     console.log(3 * c);
 }
 ```
 
-error code verspreid: if\(isNaN\(a\)\|\| isNaN\(b\)\) \(in functie\) if\(c !== false\) \(buiten functie\) afspraken nodig zodat elke functie bv. false teruggeeft bij error wat indien meerdere functies?
+De **error code** in bovenstaand voorbeeld is verspreid en staat zowel **binnen**  `if(isNaN(a)|| isNaN(b))`als **buiten de functie** `if(c !== false)`. Bij deze manier van werken zijn er onderling afspraken nodig, zodat bijvoorbeeld elke functie bij een error `false` teruggeeft. maar wat dan gedaan indien er meerdere functies zijn?
 
-bv. 2 functies:
+### voorbeeld met twee functies
 
 ```javascript
 let add = (a,b) =>{
