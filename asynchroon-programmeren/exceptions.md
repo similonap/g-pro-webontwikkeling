@@ -233,12 +233,12 @@ Om de code mooi af te ronden heeft de constructie try-catch een optioneel onderd
 
 ## exception: call stack
 
-functie 2 behandelt error
+In functie 2 wordt de error behandeld.
 
 ```javascript
 let functie1 = () =>
 {
-    throw 'Error in functie 1';
+    throw 'error in functie 1';
 }
 
 let functie2 = () =>
@@ -254,14 +254,18 @@ let functie2 = () =>
 functie2();
 ```
 
-wanneer niet direct behandeld, wordt die opnieuw gegooid
+```text
+$ node test.js
+error in functie 1
+```
+
+Wanneer deze niet direct behandeld wordt, zal die opnieuw opgeworpen en terug doorgegeven worden, naar de functie die initieel de oproeper was.
 
 ```javascript
 let functie1 = () =>
 {
     throw 'Error in functie 1';
 }
-
 let functie2 = () =>
 {
    functie1();
@@ -273,6 +277,10 @@ try{
 catch(exception){
     console.log(exception);
 }
+```
 
+```javascript
+$ node test.js
+error in functie 1
 ```
 
