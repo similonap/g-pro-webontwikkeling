@@ -114,7 +114,7 @@ if(c !== false){
 }
 
 // more code that must be run
-console.log("This code must be reached no matter what");
+console.log('This code must be reached no matter what');
 ```
 
 "messy": error handling en "normale" code gemengd
@@ -135,7 +135,7 @@ let add = (a,b) =>{
 let mult = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
     {
-        throw "add: only use numbers";
+        throw 'add: only use numbers';
     }
     return a * b;
 }
@@ -143,8 +143,8 @@ let mult = (a,b) =>{
 
 ```javascript
 try{
-    let c = add("not a number", 3);
-    let d = mult("again, not a number", 4);
+    let c = add('not a number', 3);
+    let d = mult('again, not a number', 4);
     let e = add(d,c);
     console.log(e);
 }
@@ -152,7 +152,7 @@ catch(exc){
     console.log(exc);
 }
 finally{
-    console.log("This code must be reached no matter what");
+    console.log('This code must be reached no matter what');
 }
 ```
 
@@ -178,19 +178,19 @@ finally{
 
 * "gooit" een foutmelding
 
-```text
+```javascript
 let isFout = true;
 if(isFout){
-  throw "Er is een fout"
+  throw 'Er is een fout'
 }
 ```
 
 * gooi string, nummer, object...
 
-```text
+```javascript
 let isFout = true;
 if(isFout){
-throw {waar:"Optellen", wat:"a is geen getal"}
+throw {waar:'Optellen', wat:'a is geen getal'}
 }
 ```
 
@@ -199,9 +199,9 @@ throw {waar:"Optellen", wat:"a is geen getal"}
 * mooi afronden van je code
 * wordt altijd uitgevoerd, met of zonder expections
 
-```text
+```javascript
 try{
-add("geen getal", 1);
+add('geen getal', 1);
 }
 catch(exception)
 {
@@ -219,7 +219,7 @@ functie 2 behandelt error
 ```javascript
 let functie1 = () =>
 {
-    throw "Error in functie 1";
+    throw 'Error in functie 1';
 }
 
 let functie2 = () =>
@@ -240,7 +240,7 @@ wanneer niet direct behandeld, wordt die opnieuw gegooid
 ```javascript
 let functie1 = () =>
 {
-    throw "Error in functie 1";
+    throw 'Error in functie 1';
 }
 
 let functie2 = () =>
