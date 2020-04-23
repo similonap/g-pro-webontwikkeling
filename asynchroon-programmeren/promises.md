@@ -4,16 +4,16 @@ Promises zijn de nieuwe stijl van asynchroon code schrijven die veelal in modern
 
 ## definitie
 
-Een promise is een tussentijdse staat van een operatie, volop bezig \(**pending**\) om de server te raadplegen, maar de uitkomst is nog niet geweten, of het al dan niet succesvol was of net niet en dus gefaald heeft.   
-Een promises is dus een belofte dat er een resultaat aan staat te komen. Wanneer de promise **vervuld** is, dan kan er met het resultaat iets gedaan worden. Indien de promise echter werd **afgekeurd,** zal ook de reden waarom meegegeven worden. De promise **bevat dus niet het resultaat**.
+Een promise is een **tussentijdse staat** van een operatie, volop bezig \(**pending**\) om de server te raadplegen, maar de uitkomst is nog niet geweten, of het al dan niet succesvol was of net niet en dus gefaald heeft.   
+Een promises is dus een **belofte** dat er een resultaat aan staat te komen. Wanneer de promise **vervuld** is, dan kan er met het resultaat iets gedaan worden. Indien de promise echter werd **afgekeurd,** zal ook de reden waarom meegegeven worden. De promise **bevat dus NIET het resultaat**.
 
 ## structuur
 
 ```javascript
 // Dit is dus de structuur van promise.
 let promise = fetch('...'); // pending
-promise.then(...); // wanneer die vervuld is, doe ...
-promise.catch(...) // wanneer die afgekeurd is, doe ...
+promise.then(...); // wanneer die vervuld IS, doe ...
+promise.catch(...) // wanneer die afgekeurd IS, doe ...
 ```
 
 ## maken van een promise

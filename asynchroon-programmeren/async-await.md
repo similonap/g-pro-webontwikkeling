@@ -59,3 +59,50 @@ doFetch('5');
 console.log("code done");
 ```
 
+## exceptions
+
+vang reject met catch
+
+```javascript
+let done = false;
+
+const isItDone = new Promise((resolve, reject) => {
+    if (done) {
+        resolve("Done")
+    } else {
+        reject("Not done")
+    }
+});
+
+let run = async() =>{
+    try{
+        let result = await isItDone;
+        console.log(result);
+    }
+    catch(exception){
+        console.log(exception);
+    }
+}
+run();
+```
+
+correcte methode voor fetch:
+
+```javascript
+const fetch = require('node-fetch');
+const doFetch = async () =>{
+    try{
+      let result = await fetch('https://pokeapi.co/api/v2/pokemon/ditto/')
+      let response = await result.json();
+      console.log(response.name);
+    }
+    catch(exc){
+      console.log('error');
+    }
+}
+doFetch();
+console.log('code done');
+```
+
+
+
