@@ -133,24 +133,28 @@ Let in het volgende voorbeeld op de logica van **wat gedaan wordt met error mess
 let add = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
     {
-       throw 'add: only use numbers';
+       // gooien van mogelijke error met throw
+       throw 'add: only use numbers'; 
     }
     return a + b;
 }
 let mult = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
     {
-        throw 'add: only use numbers';
+        // gooien van mogelijke error met throw
+        throw 'add: only use numbers'; 
     }
     return a * b;
 }
 
+// code waarmee mogelijk iets kan foutlopen
 try{
     let c = add('not a number', 3);
     let d = mult('again, not a number', 4);
     let e = add(d,c);
     console.log(e);
 }
+// opvangen van error met catch, dus als er iets fout loopt, doe er iets mee
 catch(exc){
     console.log(exc);
 }
@@ -169,14 +173,14 @@ This code must be reached no matter what // uitkomst van regel 26
 
 ### voordelen
 
-In bovenstaande voorbeeld staan logica en error handling mooi **apart neergeschreven**. De **universele aanpak** van het 'gooien' \(`throw`\) van een error, maakt dat er geen extra afspraken nodig zijn bij het schrijven van code, zoals voorheen wel het geval was. Aangezien de error handling nu slechts op **één plek** staat, kan de manier van behandelen van de errors makkelijk aangepast worden: 
+In bovenstaande voorbeeld staan logica en error handling mooi **apart neergeschreven**. De **universele error-aanpak** van het 'gooien' \(`throw`\) van een foutmelding \(error\), maakt dat er geen extra afspraken nodig zijn bij het schrijven van code, zoals voorheen wel het geval was. Aangezien de error handling nu slechts op **één plek** staat, kan de manier van behandelen van de errors makkelijk aangepast worden: 
 
 * log naar de console
 * bewaar boodschap in database
 * verberg boodschap voor gebruiker en zorg dat applicatie blijft draaien
 * ...
 
-### basics
+### structuur
 
 * `throw`
 * `try` / `catch`
