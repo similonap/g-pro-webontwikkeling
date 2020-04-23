@@ -13,7 +13,7 @@ $ node test.js
 Hello
 ```
 
-Het woord `async` voor functie plaatsen maakt dat de code niet geblokkeerd wordt. Door deze toevoeging van async wordt geen waarde teruggegeven, maar wel een promise.
+Het woord `async` voor functie plaatsen maakt dat de code niet geblokkeerd wordt. Door de toevoeging van `async` wordt geen waarde teruggegeven, maar wel een promise.
 
 ```javascript
 const hello = async () => { return 'Hello' };
