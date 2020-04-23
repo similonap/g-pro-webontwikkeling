@@ -1,6 +1,6 @@
 # async / await
 
-Async/await is een andere manier om promises te schrijven, waarbij de syntax veel duidelijkere is. Dit mag enkel gebruikt worden in asynchrone functies
+Async/await is een andere manier om promises te schrijven, waarbij de syntax veel duidelijkere is. Dit mag **enkel gebruikt worden in asynchrone functies**.
 
 ```javascript
 const hello = () => { return 'Hello' };
@@ -13,7 +13,7 @@ $ node test.js
 Hello
 ```
 
-Het woord `async` voor functie plaatsen maakt dat de code niet geblokkeerd wordt. Door de toevoeging van `async` wordt geen waarde teruggegeven, maar wel een promise.
+Het woord `async` voor functie plaatsen maakt dat de code niet geblokkeerd wordt. Door de toevoeging van `async` wordt geen waarde teruggegeven, maar geeft **async een promise** terug.
 
 ```javascript
 const hello = async () => { return 'Hello' };
@@ -26,13 +26,12 @@ $ node test.js
 Promise {'Hello'}
 ```
 
-await zorgt dat code wacht op het resultaat van een promise   
-wanneer promise voltooid is, krijg je waarde terug
+Het woord `await` zorgt dat code wacht op het resultaat van een promise. En wanneer de promise voltooid is, krijg je een waarde terug.
 
 ```javascript
 const doFetch = async () => {
 let result = await fetch(...);
-// code hangt tot fetch klaar is
+// code blijft hangen tot fetch klaar is
 // result bevat resultaat!
 }
 ```
@@ -42,9 +41,9 @@ let result = await fetch(...);
 ```javascript
 const fetch = require('node-fetch');
 const doFetch = async () =>{
-let result = await fetch('https://pokeapi.co/api/v2/pokemon/ditto/')
-let response = await result.json();
-console.log(response.name);
+    let result = await fetch('https://pokeapi.co/api/v2/pokemon/ditto/')
+    let response = await result.json();
+    console.log(response.name);
 }
 doFetch();
 console.log('code done');
