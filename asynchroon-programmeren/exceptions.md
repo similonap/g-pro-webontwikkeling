@@ -81,7 +81,7 @@ if(e === false){
 }
 ```
 
-what als code niet gewoon mag stoppen, bv. er is nog code na de errors die altijd moet uitgevoerd worden
+Wat als de code niet gewoon mag stoppen, aangezien er bijvoorbeeld nog altijd code na de errors moet uitgevoerd worden?
 
 ```javascript
 let c = add('not a number', 3);
@@ -89,7 +89,7 @@ if(c === false){
     return;
 }
 // add geeft error
-let d = mult('again, not a number", 4);
+let d = mult('again, not a number', 4);
 if(d === false){
     return;
 }
@@ -97,7 +97,7 @@ let e = add(d,c);
 if(e === false){
     return;
 }
-// more code that must be run, but will not be reached because of error/return
+// meer code die nog uitgevoerd moet worden, gebeurt niet door error/return
 console.log('This code must be reached no matter what');
 ```
 
