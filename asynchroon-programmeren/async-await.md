@@ -60,9 +60,9 @@ ditto
 ```javascript
 const fetch = require('node-fetch');
 const doFetch = async (pokemonName) =>{
-let result = await fetch('https://pokeapi.co/api/v2/pokemon/'+pokemonName+'/')
-let response = await result.json();
-console.log(response.name + ' ' + response.id);
+    let result = await fetch('https://pokeapi.co/api/v2/pokemon/'+pokemonName+'/')
+    let response = await result.json();
+    console.log(response.name + ' ' + response.id);
 }
 doFetch('1');
 doFetch('2');
