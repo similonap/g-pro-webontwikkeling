@@ -195,7 +195,7 @@ Het keyword throw stelt een programmeur in staat om een exception op te gooien. 
 // gooi (throw) een foutmelding (error)
 let isFout = true;
 if(isFout){
-  throw 'Er is een fout';
+    throw 'Er is een fout';
 }
 ```
 
@@ -203,14 +203,15 @@ if(isFout){
 // gooi (throw) een string, number, object...
 let isFout = true;
 if(isFout){
-throw {waar:'Optellen', wat:'a is geen getal'}
+    throw {waar:'Optellen', wat:'a is geen getal'}
 }
 ```
 
 ### try / catch
 
 Het opvangen van een exception gebeurt dus met de constructie try-catch.   
-Als er bij de verwerking van `try` een exception optreedt, wordt instant overgegaan naar de code van `catch` en die code uitgevoerd. Indien er geen exception optreedt wordt `catch` en zijn bijhorende code overgeslagen. De parameter van exception bevat extra informatie, die in `catch` gebruikt kan worden. Helaas is deze info afhankelijk van de browser die op dat moment gebruikt wordt, maar gelukkig hebben alle browsers een gemeenschappelijke property message.
+Als er bij de verwerking van `try` een exception optreedt, wordt instant overgegaan naar `catch` die de error tussen {} van `try`  opvangt om vervolgens zijn eigen catch-code uit te voeren.   
+Indien er geen exception optreedt wordt `catch` en zijn bijhorende code overgeslagen. De parameter van exception bevat extra informatie die in `catch` gebruikt kan worden. Helaas is deze info browser-afhankelijk, maar gelukkig hebben alle browsers een gemeenschappelijke property message.
 
 ```javascript
 try{
