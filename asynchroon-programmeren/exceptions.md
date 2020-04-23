@@ -211,7 +211,7 @@ if(isFout){
 
 Het opvangen van een exception gebeurt dus met de constructie try-catch.   
 Als er bij de verwerking van `try` een exception optreedt, wordt instant overgegaan naar `catch` die de error tussen {} van `try`  opvangt om vervolgens zijn eigen catch-code uit te voeren.   
-Indien er geen exception optreedt wordt `catch` en zijn bijhorende code overgeslagen. De parameter van exception bevat extra informatie die in `catch` gebruikt kan worden. Helaas is deze info browser-afhankelijk, maar gelukkig hebben alle browsers een gemeenschappelijke property message.
+Indien er geen exception optreedt wordt `catch` en zijn bijhorende code overgeslagen. De parameter van exception bevat extra informatie \(string, number of object\) die in `catch` gebruikt kan worden. Helaas is deze info browser-afhankelijk, maar gelukkig hebben alle browsers een gemeenschappelijke property message.
 
 ```javascript
 try{
