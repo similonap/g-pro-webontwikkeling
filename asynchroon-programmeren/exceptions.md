@@ -1,10 +1,10 @@
 # exceptions
 
-## error handling
+## error handling 'old school'
 
-### error handling 'old school'
-
-behandelen van fouten in de code opsplitsen "gewone code" en code om fouten te behandelen opvangen van fouten zodat de applicatie correct blijft lopen errors kunnen gelogd worden de gebruiker geen/enkel nuttige foutmeldingen krijgt
+Om fouten binnen de code te behandelen werden tot nu toe twee manier gebruikt.   
+Ten eerste kan er binnen het schrijven van code gewerkt worden met het **opsplitsen van code** in 'gewone code' en de code die specifiek geschreven wordt om fouten te behandelen.   
+Een tweede manier is door het **opvangen van fouten** zodat de applicatie correct kan blijven doorlopen, er ondertussen mogelijke errors gelogd kunnen worden waarvan de gebruiker geen of enkel de nuttige foutmeldingen vermeld krijgt.
 
 ```javascript
 let add = (a,b) =>{
