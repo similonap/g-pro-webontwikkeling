@@ -50,9 +50,9 @@ const isItDone = new Promise((resolve, reject) => {
         reject('not done')
     }
 });
-// dit gebeurt er als promise gelukt is
+// dit wordt gebeurt er als promise gelukt is
 isItDone.then(msg => console.log(msg)); // en msg word uitgestuurd(4)
-// dit gebeurt er als promise faalt
+// dit wordt gebeurt er als promise faalt
 isItDone.catch(err => console.error(err));
 
 console.log('code afgelopen'); //in terminal (1)

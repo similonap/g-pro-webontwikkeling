@@ -34,7 +34,7 @@ De **error code** in bovenstaand voorbeeld is verspreid en staat zowel **binnen*
 let add = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
     {
-        console.log("Error add: only numbers")
+        console.log('Error add: only numbers')
         return false;
     }
     return a + b;
@@ -43,38 +43,40 @@ let add = (a,b) =>{
 let mult = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
     {
-        console.log("Error mult: only numbers")
+        console.log('Error mult: only numbers')
         return false;
     }
     return a * b;
 }
 ```
 
-hoe behandelen al deze fouten?
+Hoe moeten al deze fouten behandeld worden?
 
 ```javascript
-let c = add("not a number", 3);
+let c = add('not a number', 3);
 // add geeft error
-let d = mult("again, not a number", 4);
+let d = mult('again, not a number', 4);
 // mult geeft error
 let e = add(d,c);
 ```
 
-een "check" na elke functie call
+Er komt een 'check' na elke functie call, maar elke keer als er iets fout loopt, stopt het programma. 
 
 ```javascript
-let c = add("not a number", 3);
+let c = add('not a number', 3);
 if(c === false){
     return;
 }
 // add geeft error
-let d = mult("again, not a number", 4);
+let d = mult('again, not a number', 4);
 if(d === false){
     return;
 }
 // mult geeft error
 let e = add(d,c);
-if(e === false){
+if(e === false){ 
+// Een return buiten een functie -in main JS-bestand-laat programma stoppen.
+// In Express loopt het programma gewoon verder, tenzij return op einde code.
     return;
 }
 ```
@@ -82,12 +84,12 @@ if(e === false){
 what als code niet gewoon mag stoppen, bv. er is nog code na de errors die altijd moet uitgevoerd worden
 
 ```javascript
-let c = add("not a number", 3);
+let c = add('not a number', 3);
 if(c === false){
     return;
 }
 // add geeft error
-let d = mult("again, not a number", 4);
+let d = mult('again, not a number", 4);
 if(d === false){
     return;
 }
@@ -96,13 +98,13 @@ if(e === false){
     return;
 }
 // more code that must be run, but will not be reached because of error/return
-console.log("This code must be reached no matter what");
+console.log('This code must be reached no matter what');
 ```
 
 ```javascript
-let c = add("not a number", 3);
+let c = add('not a number', 3);
 if(c !== false){
-    let d = mult("again, not a number", 4);
+    let d = mult('again, not a number', 4);
     if(d !== false){
         let e = add(d,c);
         if(e !== false){
@@ -125,7 +127,7 @@ merk op: logica **wat gedaan wordt met error message** niet in functie bepaald
 let add = (a,b) =>{
     if(isNaN(a)|| isNaN(b))
     {
-       throw "add: only use numbers";
+       throw 'add: only use numbers';
     }
     return a + b;
 }
@@ -171,8 +173,6 @@ finally{
 * `try` / `catch`
 * `finally`
 * call stack
-
-
 
 ## exception: throw
 
