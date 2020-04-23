@@ -3,8 +3,14 @@
 Async/await is een andere manier om promises te schrijven, waarbij de syntax veel duidelijkere is. Dit mag enkel gebruikt worden in asynchrone functies
 
 ```javascript
-const hello = () => { return "Hello" };
-hello();
+const hello = () => { return 'Hello' };
+let message = hello();
+console.log(message);
+```
+
+```javascript
+$ node test.js
+Hello
 ```
 
 async voor functie:
