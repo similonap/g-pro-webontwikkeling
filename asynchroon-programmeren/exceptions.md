@@ -127,7 +127,7 @@ De code als geheel is niet meer overzichtelijk, aangezien error handling en 'nor
 
 ## error handling met exceptions
 
-merk op: logica **wat gedaan wordt met error message** niet in functie bepaald
+Let in het volgende voorbeeld op de logica van **wat gedaan wordt met error message,** die niet in een functie bepaald wordt. De functie wordt uitgevoerd, maar als er een probleem is, wordt er een error-code 
 
 ```javascript
 let add = (a,b) =>{
@@ -145,21 +145,27 @@ let mult = (a,b) =>{
     }
     return a * b;
 }
-```
 
-```javascript
 try{
     let c = add('not a number', 3);
     let d = mult('again, not a number', 4);
     let e = add(d,c);
     console.log(e);
 }
+
 catch(exc){
     console.log(exc);
 }
+
 finally{
     console.log('This code must be reached no matter what');
 }
+```
+
+```javascript
+$node test.js
+add: only use numbers // uitkomst van regel 4
+This code must be reached no matter what // uitkomst van regel 29
 ```
 
 ## exceptions
