@@ -171,6 +171,8 @@ This code must be reached no matter what // uitkomst van regel 26
 
 ## exceptions
 
+Voor het afhandelen van fouten maakt JavaScript gebruik van exceptions, een mechanisme voor exception handling. De gedachte achter deze manier van werken is de volgende: Stel dat er op een bepaalde plaats binnen een programma plots een onverwachte situatie ontstaat, zal de runtime-omgeving of programmeur een exception opgooien \(`throw`\), die nadien op een andere plaats binnen het programma opgevangen \(`catch`\) en afgehandeld wordt. 
+
 ### voordelen
 
 In bovenstaande voorbeeld staan logica en error handling mooi **apart neergeschreven**. De **universele error-aanpak** van het 'gooien' \(`throw`\) van een foutmelding \(error\), maakt dat er geen extra afspraken nodig zijn bij het schrijven van code, zoals voorheen wel het geval was. Aangezien de error handling nu slechts op **één plek** staat, kan de manier van behandelen van de errors makkelijk aangepast worden: 
