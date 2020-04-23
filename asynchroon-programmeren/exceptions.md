@@ -12,13 +12,13 @@ Een tweede manier is door het **opvangen van fouten** zodat de applicatie correc
 let add = (a,b) =>{
     if(isNaN(a)|| isNaN(b)) // error code binnen functie
     {
-        console.log("Error: only numbers")
+        console.log('Error: only numbers')
         return false;
     }
     return a + b;
 }
 
-let c = add("not a number", 3);
+let c = add('not a number', 3);
 
 if(c !== false) // error code buiten functie
 {
