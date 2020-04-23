@@ -13,6 +13,8 @@ $ node test.js
 Hello
 ```
 
+### async
+
 Het woord `async` voor functie plaatsen maakt dat de code niet geblokkeerd wordt. Door de toevoeging van `async` wordt geen waarde teruggegeven, maar geeft **async een promise** terug.
 
 ```javascript
@@ -26,6 +28,8 @@ $ node test.js
 Promise {'Hello'}
 ```
 
+### await
+
 Het woord `await` zorgt dat code wacht op het resultaat van een promise. En wanneer de promise voltooid is, krijg je een waarde terug.
 
 ```javascript
@@ -36,7 +40,9 @@ let result = await fetch(...);
 }
 ```
 
-#### voorbeeld zonder "then" chains
+#### 
+
+**voorbeeld**: door gebruik async/await is er geen nood aan 'then'-chains
 
 ```javascript
 const fetch = require('node-fetch');
@@ -55,7 +61,9 @@ code done
 ditto
 ```
 
-#### voorbeeld met uitkomst terminal \(volgorde output console.log!\)
+#### 
+
+**voorbeeld**: let op voor volgorde output console.log!
 
 ```javascript
 const fetch = require('node-fetch');
@@ -84,7 +92,7 @@ venusaur 3
 
 ## exceptions
 
-vang reject met catch
+**voorbeeld**: opvangen van reject met `catch`
 
 ```javascript
 let done = false;
@@ -114,7 +122,9 @@ $ node test.js
 Not done
 ```
 
-correcte methode voor fetch:
+
+
+**voorbeeld**: correcte methode voor fetch
 
 ```javascript
 const fetch = require('node-fetch');
