@@ -126,7 +126,7 @@ Klik op Collections en vervolgens op Add my own data. Maak een nieuwe database a
 
 Als je al een database in je account hebt kan je gewoon ook op 'Add Database' drukken.
 
-### 6. Vul de missende delen van de express applicatie aan
+### 6. Initializatie van de database en inlezen van de data \(Deel 1\)
 
 * Zorg ervoor dat er een **client** object wordt aangemaakt aan de hand van de connection string \(zie hierboven\). `new MongoClient(CONNECTION_URI, { useUnifiedTopology: true });`
 * Zorg ervoor dat je connect met de client zodat er een actieve verbinding met de database is.
@@ -136,6 +136,9 @@ Als je al een database in je account hebt kan je gewoon ook op 'Add Database' dr
   * Hierna delete je alle documenten van de pokemon collection in mongodb \(zodat je altijd van een schone lei begint\)
   * Vervolgens voeg je alle pokemon toe in de collection van de array.
 * Start de node js applicatie op. Als je dit juist gedaan hebt kan je gaan kijken in MongoDB atlas of ze correct zijn toegevoegd. Je kan dit zien in Collections en dan kan je de inhoud van de Pokemon collection zien.
+
+### 6. Het aanmaken van de express routes \(Deel 2\)
+
 * De eerste express route die we gaan maken is de **/pokemon/:id** route. De route zelf is al gemaakt. We moeten hier enkel de `getPokemonById` functie invullen. Maak deze zodat die via de client een pokemon uit de database haalt met de opgegeven id. Zorg ervoor dat deze wordt terug gegeven.  Je kan deze route uittesten door de node applicatie te herstarten en dan naar `http://localhost:3000/pokemon/1` te gaan met je browser of postman. Je zou dan dit resultaat moeten krijgen:
 
 ```javascript
