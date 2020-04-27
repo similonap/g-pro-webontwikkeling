@@ -199,13 +199,36 @@ cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3,$lt:7}});
 cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3,$lt:7}, name:'pikachu'});
 ```
 
-## update
+* Logical operators
 
- 
+**meer info**: [https://docs.mongodb.com/manual/reference/operator/query-logical/](https://docs.mongodb.com/manual/reference/operator/query-logical/)
+
+* bv. OF: $or
+* $or: \[&lt;expressions&gt;\]
+
+```javascript
+cursor =  client.db('Les').collection('pokemon').find({$or:[{age:{$gt:3,$lt:7}}, {name:'pikachu'}]});
+```
 
 ## delete
 
+* **let op**: maakt je DB helemaal leeg
+
+```javascript
+let result = await client.db('Les').collection('pokemon').deleteMany({});
+```
+
+## updateOne\(\)
 
 
 
+## updateMany\(\)
+
+
+
+## deleteOne\(\)
+
+
+
+## deleteMany\(\)
 
