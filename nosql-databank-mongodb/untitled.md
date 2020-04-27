@@ -46,33 +46,52 @@ vb. relationele database **MySQL**: Zo kan een bepaalde klas uit een tabel klass
 
 {% embed url="https://www.youtube.com/watch?v=ayNI9Q84v8g" %}
 
-client initialiseren
+```javascript
+npm install mongodb
+```
+
+### client initialiseren
+
+De MongoDB-module exporteert `MongoClient`, en dat is wat gebruikt zal worden om een verbinding te maken met een MongoDB-database. 
 
 ```javascript
 const {MongoClient} = require('mongodb');
+```
+
+Er moet een constante aangemaakt worden voor de verbindings-URI. Vergeet in de verbindingsreeks niet om `<username>`,`<password>`en `your-cluster-url` \(**lokale mongodb**\) bij te werken of bij een **externe mongodb** \(voor labo: [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)\)
+
+```javascript
+// connectie URI: update <username>, <password> en <your-cluster-url>
+// meer info op https://docs.mongodb.com/ecosystem/drivers/node/
+const uri = "mongodb+srv://<username>:<password>@<your-clusterurl>/test?retryWrites=true&w=majority";
+```
+
+Nu de constante URI werd gedeclareerd, kan een exemplaar van MongoClient gemaakt worden.
+
+```javascript
+//uri is link naar mongo-database
 const client = new MongoClient(uri);
 ```
 
-voorbeeld: uri is link naar mongo-database
-
-* `const uri = "mongodb+srv://<username>:<password>@<your-clusterurl>/`
-
-  `test?retryWrites=true&w=majority";`    
-  waar &lt;your-cluster-url&gt; = l**okale mongodb**   
-  OF   
-  **externe** \(voor labo: [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)\)
-
 ### connecting to MongoDB
 
-* connect\(\) `await client.connect();`
+* connect\(\)
+
+```javascript
+await client.connect();
+```
+
 * geeft promise terug
-* dus
-  * plaats in async functie
-  * in try/catch
+* dus te plaatsen in een async-functie met een try/catch
 
 ### listing databases
 
-* van zodra connect\(\) klaar is `let list = await client.db().admin().listDatabases();`
+* van zodra connect\(\) klaar is
+
+```javascript
+let list = await client.db().admin().listDatabases();
+```
+
 * geeft promise terug
 * lijst van databases
 

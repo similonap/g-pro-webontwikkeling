@@ -47,9 +47,9 @@
 * [exceptions](asynchroon-programmeren/exceptions.md)
 * [async / await](asynchroon-programmeren/async-await.md)
 
-## NoSql-databanken MongoDB
+## NoSql-databank MongoDB
 
-* [MongoDB](nosql-databanken-mongodb/untitled.md)
+* [MongoDB](nosql-databank-mongodb/untitled.md)
 
 ## monitoraat
 
