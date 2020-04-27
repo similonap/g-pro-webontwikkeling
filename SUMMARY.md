@@ -36,7 +36,7 @@
 * [scope in JS](3.-js-functioneel-programmeren/scope.md)
 * [closures in JS](3.-js-functioneel-programmeren/closures-in-js.md)
 
-## asynchroon programmeren
+## 4. asynchroon programmeren <a id="asynchroon-programmeren"></a>
 
 * [inleiding](asynchroon-programmeren/inleiding.md)
 * [blocking code](asynchroon-programmeren/blocking-code.md)
@@ -47,9 +47,11 @@
 * [exceptions](asynchroon-programmeren/exceptions.md)
 * [async / await](asynchroon-programmeren/async-await.md)
 
-## NoSql-databank MongoDB
+## 5. MongoDB \(NoSql-DB\) <a id="mongodb"></a>
 
-* [MongoDB](nosql-databank-mongodb/untitled.md)
+* [NoSQL vs relationele DB](mongodb/untitled.md)
+* [MongoDB in NodeJS](mongodb/mongodb-in-nodejs.md)
+* [CRUD-operations](mongodb/crud-operations.md)
 
 ## monitoraat
 

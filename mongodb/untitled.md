@@ -1,8 +1,6 @@
-# MongoDB
+# NoSQL vs relationele DB
 
-## NoSQL vs relationele DB
-
-### NoSQL database
+## NoSQL database
 
 **MongoDB** is een **NoSQL-database** \(Not Only SQL\), eentje die **SQL vermijdt**. Het SQL-systeem wordt ter ondersteuning gebruikt, maar niet actief bij het verwerken van verzoeken. Dit soort databases kan daarom ingezet worden bij grote hoeveelheden van gegevens.  
 In een NoSQL-database wordt aan een rij slechts een enkele kolom gelinkt. Alle entry’s voor een rij worden gegroepeerd in dezelfde kolom, waardoor plaats bespaard wordt. Door het grote volume aan data zijn koppelingen als JOIN \(vrijwel\) onhaalbaar.  
@@ -23,7 +21,7 @@ In een NoSQL-database wordt aan een rij slechts een enkele kolom gelinkt. Alle e
 ]
 ```
 
-### relationele DB
+## relationele DB
 
 Op het eerste gezicht lijkt een relationele database eerder een platte database. Het verschil zit in de tabellen die niet op zichzelf staan. **Data** zit verspreid over **meerdere tabellen** binnen een  database,  waarbij de tabellen aan elkaar gekoppeld kunnen worden met JOIN.   
 Een relationele database is een prima oplossing voor **gestructureerde data**, waarbij de **structuur** nadien **moeilijk aanpasbaar** is en daarom op voorhand bepaald dient te worden. Vanwege de opbouw kunnen **ingewikkelde queries** op dit soort databanken losgelaten worden.  
@@ -34,84 +32,13 @@ vb. relationele database **MySQL**: Zo kan een bepaalde klas uit een tabel klass
 | Sven | Charleer | sven.charleer@ap.be |
 | Andie | Similon | andie.similon@ap.be  |
 
-### NoSQL vs relationele DB
+## NoSQL vs relationele DB
 
 | relationele DB | NoSQL |
 | :--- | :--- |
 | record in RDB | MongoDB's document \(JSON-object\) |
 | tabel in RDB | MongoDB's collection |
 | \_id is unieke identifier \(indexed\)\) voor elk document | document wordt binair bijgehouden \(BSON\) |
-
-## using MongoDB in NodeJS
-
-{% embed url="https://www.youtube.com/watch?v=ayNI9Q84v8g" %}
-
-```javascript
-npm install mongodb
-```
-
-### client initialiseren
-
-De MongoDB-module exporteert `MongoClient`, en dat is wat gebruikt zal worden om een verbinding te maken met een MongoDB-database. 
-
-```javascript
-const {MongoClient} = require('mongodb');
-```
-
-Er moet een constante aangemaakt worden voor de verbindings-URI. Vergeet in de verbindingsreeks niet om `<username>`,`<password>`en `your-cluster-url` \(**lokale mongodb**\) bij te werken of bij een **externe mongodb** \(voor labo: [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)\)
-
-```javascript
-// connectie URI: update <username>, <password> en <your-cluster-url>
-// meer info op https://docs.mongodb.com/ecosystem/drivers/node/
-const uri = "mongodb+srv://<username>:<password>@<your-clusterurl>/test?retryWrites=true&w=majority";
-```
-
-Nu de constante URI werd gedeclareerd, kan een exemplaar van MongoClient gemaakt worden.
-
-```javascript
-//uri is link naar mongo-database
-const client = new MongoClient(uri);
-```
-
-### connecting to MongoDB
-
-* connect\(\)
-
-```javascript
-await client.connect();
-```
-
-* geeft promise terug
-* dus te plaatsen in een async-functie met een try/catch
-
-### listing databases
-
-* van zodra connect\(\) klaar is
-
-```javascript
-let list = await client.db().admin().listDatabases();
-```
-
-* geeft promise terug
-* lijst van databases
-
-### closing connection
-
-* close\(\)
-* client.close\(\) in finally!
-
-```javascript
-try {
-    // connect to the MongoDB cluster
-    await client.connect();
-    // make the appropriate DB calls
-    ...
-    } catch (e) {
-        console.error(e);
-    } finally {
-        await client.close();
-    }
-```
 
 
 
