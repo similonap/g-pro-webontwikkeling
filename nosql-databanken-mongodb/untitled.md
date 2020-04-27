@@ -46,54 +46,158 @@ vb. relationele database **MySQL**: Zo kan een bepaalde klas uit een tabel klass
 
 {% embed url="https://www.youtube.com/watch?v=ayNI9Q84v8g" %}
 
+client initialiseren
 
+```javascript
+const {MongoClient} = require('mongodb');
+const client = new MongoClient(uri);
+```
 
+voorbeeld: uri is link naar mongo-database
 
+* `const uri = "mongodb+srv://<username>:<password>@<your-clusterurl>/`
 
-  
-  
-
+  `test?retryWrites=true&w=majority";`    
+  waar &lt;your-cluster-url&gt; = l**okale mongodb**   
+  OF   
+  **externe** \(voor labo: [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)\)
 
 ### connecting to MongoDB
 
-
-
-
+* connect\(\) `await client.connect();`
+* geeft promise terug
+* dus
+  * plaats in async functie
+  * in try/catch
 
 ### listing databases
 
-
-
-
+* van zodra connect\(\) klaar is `let list = await client.db().admin().listDatabases();`
+* geeft promise terug
+* lijst van databases
 
 ### closing connection
 
+* close\(\)
+* client.close\(\) in finally!
 
+```javascript
+try {
+    // connect to the MongoDB cluster
+    await client.connect();
+    // make the appropriate DB calls
+    ...
+    } catch (e) {
+        console.error(e);
+    } finally {
+        await client.close();
+    }
+```
 
 
 
 ## playing with data
 
-
-
-  
-
+Create, read, update, delete \(CRUD\)
 
 ### choosing your database and collection
 
+* client.db\(&lt;naam van database&gt;\)
+* client.db\(...\).collection\(&lt;naam van collection&gt;\)
+* collection maakt nieuwe collectie aan indien die niet bestaat \(hoofdlettergevoelig! \)
 
-
-
+```javascript
+await client.db('Les').collection('pokemon')...
+```
 
 ## create
 
+**insert van 1 document** `insertOne(...)`
 
+```javascript
+const pikachu = {name:'pikachu'};
+const result = await client.db('Les').collection('pokemon').insertOne(pikachu);
+console.log(`New listing created with the following id: ${result.insertedId}`);
+```
 
+* MongoDB maakt zelf een \_id aan
+* formaat document staat niet vast \(niet zoals record in RDB\)
+* nieuw \_id bij elke insert = verschillende keren JSON-object invoegen
 
+**insert van verschillende documenten** `insertMany(...)`
+
+```javascript
+const pokemon = [
+            {name: 'pichu', age:7},
+            {name: 'flareon',age:3},
+            {
+                name: 'eevee',
+                owner: 'sven',
+                age: 5
+            }
+        ];
+result = await client.db('Les').collection('pokemon').insertMany(pokemon);
+console.log(`${result.insertedCount} new listing(s) created with the following id(s):`);
+console.log(result.insertedIds);
+```
 
 ## read
 
+* `findOne()` geeft eerste document van query terug
+* parameter {} \(leeg object\) geeft alle resultaten terug \(~= select zonder where\)
 
+```javascript
+result = await client.db('Les').collection('pokemon').findOne({});
+console.log(result);
+```
+
+* `findOne({name:'eevee'})` geeft eerste document van query terug waar name === 'eevee'
+* parameter {name:'eevee'} \(object\) ~= select where name = 'eevee'
+
+```javascript
+result = await client.db('Les').collection('pokemon').findOne({name:'eevee'});
+console.log(result);
+```
+
+* `find()` geeft alle documenten van query terug
+* geeft cursor terug \(laat toe over resultaten te itereren\)
+* gebruik toArray\(\) \(geeft promise terug\) om naar array om te zetten
+
+```javascript
+cursor =  client.db('Les').collection('pokemon').find({});
+result = await cursor.toArray();
+console.log(result);
+```
+
+* `find()`'s cursor kan bewerkt worden:
+* `.limit(3)` limiteert tot 3 resultaten
+* `.sort({age:-1})` sorteert op naam
+
+```javascript
+cursor =  client.db('Les').collection('pokemon').find({}).sort({age:-1}).limit(3);
+```
+
+* resultaten filteren \(geavanceerde queries\)
+* age &gt; 3
+
+```javascript
+cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3}});
+```
+
+* age &gt; 3 && age &lt; 7
+
+```javascript
+cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3,$lt:7}});
+```
+
+**meer info**: [https://docs.mongodb.com/manual/reference/operator/query/](https://docs.mongodb.com/manual/reference/operator/query/)
+
+* combineren van filters
+* age &gt; 3 && age &lt; 7 && name == 'pikachu
+
+```javascript
+cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3,$lt:7}, name:'pikachu'});
+```
 
 ## update
 
