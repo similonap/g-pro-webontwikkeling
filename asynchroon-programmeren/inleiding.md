@@ -1,6 +1,8 @@
 # inleiding
 
-Hieronder zullen een aantal belangrijke concepten besproken worden met betrekking tot asynchroon programmeren en hoe dit eruit ziet in zowel webbrowsers als JavaScript.
+{% embed url="https://youtu.be/BhzSu4jeVjM?t=832" %}
+
+Hier zullen een aantal belangrijke concepten besproken worden met betrekking tot asynchroon programmeren en hoe dit eruit ziet in zowel webbrowsers als JavaScript.
 
 Veelal wordt programmeercode voor een bepaald programma zo geschreven dat deze rechtdoor gaat, waarbij er telkens maar één ding tegelijkertijd gebeurt. Als een functie afhankelijk is van het resultaat van een andere functie, moet deze wachten tot de andere functie voltooid is en totdat gebeurt, wordt het hele programma in wezen gestopt vanuit het perspectief van de gebruiker.  
 Daarom krijgen Mac-gebruikers zo nu en dan de ronddraaiende regenboogkleurige cursor of kleine cirkel te zien. Het besturingssysteem geeft met deze cursor aan dat het huidige programma dat gebruikt wordt, moet stoppen en eerst moet wachten tot er iets anders afloopt \(soms helaas een vrije interpretatie van "Het huidige programma loopt vast. Help!"\).
