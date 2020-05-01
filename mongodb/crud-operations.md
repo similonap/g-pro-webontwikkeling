@@ -1,5 +1,5 @@
 ---
-description: 'create, read, update, delete'
+description: 'Create, Read, Update, Delete aka playing with data'
 ---
 
 # CRUD-operations
@@ -128,12 +128,6 @@ cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3,$lt:7}, name:'
 cursor =  client.db('Les').collection('pokemon').find({$or:[{age:{$gt:3,$lt:7}}, {name:'pikachu'}]});
 ```
 
-* **let op**: maakt je DB helemaal leeg
-
-```javascript
-let result = await client.db('Les').collection('pokemon').deleteMany({});
-```
-
 ## update
 
 ### updateOne\(\)
@@ -164,4 +158,10 @@ Soms is het handig om ineens meer dan één document tegelijk bij te werken en d
 ### deleteMany\(\)
 
 Om meer dan één document tegelijkertijd te verwijderen is er `deleteMany()`. Net als bij `deleteOne()` vereist `deleteMany()` dat een filter \(object\) wordt doorgegeven. Ook opties van het type object kunnen opgenomen worden te nemen.
+
+```javascript
+let result = await client.db('Les').collection('pokemon').deleteMany({});
+```
+
+**let op**: Dit maakt je DB helemaal leeg.
 
