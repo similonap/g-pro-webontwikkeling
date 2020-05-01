@@ -1,5 +1,7 @@
 # NoSQL vs relationele DB
 
+{% embed url="https://youtu.be/LP683PsOGZw?t=708" %}
+
 ## NoSQL database
 
 **MongoDB** is een **NoSQL-database** \(Not Only SQL\), eentje die **SQL vermijdt**. Het SQL-systeem wordt ter ondersteuning gebruikt, maar niet actief bij het verwerken van verzoeken. Dit soort databases kan daarom ingezet worden bij grote hoeveelheden van gegevens.  
