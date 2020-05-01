@@ -1,5 +1,7 @@
 # recursieve functie
 
+{% embed url="https://youtu.be/LhKdZtWuXUU?t=360" %}
+
 ## definitie
 
 **Recursie** \(recursion\) is wanneer een functie zichzelf oproept. 
