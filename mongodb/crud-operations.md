@@ -142,21 +142,24 @@ Een enkel document kan bijgewerkt worden door gebruik te maken van `updateOne ()
 
 * **filter \(object\)** wordt gebruikt om het document te selecteren dat geüpdate moet worden. De filter is vergelijkbaar met de query die in `findOne()` gebruikt wordt om naar een bepaald document te zoeken. Om te zoeken naar alle documenten is het nodig om binnen de filter geen eigenschappen mee te geven. Eén of meerdere eigenschappen opnemen binnen de filter verfijnt de zoekopdracht.  
 * **update \(object\)** wordt gebruikt om het document te updaten.  MongoDB heeft verschillende update-operators, zoals `$inc`, `$currentDate`, `$set` en `$unset`.  Een [volledige lijst van update-operators](https://docs.mongodb.com/manual/reference/operator/update/) en hun beschrijvingen staat te lezen op de officiële documentatie van MongoDB.
-* **options \(object\)** is een optionele parameter voor opties. Meer info over deze opties is te vinden op de [updateOne\(\)-documenten](https://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#updateOne) online.
+* **options \(object\)** is een _optionele_ parameter voor opties. Meer info over deze opties is te vinden op de [updateOne\(\)-documenten](https://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#updateOne) online.
 
 `updateOne()` zal het eerste document bijwerken dat overeenkomt met de gegeven zoekopdracht. Indien er meer dan één document overeenkomt met de zoekopdracht, wordt slechts één document bijgewerkt.
 
 ### updateMany\(\)
 
-Soms is het handig om ineens meer dan één document tegelijk bij te werken en dat kan met `updateMany()`. Net zoals bij `updateOne()` vereist `updateMany()` dat een filter\(object\) en een update\(object\) wordt doorgegeven. Ook opties van het type object kunnen opgenomen worden te nemen.
+Soms is het handig om ineens meer dan één document tegelijk bij te werken en dat kan met `updateMany()`. Net zoals bij `updateOne()` vereist `updateMany()` dat een filter \(object\) en een update \(object\) wordt doorgegeven. Ook opties van het type object kunnen opgenomen worden te nemen.
 
 ## delete
 
 ### deleteOne\(\)
 
+`deleteOne()` kan één enkel document verwijderen en heeft één vereiste parameter, namelijk filter\(object\). De filter wordt gebruikt om het te verwijderen document te selecteren, en is vergelijkbaar met de query die in `findOne()` en in `updateOne()` gebruikt worden om naar een bepaald document te zoeken. 
 
+* **filter \(object\)** wordt gebruikt om het document te selecteren dat gedelete moet worden. De filter is vergelijkbaar met de query din `findOne()` en `updateOne()`. Om te zoeken naar alle documenten is het nodig om binnen de filter geen eigenschappen mee te geven. Eén of meerdere eigenschappen opnemen binnen de filter verfijnt de zoekopdracht. 
+* **options \(object\)** is een _optionele_ parameter voor opties. Meer info over deze opties is te vinden op de [deleteOne\(\)-documenten](https://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#deleteOne) online.
 
-
+`deleteOne()` verwijdert het eerste document dat overeenkomt met de opgegeven zoekopdracht. Zelfs als meer dan één document overeenkomt met de zoekopdracht, wordt er slechts één document verwijderd. Als er geen filter opgegeven wordt, zal het eerste document in natuurlijke volgorde verwijderd worden.
 
 ### deleteMany\(\)
 
