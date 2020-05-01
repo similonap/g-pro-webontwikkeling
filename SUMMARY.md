@@ -26,15 +26,15 @@
 * [3. request & responses](express/request-and-responses.md)
 * [4. API's](express/apis.md)
 
-## 3. JS - functioneel programmeren
+## 3. JS - functioneel programmeren <a id="js-functioneel-programmeren"></a>
 
-* [sort an array of objects](3.-js-functioneel-programmeren/sort-an-array-of-objects.md)
-* [map method \(array\)](3.-js-functioneel-programmeren/map-method-array.md)
-* [filter method \(array\)](3.-js-functioneel-programmeren/filter-method-array.md)
-* [reduce method \(array\)](3.-js-functioneel-programmeren/reduce-method-array.md)
-* [recursieve functie](3.-js-functioneel-programmeren/recursieve-functie.md)
-* [scope in JS](3.-js-functioneel-programmeren/scope.md)
-* [closures in JS](3.-js-functioneel-programmeren/closures-in-js.md)
+* [sort an array of objects](js-functioneel-programmeren/sort-an-array-of-objects.md)
+* [map method \(array\)](js-functioneel-programmeren/map-method-array.md)
+* [filter method \(array\)](js-functioneel-programmeren/filter-method-array.md)
+* [reduce method \(array\)](js-functioneel-programmeren/reduce-method-array.md)
+* [recursieve functie](js-functioneel-programmeren/recursieve-functie.md)
+* [scope in JS](js-functioneel-programmeren/scope.md)
+* [closures in JS](js-functioneel-programmeren/closures-in-js.md)
 
 ## 4. asynchroon programmeren <a id="asynchroon-programmeren"></a>
 
