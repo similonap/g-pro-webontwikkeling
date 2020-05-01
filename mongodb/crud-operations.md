@@ -163,3 +163,5 @@ Soms is het handig om ineens meer dan één document tegelijk bij te werken en d
 
 ### deleteMany\(\)
 
+Om meer dan één document tegelijkertijd te verwijderen is er `deleteMany()`. Net als bij `deleteOne()` vereist `deleteMany()` dat een filter \(object\) wordt doorgegeven. Ook opties van het type object kunnen opgenomen worden te nemen.
+
