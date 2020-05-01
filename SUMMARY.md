@@ -33,7 +33,7 @@
 * [filter method \(array\)](js-functioneel-programmeren/filter-method-array.md)
 * [reduce method \(array\)](js-functioneel-programmeren/reduce-method-array.md)
 * [recursieve functie](js-functioneel-programmeren/recursieve-functie.md)
-* [scope in JS](js-functioneel-programmeren/scope.md)
+* [scope in JS](js-functioneel-programmeren/scope-in-js.md)
 * [closures in JS](js-functioneel-programmeren/closures-in-js.md)
 
 ## 4. asynchroon programmeren <a id="asynchroon-programmeren"></a>
