@@ -148,11 +148,13 @@ Een enkel document kan bijgewerkt worden door gebruik te maken van `updateOne ()
 
 ### updateMany\(\)
 
-
+Soms is het handig om ineens meer dan één document tegelijk bij te werken en dat kan met `updateMany()`. Net zoals bij `updateOne()` vereist `updateMany()` dat een filter\(object\) en een update\(object\) wordt doorgegeven. Ook opties van het type object kunnen opgenomen worden te nemen.
 
 ## delete
 
 ### deleteOne\(\)
+
+
 
 
 
