@@ -138,7 +138,13 @@ let result = await client.db('Les').collection('pokemon').deleteMany({});
 
 ### updateOne\(\)
 
+Een enkel document kan bijgewerkt worden door gebruik te maken van `updateOne ()`. `updateOne ()` heeft twee vereiste parameters en een optionele: 
 
+* **filter \(object\)** wordt gebruikt om het document te selecteren dat geüpdate moet worden. De filter is vergelijkbaar met de query die in `findOne()` gebruikt wordt om naar een bepaald document te zoeken. Om te zoeken naar alle documenten is het nodig om binnen de filter geen eigenschappen mee te geven. Eén of meerdere eigenschappen opnemen binnen de filter verfijnt de zoekopdracht.  
+* **update \(object\)** wordt gebruikt om het document te updaten.  MongoDB heeft verschillende update-operators, zoals `$inc`, `$currentDate`, `$set` en `$unset`.  Een [volledige lijst van update-operators](https://docs.mongodb.com/manual/reference/operator/update/) en hun beschrijvingen staat te lezen op de officiële documentatie van MongoDB.
+* **options \(object\)** is een optionele parameter voor opties. Meer info over deze opties is te vinden op de [updateOne\(\)-documenten](https://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#updateOne) online.
+
+`updateOne()` zal het eerste document bijwerken dat overeenkomt met de gegeven zoekopdracht. Indien er meer dan één document overeenkomt met de zoekopdracht, wordt slechts één document bijgewerkt.
 
 ### updateMany\(\)
 
