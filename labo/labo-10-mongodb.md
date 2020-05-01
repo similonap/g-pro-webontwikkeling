@@ -1,4 +1,4 @@
-# labo 10: mongodb
+# labo 10&11: mongodb
 
 ### 1. Maak het project aan
 
