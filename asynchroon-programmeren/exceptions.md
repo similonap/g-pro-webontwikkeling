@@ -1,5 +1,7 @@
 # exceptions
 
+{% embed url="https://youtu.be/WxbF38WJWlw?t=364" %}
+
 ## error handling vroeger...
 
 Om **fouten binnen de code te behandelen** werden tot nu toe twee manier gebruikt.   
