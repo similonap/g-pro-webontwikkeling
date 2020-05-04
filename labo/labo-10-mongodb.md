@@ -199,18 +199,30 @@ Als je al een database in je account hebt kan je gewoon ook op 'Add Database' dr
 
 ```javascript
 [
-    {
-        "_id": 4,
-        "name": "charmander",
-        "height": 6,
-        "weight": 85
-    },
-    {
-        "_id": 7,
-        "name": "squirtle",
-        "height": 5,
-        "weight": 90
-    }
+   {
+      "_id":1,
+      "name":"bulbasaur",
+      "height":7,
+      "weight":69
+   },
+   {
+      "_id":4,
+      "name":"charmander",
+      "height":6,
+      "weight":85
+   },
+   {
+      "_id":7,
+      "name":"squirtle",
+      "height":5,
+      "weight":90
+   },
+   {
+      "_id":10,
+      "name":"caterpie",
+      "height":3,
+      "weight":29
+   }
 ]
 ```
 
