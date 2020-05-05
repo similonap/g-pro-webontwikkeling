@@ -4,6 +4,8 @@ description: 'Create, Read, Update, Delete aka playing with data'
 
 # CRUD-operations
 
+{% embed url="https://youtu.be/WrgeV5pmJbU?t=615" %}
+
 ## database en collection
 
 * `client.db(<naam van database>)`
