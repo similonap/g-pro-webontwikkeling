@@ -118,7 +118,8 @@ meer info: [query operators](https://docs.mongodb.com/manual/reference/operator/
 
 ### AND queries \| combineren filters
 
-Filters kunnen gecombineerd worden, waardoor nog meer gericht gezocht kan worden.  
+`$and`voert een logische `AND`bewerking uit op een reeks van _één of meer_ uitdrukkingen \(bijv `<expression1>`, `<expression2>`etc.\) en selecteert de documenten die voldoen aan _alle_ expressions in de array. De `$and`operator maakt gebruik van _short-circuit evaluatie_ . Als de eerste expressie \(bijvoorbeeld `<expression1>`\) een `false` teruggeeft, zal MongoDB de resterende expressies niet verder evalueren.  
+  
 `.find({age:{$gt:3,$lt:7}, name:'pikachu'});`
 
 * `{age:{$gt:3,$lt:7}, name:'pikachu'}` 
@@ -138,7 +139,9 @@ meer info: [and \| logical query operators](https://docs.mongodb.com/manual/refe
 
 ### OR queries \| combineren filters
 
-.`find($or[{age:{$gt:3}}, {name:'pikachu'});` 
+De `$or`operator voert een logische `OR`bewerking uit op een array van _twee of meer_ `<expressions>` en selecteert de documenten die voldoen aan _ten minste_ één van de `<expressions>`.   
+  
+`.find($or[{age:{$gt:3}}, {name:'pikachu'});` 
 
 * `{age:{$gt:3}}` OR `{name:'pikachu'}` 
 * age &gt; 3 OR name == 'pikachu'
@@ -155,6 +158,8 @@ meer info: [or \| logical query operators](https://docs.mongodb.com/manual/refer
 
 ### IN queries \| combineren filters
 
+De `$in`operator selecteert de documenten waarbij de waarde van een veld gelijk is aan elke waarde in de opgegeven array.  
+  
 `.find({name:{$in:['pikachu', 'eevee']}})`
 
 ```javascript
