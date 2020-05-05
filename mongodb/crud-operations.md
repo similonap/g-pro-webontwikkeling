@@ -16,9 +16,9 @@ await client.db('Les').collection('pokemon')...
 
 ## create
 
-### **insert\(\): aanmaken 1 document**
+### **insertOne\(\): aanmaken 1 document**
 
-`insert(...)`
+`insertOne(...)`
 
 ```javascript
 const pikachu = {name:'pikachu'};
@@ -87,46 +87,83 @@ result = await cursor.toArray();
 console.log(result);
 ```
 
-* `find()`'s cursor kan bewerkt worden:
-* `.limit(3)` limiteert tot 3 resultaten
-* `.sort({age:-1})` sorteert op naam
+## **query operators**
+
+### filteren resultaten
+
+Door gebruik te maken van query operators kan er specifiek gezocht worden en kunnen zo resultaten gefilterd worden \(geavanceerde queries\).  In onderstaand voorbeeld is de parameter een JSON-object, namelijk `{age:{$gt:3}}`. Het gefilterde resultaat zal de leeftijd hoger dan 3 weergeven \(age &gt; 3\).
 
 ```javascript
-cursor =  client.db('Les').collection('pokemon').find({}).sort({age:-1}).limit(3);
+cursor =  client
+          .db('Les')
+          .collection('pokemon')
+          .find({age:{$gt:3}});
 ```
 
-* resultaten filteren \(geavanceerde queries\)
-* age &gt; 3
+`.find({age:{$gt:3,$lt:7}});`
+
+* age &gt; 3 \(gt\) 
+* age &lt; 7 \(lt\)
 
 ```javascript
-cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3}});
+cursor =  client
+          .db('Les')
+          .collection('pokemon')
+          .find({age:{$gt:3,$lt:7}});
 ```
 
-* age &gt; 3 && age &lt; 7
+meer info: [query operators](https://docs.mongodb.com/manual/reference/operator/query/)
+
+
+
+### AND queries \| combineren filters
+
+Filters kunnen gecombineerd worden, waardoor nog meer gericht gezocht kan worden.  
+`.find({age:{$gt:3,$lt:7}, name:'pikachu'});`
+
+* `{age:{$gt:3,$lt:7}, name:'pikachu'}` 
+* `age:{$gt:3,$lt:7}` EN `name:'pikachu'` 
+* `age:{$gt:3}` EN `age:{$lt:7}` EN `name:'pikachu'` 
+* age &gt; 3 EN age &lt; 7 EN name == 'pikachu'
 
 ```javascript
-cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3,$lt:7}});
+cursor =  client.db('Les')
+          .collection('pokemon')
+          .find({age:{$gt:3,$lt:7}, name:'pikachu'});
 ```
 
-**meer info**: [https://docs.mongodb.com/manual/reference/operator/query/](https://docs.mongodb.com/manual/reference/operator/query/)
+meer info: [and \| logical query operators](https://docs.mongodb.com/manual/reference/operator/query/and/#op._S_and)
 
-* combineren van filters
-* age &gt; 3 && age &lt; 7 && name == 'pikachu
+
+
+### OR queries \| combineren filters
+
+.`find($or[{age:{$gt:3}}, {name:'pikachu'});` 
+
+* `{age:{$gt:3}}` OR `{name:'pikachu'}` 
+* age &gt; 3 OR name == 'pikachu'
 
 ```javascript
-cursor =  client.db('Les').collection('pokemon').find({age:{$gt:3,$lt:7}, name:'pikachu'});
+cursor =  client.db('Les')
+          .collection('pokemon')
+          .find({$or:[{age:{$gt:3,$lt:7}}, {name:'pikachu'}]});
 ```
 
-* Logical operators
+meer info: [or \| logical query operators](https://docs.mongodb.com/manual/reference/operator/query/or/)
 
-**meer info**: [https://docs.mongodb.com/manual/reference/operator/query-logical/](https://docs.mongodb.com/manual/reference/operator/query-logical/)
 
-* bv. OF: $or
-* $or: \[&lt;expressions&gt;\]
+
+### IN queries \| combineren filters
+
+`.find({name:{$in:['pikachu', 'eevee']}})`
 
 ```javascript
-cursor =  client.db('Les').collection('pokemon').find({$or:[{age:{$gt:3,$lt:7}}, {name:'pikachu'}]});
+cursor =  client.db('Les')
+          .collection('pokemon')
+          .find({name:{$in:['pikachu', 'eevee']}});
 ```
+
+meer info: [in \| comparison query operator](https://docs.mongodb.com/manual/reference/operator/query/in/#op._S_in)
 
 ## update
 
