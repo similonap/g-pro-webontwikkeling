@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-
+**Zorg dat je deze opdracht indient via Digitap ten laatste op 29 mei!**
 
 ### 1. Maak het project aan
 
