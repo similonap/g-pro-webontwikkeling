@@ -75,5 +75,5 @@
 ## Extra info
 
 * [extra info](extra-info/extra-info.md)
-* [Opgave avondonderwijs](opgave-avondonderwijs.md)
+* [opgave avondonderwijs](opgave-avondonderwijs.md)
 

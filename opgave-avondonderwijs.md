@@ -1,4 +1,4 @@
-# Opgave avondonderwijs
+# opgave avondonderwijs
 
 ## Overzicht
 
@@ -18,7 +18,7 @@ te typen in de Terminal. Maak een nieuwe npm-package met bijbehorende package.js
 npm init
 ```
 
-te doen. De default waarden zullen hier voldoende zijn. Installeer vervolgens de nodige npm libraries voor dit project:
+te doen. De default waarden zullen hier voldoende zijn. Installeer vervolgens de nodige npm-libraries voor dit project:
 
 ```text
 npm install --save mongodb node-fetch express ejs
@@ -92,24 +92,24 @@ const loadDBData = async(client) => {
 
 ### 3. Laad Pokemon in via API
 
-Vul de `loadAllPokemonData` functie in. Deze functie moet de eerste 20 pokemon inladen via de pokeapi. Gebruik hiervoor de node-fetch library. Je kan de pokemon inladen via   
-[`https://pokeapi.co/api/v2/pokemon/`](https://pokeapi.co/api/v2/pokemon/)`<nummer van de pokemon>`. De functie maakt een array van deze Pokemon en geeft ze terug als return value
+Vul de `loadAllPokemonData` functie in. Deze functie moet de eerste 20 pokemons inladen via de pokeapi. Gebruik hiervoor de node-fetch-library. Je kan de pokemons inladen via   
+[`https://pokeapi.co/api/v2/pokemon/`](https://pokeapi.co/api/v2/pokemon/)`<nummer van de pokemon>`. De functie maakt een array van deze Pokemon en geeft ze terug als return value.
 
 ### 4. De getMyPokemon functie
 
 Vul de `getMyPokemon` functie in:
 
-* `getMyPokemon` filtert de **20 Pokemon**: enkel Pokemon die **groter zijn dan 10**
-* `getMyPokemon` geeft een array terug, maar niet in het originele JSON formaat van de API. Elk element in de array mag maar 2 velden hebben
+* `getMyPokemon` filtert de **20 Pokemons**: enkel Pokemons die **groter zijn dan 10**
+* `getMyPokemon` geeft een array terug, maar niet in het originele JSON-formaat van de API. Elk element in de array mag maar 2 velden hebben:
   * het veld `name`, die de naam van de pokemon bevat
   * het veld `sprite`, die de sprite \(afbeelding\) van de pokemon bevat 
-* Tip: gebruik filter en map
+* tip: gebruik filter en map
 
 ### 5. De myPokemon route
 
-De `myPokemon` route gebruikt de data `getMyPokemon`. Zorg dat de route mooi de naam en de afbeelding van elke Pokemon toont
+De `myPokemon` route gebruikt de data `getMyPokemon`. Zorg dat de route mooi de naam en de afbeelding van elke Pokemon toont.
 
-Tip: gebruik EJS. Er zijn 7 Pokemon.
+tip: gebruik EJS. Er zijn 7 Pokemons.
 
 ### 6. De getMyPokemonSummary functie
 
@@ -117,7 +117,7 @@ Vul de `getMyPokemonSummary` functie in:
 
 * de functie geeft een object terug in de vorm van: `{totalWeight:0, totalHeight:0, avgWeight:0, avgHeight:0}`
 * de functie berekent dus het **totale gewicht**, **totale grootte**, **gemiddeld gewicht** en **gemiddelde grootte** van de **20** Pokemon **die groter zijn dan 10**
-* Tip: gebruik filter en reduce.
+* tip: gebruik filter en reduce.
 
 ### 7. De myPokemonSummary route
 
@@ -139,5 +139,5 @@ Vul de `loadDBData` functie in.
 
 ### 9. De moviedata route
 
-Deze route gebruikt de data van de `loadDBData` functie. Zorg dat deze route het JSON resultaat teruggeeft van deze functie.
+Deze route gebruikt de data van de `loadDBData` functie. Zorg dat deze route het JSON-resultaat teruggeeft van deze functie.
 
