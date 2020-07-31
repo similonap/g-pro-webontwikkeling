@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-**Zorg dat je deze opdracht indient via Digitap ten laatste op 1 september!**
+**! Zorg dat je deze opdracht indient via Digitap ten laatste op 1 september 23:59u !**
 
 ### 1. Maak het project aan
 
