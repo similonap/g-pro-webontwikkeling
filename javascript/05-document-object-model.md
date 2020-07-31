@@ -94,7 +94,9 @@ Met `document.write();` kunnen we heel eenvoudig nieuwe inhoud aan de pagina \(D
       </td>
     </tr>
   </tbody>
-</table>try it yourself: [https://www.w3schools.com/js/tryit.asp?filename=tryjs\_output\_write](https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_write)
+</table>
+
+try it yourself: [https://www.w3schools.com/js/tryit.asp?filename=tryjs\_output\_write](https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_write)
 
 ### _element_.innerHTML = "";
 
@@ -123,7 +125,9 @@ Met de innerHTML-eigenschap kan je de volledige inhoud \(incl. markup\) van een 
       </td>
     </tr>
   </tbody>
-</table>{% hint style="warning" %}
+</table>
+
+{% hint style="warning" %}
 **XSS**  
 Cross-site scripting attacks zijn manieren om bepaalde data toe te voegen aan een website die daar niet thuis hoort. \(video: [https://youtu.be/zv0kZKC6GAM](https://youtu.be/zv0kZKC6GAM) \)
 {% endhint %}
